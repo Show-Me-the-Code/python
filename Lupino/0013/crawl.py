@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 
 def get_html(url):
-    r = requests.get("http://tieba.baidu.com/p/2166231880")
+    r = requests.get(url)
 
     return r.text
 

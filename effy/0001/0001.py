@@ -25,11 +25,32 @@ def digit(raw):
 
 def codeGen(n):
 	codes_pool = []
-	for i in range(n-1):
+	for i in range(n):
 		code = ""
 		for i in range(10):
 			code += digit(codeSeedA)
 		codes_pool.append(code)
 	return codes_pool
 
-codes = codeGen(200)
+'''
+Standard uuid
+'''
+import uuid
+def uuidGen(n):
+	codes_pool =[]
+	for i in range(n):
+		codes_pool.append(uuid.uuid4())
+	return codes_pool
+
+#codes_udf = codeGen(10000)
+codes_uuid = uuidGen(10000)
+
+
+'''
+In the case of 200 activation code, it is almost equally fast.
+
+As the size of code pool grows (e.g. to 10000), uuidGen() is twice slower than codeGen(),
+since uuid is checking whether duplications. Plus, the confidence level of codeGen() to not
+produce duplication lowers down as pool size increases.
+
+'''

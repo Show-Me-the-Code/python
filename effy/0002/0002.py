@@ -32,7 +32,6 @@ Step 2:
 Define and create table/metadata (Alternative 1), or use existing table (Alternative 2) 
 '''
 metadata = MetaData(db)
-
 '''
 Alternative 1: 
 The following code block is of one time use, after initilization of the table 
@@ -81,17 +80,14 @@ map between object and relational table.
 mapper(Codes, codes)
 metadata.create_all(db)
 
-
 '''
 Step 5:
 Create instances of Codes class
 '''
-
 raw_codes = codeGen(200)
 code_list = []
 for i in range(len(raw_codes)):
 	code_list.append(Codes(i+1, raw_codes[i]))
-
 
 '''
 Step 6:

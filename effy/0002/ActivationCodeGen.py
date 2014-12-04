@@ -8,7 +8,7 @@ def digit(raw):
 
 def codeGen(n):
 	codes_pool = []
-	for i in range(n-1):
+	for i in range(n):
 		code = ""
 		for i in range(10):
 			code += digit(codeSeedA)

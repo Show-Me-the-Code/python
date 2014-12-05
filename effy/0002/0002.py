@@ -25,7 +25,7 @@ start a live connection with DBApi
 '''
 ## activate echo option will print out actual SQL statement at each step, for debugging purposes
 ## to connect to postgresql, create_engine('dialect://username:password@local:port/DBname')
-db = create_engine('postgresql://username:password@localhost:5432/dbname', echo=False)
+db = create_engine('postgresql://username:password@localhost:5432/DBname', echo=False)
 
 '''
 Step 2:

@@ -12,6 +12,7 @@
 from PIL import Image, ImageDraw, ImageFont
 import sys
 
+
 def add_num_to_img(file_path):
     im = Image.open(file_path)
     im_draw = ImageDraw.Draw(im)
@@ -21,8 +22,13 @@ def add_num_to_img(file_path):
     im.save(file_path)
 
 if __name__ == "__main__":
-    for infile in sys.argv[1:]:
-        try:
-            add_num_to_img(infile)
-        except IOError:
-            pass
+    if len(sys.argv) <= 1:
+        print("Need at least 1 parameter. Try to execute 'python 0000.py $image_path'")
+    else:
+        for infile in sys.argv[1:]:
+            try:
+                add_num_to_img(infile)
+                print("Success!")
+            except IOError:
+                print("Can't open image!")
+                pass

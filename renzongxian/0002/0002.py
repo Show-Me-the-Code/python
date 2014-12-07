@@ -5,6 +5,7 @@
 # Python 2.7, MySQL-python does not currently support Python 3
 
 """
+
 将 0001 题生成的 200 个激活码（或者优惠券）保存到 MySQL 关系型数据库中。
 
 """
@@ -22,32 +23,32 @@ def generate_key():
 
 
 def write_to_mysql(key_list):
-    # 打开数据库连接
+    # Connect to database
     db = MySQLdb.connect("localhost", "test", "test1234", "testDB")
 
-    # 使用cursor()方法打开操作游标
+    # Use function cursor() to open the cursor operation
     cursor = db.cursor()
 
-    # 如果数据表已存在，删除表
+    # If the table exists, delete it
     cursor.execute("drop table if exists ukey")
 
-    # 创建数据表SQL语句
+    # Create table
     sql = """create table ukey (
             key_value char(40) not null
             )"""
     cursor.execute(sql)
 
-    # SQL 插入
+    # Insert data
     try:
         for i in range(200):
             cursor.execute('insert into ukey values("%s")' % (key_list[i]))
-        # 提交到数据库执行
+        # Commit to database
         db.commit()
     except:
-        # 发生错误时回滚
+        # Rollback when errors occur
         db.rollback()
 
-    # 关闭数据库
+    # Close database
     db.close()
 
 

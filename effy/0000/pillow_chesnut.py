@@ -8,8 +8,9 @@ ImageFont!! anyone knows why??
 >___,<
 '''
 from PIL import Image, ImageDraw
+import os
 # open the base pic
-minion = Image.open("Your_Working_Directory_Path/python/effy/0000/zizi.gif").convert('RGBA')
+minion = Image.open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"zizi.gif")).convert('RGBA')
 # new a transparent canvas for the annoying number :)
 annoying = Image.new('RGBA', minion.size, (255, 255, 255, 0))
 # get the drawing context , note that ImageDraw is the actionable module that will CREATE canvas on the base pic

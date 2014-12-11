@@ -1,7 +1,0 @@
-python和mongo的连接出乎意料的简单。
-需要的只是一个pymongo中的MongoClient来建立一个live connection！
-
-而且最赞的是，由于是nosql，根本不需要考虑collection原来的数据，key，schema什么的，直接统统insert。
-
-在之前和relational sql连接的时候（postgres）需要考虑原来的table里面的PK有没有重复，id要被maintai成城incremental，这种问题。
-

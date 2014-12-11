@@ -6,6 +6,7 @@ So.. the following code is a very  preliminary word processing,
 it won't split abbrevations, like "I'd", nor it won't split words
 concatenated with underscore, like "bad_game"
 '''
+import os
 import re
 def word_count(file_path):
 	word_dict = {}
@@ -22,7 +23,7 @@ def word_count(file_path):
 				word_dict[word] = word_dict.get(word,0) + 1
 	return word_dict
 
-result = word_count("Your_Working_Directory_Path/python/effy/0004/readme.txt")
+result = word_count(os.path.join(os.path.dirname(os.path.abspath(__file__)), "sampletext.txt"))
 
 ###################################################################################
 

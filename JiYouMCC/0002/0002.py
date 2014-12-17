@@ -47,3 +47,32 @@ def selectCodes(table='app_mccatcivitas.showmethecode'):
     for row in rows:
         result.append(str(row[0]))
     return result
+
+
+def cleanUp(table='app_mccatcivitas.showmethecode'):
+    connection = MySQLdb.connect(
+        host=sae.const.MYSQL_HOST,
+        user=sae.const.MYSQL_USER,
+        passwd=sae.const.MYSQL_PASS,
+        port=int(sae.const.MYSQL_PORT),
+        init_command='set names utf8')
+    cur = connection.cursor()
+    try:
+        cur.execute("""drop table %s""" % (table))
+    except Exception, e:
+        print e
+    connection.commit()
+    cur.execute(
+        """create table %s (code char(32) not null primary key)""" % (table))
+    connection.commit()
+    cur.close()
+    connection.close()
+
+
+def Process():
+    cleanUp()
+    code = create_code()
+    for c in code:
+        insertCode(c)
+    result = selectCodes()
+    return result

@@ -9,10 +9,10 @@
 # 建字典，保存对应的程序语言和后缀、单行注释符、多行注释符
 import pdb
 # 扩展其他程序可以在这里加入
-lan_postfix={'python':'.py'}
-lan_comment={'python':'#'}
+lan_postfix={'python':'.py','c':'.c'}
+lan_comment={'python':'#','c':'//'}
 # 解决多行注释 如python中的'''
-multi_comment={'python':'\'\'\''}
+multi_comment={'python':'\'\'\'','c':'/*'}
 
 def stat_lines(file_name,file_type):
 	import re
@@ -23,6 +23,7 @@ def stat_lines(file_name,file_type):
 			for line in f.readlines():
 				# pdb.set_trace()
 				line_next=line.lstrip()
+				# fuck a bug here in c multi comment
 				if line_next.startswith(multi_comment[file_type]):
 					is_comment= not is_comment
 					if not is_comment:
@@ -46,7 +47,7 @@ def main():
 	for file in os.listdir('.'):
 		if file.endswith('.c') or file.endswith('.cpp'):
 			# c_stat应该是一个字典，keys包括comment，content，null_line
-			pdb.set_trace()
+			# pdb.set_trace()
 			c_stat=stat_lines(file,'c')
 			c_sum_stat['comment']+=c_stat['comment']
 			c_sum_stat['content']+=c_stat['content']

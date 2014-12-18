@@ -1,0 +1,10 @@
+<h1>登录</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="login" />    
+    <input type="hidden" name="next" value="{{ next|escape }}" />
+</form>
+<form action="/register">
+    <input type="submit" value="register">
+</form>

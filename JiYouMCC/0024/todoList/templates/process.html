@@ -1,0 +1,40 @@
+<body>
+<table>
+	<tr>
+		<td>Hello,{{ user_name }}!</td>
+		<td><a href="logout">logout</a></td>
+	</tr>
+</table>
+<table>
+	<th>
+		<td>Add Mission</td>
+		<td>
+			<form action="/" method="get">
+				<input type="text" name="detail" maxlength ="40" />
+				<input type="submit">
+			</form>
+		</td>
+	</th>
+</table>
+<table>
+	<tr>
+		{% for item in status %}
+		<th>{{ item.status }}</th>
+		{% endfor %}
+	</tr>
+	<tr>
+		{% for item in lists %}
+		<td>
+			{% for i in item %}
+            	<div>{{ i.createdate|date:"Y-n-j H:i:s" }} {{ i.detail}}
+            	{% if not i.status = laststatus %}
+            		<a href='?move={{ i.id }}'>[GO]</a>
+            	{% endif %}
+            	</div>
+            {% endfor %}
+            
+        </td>
+        {% endfor %}
+	</tr>
+</table>
+</body>

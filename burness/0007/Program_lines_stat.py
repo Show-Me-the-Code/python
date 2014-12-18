@@ -12,7 +12,8 @@ import pdb
 lan_postfix={'python':'.py','c':'.c'}
 lan_comment={'python':'#','c':'//'}
 # 解决多行注释 如python中的'''
-multi_comment={'python':'\'\'\'','c':'/*'}
+multi_comment_start={'python':'\'\'\'','c':'/*'}
+multi_comment_end={'python':'\'\'\'','c':'*/'}
 
 def stat_lines(file_name,file_type):
 	import re
@@ -24,10 +25,13 @@ def stat_lines(file_name,file_type):
 				# pdb.set_trace()
 				line_next=line.lstrip()
 				# fuck a bug here in c multi comment
-				if line_next.startswith(multi_comment[file_type]):
-					is_comment= not is_comment
-					if not is_comment:
-						 stat_result['comment']+=1
+				if not is_comment and line_next.startswith(multi_comment_start[file_type]):
+					is_comment= True
+					stat_result['comment']+=1
+					continue
+				if line_next.startswith(multi_comment_end[file_type]):
+					is_comment=False
+					stat_result['comment']+=1
 				# print(line)
 				# print(line_next)
 				if not line.split():

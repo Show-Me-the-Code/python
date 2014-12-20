@@ -19,7 +19,7 @@ def add_num_to_img(file_path):
     font = ImageFont.truetype("arial.ttf", int(im.size[0]/5))
     im_draw.text((int(im.size[0]-im.size[0]/10), 5), "4", (256, 0, 0), font=font)
     del im_draw
-    im.save(file_path)
+    im.save('./result.png')
 
 if __name__ == "__main__":
     if len(sys.argv) <= 1:
@@ -32,3 +32,4 @@ if __name__ == "__main__":
             except IOError:
                 print("Can't open image!")
                 pass
+

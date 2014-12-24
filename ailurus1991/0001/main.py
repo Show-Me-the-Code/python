@@ -18,4 +18,4 @@ def codeGenerator(number, codeLength = 8):
                 str = str + chars[index-1]
             codeFile.write(str+'\n')
 
-print codeGenerator(10)
+print codeGenerator(200)

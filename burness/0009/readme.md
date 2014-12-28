@@ -13,8 +13,7 @@
 	* attrs是(属性，值)元组的list
 	* HTMLParser自动将tag和attrs都转为小写
 
-··
- def handle_starttag(self, tag, attrs):
+    def handle_starttag(self, tag, attrs):
         #print "Encountered the beginning of a %s tag" % tag
         if tag == "a":
             if len(attrs) == 0: pass
@@ -22,4 +21,3 @@
                 for (variable, value)  in attrs:
                     if variable == "href":
                         self.links.append(value)
-··

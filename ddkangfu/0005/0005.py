@@ -4,6 +4,10 @@ import os
 
 from PIL import Image
 
+"""
+0005：你有一个目录，装了很多照片，把它们的尺寸变成都不大于 iPhone5 分辨率的大小。
+"""
+
 # iphone 5 1136×640
 IPHONE5_X = 1136
 IPHONE5_Y = 640

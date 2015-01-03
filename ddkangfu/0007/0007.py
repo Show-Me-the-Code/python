@@ -3,6 +3,10 @@
 import os
 import re
 
+"""
+0007：有个目录，里面是你自己写过的程序，统计一下你写过多少行代码。包括空行和注释，但是要分别列出来。
+"""
+
 def source_statistic(file_name):
     total = 0
     blank = 0

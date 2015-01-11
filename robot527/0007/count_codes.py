@@ -17,22 +17,38 @@ class PyfileInfo:
             print(self.file_name + ' is not a .py file!')
             return
         mc_flag = False
+        mc_start = ''
+        """
+        最高优先级检测由三连引号包围的多行注释，也可能是单行注释；
+        其次检测空行；
+        再次检测由#开头的单行注释，由单引号或者双引号包围的单行注释；
+        """
         try:
             with open(self.file_name) as code:
                 for each_line in code:
                     self.total_line_num += 1
                     temp = each_line.strip()
-                    if temp == '':
-                        self.blank_line_num += 1
-                    elif temp[0] == '#':
+                    if mc_flag is False:
+                        if temp[0:3] in ["'''", '"""']:
+                            mc_start = temp[0:3]
+                            mc_flag = True
+                            if len(temp) >= 6 and temp[-3:] == mc_start:
+                                self.comment_line_num += 1
+                                mc_start = ''
+                                mc_flag = False
+                        else:
+                            if len(temp) == 0:
+                                self.blank_line_num += 1
+                            else:                                
+                                if temp[0] == '#':
+                                    self.comment_line_num += 1
+                                elif temp[0] in ['"', "'"] and temp[0] == temp[-1:]:
+                                    self.comment_line_num += 1                                
+                    elif temp[-3:] == mc_start:
+                        #found the end of the multiple-line comment
                         self.comment_line_num += 1
-                    else:
-                        if False == mc_flag:
-                            if temp[0:3] == '"""':
-                                mc_flag = True
-                        elif temp[-3:] == '"""':
-                            mc_flag = False
-                            self.comment_line_num += 1
+                        mc_start = ''
+                        mc_flag = False
                     if mc_flag:
                         self.comment_line_num += 1
         except IOError as err:

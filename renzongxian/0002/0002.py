@@ -6,7 +6,7 @@
 
 """
 
-将 0001 题生成的 200 个激活码（或者优惠券）保存到 MySQL 关系型数据库中。
+第 0002 题：将 0001 题生成的 200 个激活码（或者优惠券）保存到 MySQL 关系型数据库中。
 
 """
 
@@ -54,3 +54,4 @@ def write_to_mysql(key_list):
 
 if __name__ == '__main__':
     write_to_mysql(generate_key())
+

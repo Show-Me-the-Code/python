@@ -1,0 +1,11 @@
+In English, that means start with any non-'defaults' keyword argument that doesn’t contain a double underscore (which would indicate a non-exact lookup). Then add the contents of defaults, overriding any keys if necessary, and use the result as the keyword arguments to the model class. As hinted at above, this is a simplification of the algorithm that is used, but it contains all the pertinent details. The internal implementation has some more error-checking than this and handles some extra edge-conditions; if you’re interested, read the code.
+
+If you have a field named defaults and want to use it as an exact lookup in get_or_create(), just use 'defaults__exact', like so:
+
+The get_or_create() method has similar error behavior to create() when you’re using manually specified primary keys. If an object needs to be created and the key already exists in the database, an IntegrityError will be raised.
+
+This method is atomic assuming correct usage, correct database configuration, and correct behavior of the underlying database. However, if uniqueness is not enforced at the database level for the kwargs used in a get_or_create call (see unique or unique_together), this method is prone to a race-condition which can result in multiple rows with the same parameters being inserted simultaneously.
+
+If you are using MySQL, be sure to use the READ COMMITTED isolation level rather than REPEATABLE READ (the default), otherwise you may see cases where get_or_create will raise an IntegrityError but the object won’t appear in a subsequent get() call.
+
+Finally, a word on using get_or_create() in Django views. Please make sure to use it only in POST requests unless you have a good reason not to. GET requests shouldn’t have any effect on data. Instead, use POST whenever a request to a page has a side effect on your data. For more, see Safe methods in the HTTP spec.

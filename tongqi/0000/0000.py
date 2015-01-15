@@ -1,6 +1,5 @@
-from PIL import Image
-from PIL import ImageFont
-from PIL import ImageDraw
+from PIL import Image, ImageFont, ImageDraw
+
 text = "555"
 img = Image.open("0000.png")
 w_img, h_img=img.size

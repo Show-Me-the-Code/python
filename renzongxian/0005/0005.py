@@ -5,7 +5,7 @@
 
 """
 
-你有一个目录，装了很多照片，把它们的尺寸变成都不大于 iPhone5 分辨率（1136*640）的大小。
+第 0005 题：你有一个目录，装了很多照片，把它们的尺寸变成都不大于 iPhone5 分辨率（1136*640）的大小。
 
 """
 
@@ -38,3 +38,4 @@ if __name__ == "__main__":
             for image_name in os.listdir(dir_path):
                 image_path = os.path.join(dir_path, image_name)
                 resize_image(image_path)
+

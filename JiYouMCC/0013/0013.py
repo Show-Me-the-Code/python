@@ -1,4 +1,5 @@
 import urllib2
+import urllib
 import re
 import os
 import uuid
@@ -32,13 +33,9 @@ def get_images(html_url='http://ycool.com/post/ae3u4zu',
             if ex is '':
                 continue
             filename += ex
-            file_request = urllib2.Request(img)
             try:
-                file_response = urllib2.urlopen(file_request)
-                output = open(os.path.join(folder_name, filename), 'w+')
-                output.write(file_response.read())
+                urllib.urlretrieve(img, os.path.join(folder_name, filename))
                 print 'Image save at %s' % output.name
-                output.close()
             except Exception, ex:
                 print ex
     except Exception, e:

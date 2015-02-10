@@ -1,4 +1,4 @@
-# Python Databases Tutorial - MySQL
+# Python Databases Note - MySQL
 
 
 ### install and setting

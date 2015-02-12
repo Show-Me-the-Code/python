@@ -9,7 +9,7 @@ import uuid
 def generate_activation_code(count):
     code_list = []
     for i in xrange(count):
-        code = str(uuid.uuid4()).replace('-', '').upper()
+        code = str(uuid.uuid4()).get_hex().upper()
         if not code in code_list:
             code_list.append(code)
 

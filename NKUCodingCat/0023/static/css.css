@@ -1,0 +1,35 @@
+
+#form1 {
+	background-color: #3399FF;
+	margin-top:1em;
+}
+input#Submit{
+margin:1em;
+}
+input#name{
+margin-top:1em;
+margin-bottom:1em;
+}
+label{
+margin-left:1em;
+}
+div.odd{
+background-color: #FFFFFF;
+}
+div.nor{
+background-color: #DDDDDD;
+}
+div.nor,div.odd{
+		margin:0px;
+		padding:0px;
+		border:1px;
+}
+div.text
+{
+	padding-top:1em;
+	padding-bottom:1em;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+pre{padding-left:3em;}
+h3{padding-left:1.5em;}

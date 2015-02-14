@@ -4,53 +4,7 @@ const = """
 <html lang="zh-cn">
 <head>
     <meta charset="utf-8">
-    <style type="text/css">
-        h1
-        {
-            color: green;
-        }
-        table, th, td
-        {
-            border: 1px solid blue;
-        }
-        table
-        {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th
-        {
-            height: 50px;
-        }
-        td.task
-        {
-            width: 70%;
-        }
-        input#delete
-        {
-            font-size: 15px;
-            color: blue;
-            background-color: #FFFFFF;
-            border-width: 0;
-            cursor: pointer;
-        }
-        textarea
-        {
-            vertical-align: middle;
-            width: 500px;
-            height: 100px;
-        }
-        input#submit
-        {
-            width: 107px;
-            height: 42px;
-            border-width: 0;
-            font-size: 17px;
-            font-weight: 500;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-    </style>
+<link type="text/css" rel="stylesheet" href="./static/css.css" />
 </head>
 
 <body>
@@ -63,20 +17,8 @@ const = """
             <td class="task_h"><div align="center">任务</div></td>
             <td class="manage_h"><div align="center">管理</div></td>
         </tr>
-        <tr>
-            <td class="task">{{ task.task }}</td>
-            <td class="manage">
-              <div align="center">
-                <input type="submit" name="id-1" id="delete" value="删除" />
-              </div></td>
-        </tr>
-		<tr>
-            <td class="task">{{ task.task }}</td>
-            <td class="manage">
-              <div align="center">
-                <input type="submit" name="id-2" id="delete" value="删除" />
-              </div></td>
-        </tr>
+
+		{0}
     </table>
     <br>
     <textarea name="newtask" id="newtask" maxlength="500"></textarea>
@@ -96,7 +38,7 @@ import SQLIO
 
 @route('/todo')
 def index():
-	return const
+	return const.format(SQLIO.PageMake(),)
 @post('/todo')
 def Accept():
 	Req = request.body.read()
@@ -107,17 +49,23 @@ def Accept():
 		M[A[0]] = urllib.unquote(A[1])
 	for j in M.keys():
 		if re.findall("id-",j):
-			return "Delete",j[3:]
+			SQLIO.SQL_del(int(j[3:]))
+			redirect('/todo', 302)
 	try:
 		type = M["new"]
 		newtask = M["newtask"]
-		if newtask != "":
-			return newtask
-		else:
-			return "=.=所以你想添加什么任务呀"
 	except:
-		return "虽然不知道你在干什么但是触发了服务器错误呢"
+		redirect('/error', 404)
+	if newtask != "":
+		SQLIO.SQL_in(newtask)
+		redirect('/todo', 302)
+	else:
+		return "=.=所以你想添加什么任务呀"
+	
 @route('/error')
 def err():
 	return "虽然不知道你在干什么但是触发了服务器错误呢"
+@route('/static/<filename>') 
+def server_static(filename):
+	return static_file(filename, root=Root)
 run(host='localhost',port=8080)

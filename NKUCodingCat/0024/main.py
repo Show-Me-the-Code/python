@@ -89,10 +89,10 @@ const = """
 """
 
 
-from bottle import static_file,route, run, post, request, redirect
+from bottle import static_file,route, run, post, request, redirect, error
 import os,  urllib,re,json,time
 Root = os.path.split(os.path.realpath(__file__))[0]+"/static/"
-
+import SQLIO
 
 @route('/todo')
 def index():
@@ -105,5 +105,19 @@ def Accept():
 	for i in L:
 		A = re.split("=",i)
 		M[A[0]] = urllib.unquote(A[1])
-	return json.dumps(M)
+	for j in M.keys():
+		if re.findall("id-",j):
+			return "Delete",j[3:]
+	try:
+		type = M["new"]
+		newtask = M["newtask"]
+		if newtask != "":
+			return newtask
+		else:
+			return "=.=所以你想添加什么任务呀"
+	except:
+		return "虽然不知道你在干什么但是触发了服务器错误呢"
+@route('/error')
+def err():
+	return "虽然不知道你在干什么但是触发了服务器错误呢"
 run(host='localhost',port=8080)

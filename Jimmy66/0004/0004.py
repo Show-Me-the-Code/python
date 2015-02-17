@@ -6,7 +6,7 @@ import re
 
 #计算单词个数
 def counter(string):
-	words = re.findall(r'[a-zA-Z]+\b',string)
+	words = re.findall(r'[a-zA-Z]+(\'[a-zA-Z]+|\b)',string) #修改了正则表达式
 	amount = len(words)
 	return str(amount)
 
@@ -21,7 +21,7 @@ if __name__ == '__main__':
 	string = file_read('GitHub.txt')
 	result = counter(string)
 	print  'There are', result, 'words in this article.'
-	print  "这篇文章中有" + result + "个英文单词"
+	print  '这篇文章中有' + result + '个英文单词'
 
 	
 			

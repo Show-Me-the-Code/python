@@ -1,3 +1,0 @@
-Flask
-flask-mongoengine
-Flask-Script

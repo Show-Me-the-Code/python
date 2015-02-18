@@ -10,3 +10,10 @@ The order is very important, if you write `[a-zA-Z]` after `|` , it will be igno
 What's more, in python use `'` in a string `\'` is necessary.
 
 	re.findall(r'[a-zA-Z]+(\'[a-zA-Z]+|\b)',string) 
+
+
+---
+
+##Warning##
+
+There are some mistake use this re in Python. It works well in Sublime. I will try to fix it in several days. Thank you! 

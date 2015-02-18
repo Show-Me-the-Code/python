@@ -1,0 +1,8 @@
+GitHub
+
+From Wikipedia, the free encyclopedia
+
+GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. Unlike Git, which is strictly a command-line tool, GitHub provides a web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as wikis, task management, and bug tracking and feature requests for every project.[2]
+
+GitHub offers both paid plans for private repositories and free accounts, which are usually used to host open-source software projects. As of 2014, GitHub reports having over 3.4 million users and with 16.7 million repositories[3] making it the largest code host in the world.[4]
+

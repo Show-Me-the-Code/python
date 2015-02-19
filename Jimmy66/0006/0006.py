@@ -19,16 +19,22 @@ def most_word_number(word_list):
     str_dict = {}
     for item in word_list:
         if item in str_dict:
-            str_dict[item] +=1
+            str_dict[item] += 1
         else:
-            str_dict[item] =1
-
+            str_dict[item] = 1
+#非常漂亮的写法，来自于别人的代码，下面那个是我看到这个后自己写的，但是这个有一个比较奇怪的问题，在sublime中少打一行或者略作修改，保存的结果会不同，我也解释不清楚为什么            
     str_dict = {str_dict[key]:key for key in str_dict}
     return (max(str_dict),str_dict[max(str_dict)])
+#   temp = {}
+#   for key in str_dict:
+#   	temp[str_dict[key]] = key
+#   return max(temp),temp[max(temp)]
+
 
 
 if __name__ == '__main__':
 	string = file_read('GitHub.txt')
 	words = list1(string)
-	print (most_word_number(words))
+	times,word = most_word_number(words)
+	print '出现最多的单词为' + str(word) + '，出现了' + str(times) + '次'
 	

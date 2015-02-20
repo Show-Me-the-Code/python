@@ -1,3 +1,4 @@
+#测试
 void setup()
 {
 size(800,800);

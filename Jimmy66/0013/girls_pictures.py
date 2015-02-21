@@ -43,7 +43,9 @@ def get_picturs_url_list(url):
 
 #下载图片并存储到本地文件夹
 def image_save(url,number):
-	filename = str(number) + '.jpg'
+	number = str(number)
+	print '正在抓取第',number,'张'
+	filename = number + '.jpg'
 	with open(filename,'wb') as fp:
 		img = read_image(url)
 		fp.write(img)
@@ -71,3 +73,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
+	print '全部抓完啦，你这个hentai'

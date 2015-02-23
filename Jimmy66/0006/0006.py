@@ -12,7 +12,7 @@ def list1(string):
 def file_read(filename):
 	with open(filename,'r') as fp:
 		article = fp.read()
-		return article
+	return article
 
 #计算出出现最多的单词
 def most_word_number(word_list):

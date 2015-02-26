@@ -27,7 +27,7 @@ def gen_pattern(l):
 def input_replace(pattern):
     sentence = raw_input('Please enter a sentence:')
     #直接替换了，懒得先检测,然后判断分支了，没有就不替换
-    print re.sub(pattern,'**',sentence)
+    print re.sub(pattern,'**',sentence)   #如何在字符串变量前面加r并且被识别，这个问题值得考虑下(已解决)写成形如 pattern = r'abc' 即可  
 
 #主函数
 def main():

@@ -1,0 +1,67 @@
+﻿# SQL-Front 5.1  (Build 4.16)
+
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE */;
+/*!40101 SET SQL_MODE='NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES */;
+/*!40103 SET SQL_NOTES='ON' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS */;
+/*!40014 SET FOREIGN_KEY_CHECKS=0 */;
+
+
+# Host: localhost    Database: 0024
+# ------------------------------------------------------
+# Server version 5.5.38
+
+DROP DATABASE IF EXISTS `0024`;
+CREATE DATABASE `0024` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `0024`;
+
+#
+# Source for table code
+#
+
+DROP TABLE IF EXISTS `code`;
+CREATE TABLE `code` (
+  `id` int(20) NOT NULL DEFAULT '0',
+  `to` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+#
+# Dumping data for table code
+#
+
+LOCK TABLES `code` WRITE;
+/*!40000 ALTER TABLE `code` DISABLE KEYS */;
+INSERT INTO `code` VALUES (13,'haiohpd');
+INSERT INTO `code` VALUES (14,'daduwwg');
+INSERT INTO `code` VALUES (9,'7');
+INSERT INTO `code` VALUES (11,'9');
+/*!40000 ALTER TABLE `code` ENABLE KEYS */;
+UNLOCK TABLES;
+
+#
+# Source for table max
+#
+
+DROP TABLE IF EXISTS `max`;
+CREATE TABLE `max` (
+  `pro` varchar(255) DEFAULT NULL,
+  `max` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+#
+# Dumping data for table max
+#
+
+LOCK TABLES `max` WRITE;
+/*!40000 ALTER TABLE `max` DISABLE KEYS */;
+INSERT INTO `max` VALUES ('max',15);
+/*!40000 ALTER TABLE `max` ENABLE KEYS */;
+UNLOCK TABLES;
+
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

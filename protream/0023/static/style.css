@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Verdana,"BitStream vera Sans",Helvetica,Sans-serif;
+    font-size: 12px;
+    color: #333;
+    margin: 20px auto;
+}
+
+#container {
+    width: 600px;
+    margin: 0px auto;
+}
+
+#container h1 {
+    text-align: center;
+    color: #AAA;
+}
+
+.message {
+    margin: 5px 0px;
+    padding: 5px;
+    border-bottom: 1px dotted #AAA;
+}
+
+.timestamp {
+    float: right;
+}

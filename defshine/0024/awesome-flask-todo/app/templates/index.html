@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="{{ url_for('static',filename='bootstrap.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static',filename='index.css') }}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>awesome-flask-todo</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-10">
+            <form class="input-group" action="/add" method="post">
+                {{ form.hidden_tag() }}
+                {{ form.content(class="form-control") }}
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Add</button>
+                </span>
+            </form>
+            {% for error in form.errors.content %}
+                <div class="flash alert-danger"><span>{{ error }}</span></div>
+            {% endfor %}
+
+            <div>
+                <h2>Todo List</h2>
+                {% if todos %}
+                    <table class="table">
+                    <thead>
+                        <tr>
+                            <th>content</td>
+                            <th>time</td>
+                            <th>operation</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                     {% for t in todos %}
+                        {% if t.status == 0 %}
+                            <tr class="info">
+                                <td>{{ t.content }}</td>
+                                <td>{{ t.time.strftime('%H:%M %d-%m-%Y') }}</td>
+                                <td>
+                                    <a href="/done/{{ t.id }}" class="btn btn-primary">Done</a>
+                                    <a href="/delete/{{ t.id }}" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                         {% else %}
+                              <tr class="danger">
+                                <td id="center" >{{ t.content }}</td>
+                                <td>{{ t.time.strftime('%H:%M %d-%m-%Y') }}</td>
+                                <td>
+                                    <a href="/undone/{{ t.id }}" class="btn btn-primary">Undone</a>
+                                    <a href="/delete/{{ t.id }}" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+
+                         {% endif %}
+                        {% endfor %}
+                    </tbody>
+                    </table>
+                {% else %}
+                    <h3 class="text-info">No todos,pelease add</h3>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Copyright © defshine 2014</p>
+    </div>
+</footer>
+</body>
+</html>

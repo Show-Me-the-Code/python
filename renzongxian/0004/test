@@ -1,0 +1,27 @@
+Why are my contributions not showing up on my profile?
+Your profile contributions graph is a record of contributions you've made to GitHub repositories. Contributions are only counted if they meet certain criteria. In some cases, we may need to rebuild your graph in order for contributions to appear.
+
+Contributions that are counted
+
+Issues and pull requests
+
+Issues and pull requests will appear on your contributions graph if they meet both of these conditions:
+
+They were opened within the past year.
+They were opened in a standalone repository, not a fork.
+Commits
+
+Commits will appear on your contributions graph if they meet all of the following conditions:
+
+The commits were made within the past year.
+The email address used for the commits is associated with your GitHub account.
+The commits were made in a standalone repository, not a fork.
+The commits were made:
+In the repository's default branch (usually master)
+In the gh-pages branch (for repositories with Project Pages sites)
+In addition, at least one of the following must be true:
+
+You are a collaborator on the repository or are a member of the organization that owns the repository.
+You have forked the repository.
+You have opened a pull request or issue in the repository.
+You have starred the repository.

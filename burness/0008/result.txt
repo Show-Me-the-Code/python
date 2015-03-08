@@ -1,0 +1,328 @@
+股权众筹迎来监管 券商也可做平台_网易科技 应用 网易新闻 网易云音乐 网易云阅读 有道云笔记 网易花田 网易公开课 网易彩票 有道词典 邮箱大师 LOFTER 设为首页 登录 网易邮箱/通行证用户可直接登录 
+账号： 密码： 十天内免登录 忘记密码？ 下载“最好用的手机邮箱应用” 登　录 注册免费邮箱 注册VIP邮箱（特权邮箱，付费） 欢迎您， 安全退出 LOFTER 进入LOFTER 热门话题 热门标签 下载LOFTER客户端 邮箱 免费邮箱 VIP邮箱 企业邮箱 免费注册 快速注册 支付 一卡通充值 一卡通购买 我的网易宝 花田 找对象 搭讪广场 我的花田 下载花田客户端 BOBO 女神视频直播 女神排行榜 女神资讯 下载BoBo客户端 新闻 体育 NBA 娱乐 财经 股票 汽车 科技 手机 数码 女人 论坛 视频 旅游 房产 家居 教育 读书 游戏 健康 彩票 车险 真话 应用 酒香 .ep-sp-recommend .brl{height:30px;} NTES.ready(function() { var config = { channels : ['tech', 'game', 'digi', 'travel', 'money', 'mobile', 'edu', 'house', 'home', 'auto', 'lady'], baseurl : 'http://www.163.com/special/00774IN2/tbtj1301_' }; var countArr = [], i, recommend = $('#js-epSpRecommend'), ctrl = $(recommend.$('.ctrlbtn')[0]); for(i = 0; i < config.channels.length; i++){ countArr.push(i); } if(window.epTools && window.epTools.getRadomArray) { countArr = window.epTools.getRadomArray(countArr, 3); } else { countArr.sort(function(){ return 0.5 - Math.random(); }); } $('#tbtj-1').innerHTML = '<iframe src="' + config.baseurl + config.channels[countArr[0]] + '.html" width="295" height="129" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>'; $('#tbtj-3').innerHTML = '<iframe src="' + config.baseurl + config.channels[countArr[1]] + '.html" width="295" height="129" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>'; $('#tbtj-4').innerHTML = '<iframe src="' + config.baseurl + config.channels[countArr[2]] + '.html" width="295" height="129" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>'; i = Math.floor(Math.random() * 4); var slide = new NTES.ui.Slide ($('#js-epSpRecommend > .tabctrl > span'),$('#js-epSpRecommend > .tabcon > div'),'current','mouseover', 10000); slide.show(i); recommend.style.display = 'block'; recommend.addEvent('mouseover', function(){ ctrl.style.display = 'block'; }).addEvent('mouseout', function(){ ctrl.style.display = 'none'; }); ctrl.addEvent('click', function(){ slide.showNext(); }) }); 网易首页 网易科技 互联网 正文 股权众筹迎来监管 券商也可做平台 2014-12-19 01:59:09　来源: 第一财经日报 (上海) 0 
+
+杜卿卿 李潇雄 
+
+股权众筹行业迎来首部监管规则，正式向草莽时代挥手告别。 
+
+12月18日，中国证券业协会推出《私募股权众筹融资管理办法（试行）》（下称《办法》）并公开征求意见，股权众筹被正式纳入监管。北京大学金融与产业发展研究中心秘书长黄嵩对《第一财经日报》表示，股权众筹以私募方式发行，与交易所市场互补，使得多层次股票市场又增加了一个新层次。 
+
+根据新规，券商也获准参与股权众筹业务。一位券商高管对记者表示，对证券行业而言众筹业务属于一项创新业务，未来是大势所趋。不过有多少券商会加入，还要区分业务侧重。 
+
+股权众筹“扶正” 
+
+“规则出台之后，这个行业会更加规范的发展，未来股权众筹将有更高的市场认知度，在更广泛的人群中发展。”人人投CEO郑林对《第一财经日报》表达了他的期待。 
+
+股权众筹发展至今，全国已有30家互联网平台，不过各家平台定位不同，风格迥异。比如人人投，有的平台项目资金需求不到万元，天使汇，平台2000位投资人年投资额就有五百亿。 
+
+《办法》将股权众筹纳入监管，也为各众筹平台划定了统一标准。 
+
+首先是非公开性。要求满足三个条件：投资者必须为特定对象，即经股权众筹平台核实的符合《办法》中规定条件的实名注册用户；二是投资者累计不得超过200人；三是股权众筹平台只能向实名注册用户推荐项目信息，股权众筹平台和融资者均不得进行公开宣传、推介或劝诱。 
+
+第二是合格投资者限制。即投资人需要符合《私募投资基金监督管理暂行办法》要求，同时满足“金融资产不低于300万元人民币或最近三年个人年均收入不低于50万元人民币的个人”。 
+
+股权众筹的发行方式，之前一直存在争议。有观点认为应该公开发行，否则违反股权众筹的本质；有的则认为必须私募发行。 
+
+黄嵩认为，股权众筹选择私募方式是必然。符合公募条件可以通过IPO公开发行，不符合公募条件而希望通过股权众筹，则只能通过私募。 
+
+中国人民大学财政金融学院副院长赵锡军表示，作为股权众筹行业的第一部规则，《办法》比较合理适度，可以对众筹行业进行规范约束。股权众筹以公开方式运作，短期难以实现。一方面，《证券法》不修改，以公开方式进行股权众筹不合法；另一方面，规则对投融资规模没有限制，如果不对投资者数量进行限制，则风险不可控。 
+
+对于合格投资者门槛的设定，业界观点不一。太平洋证券副总裁程晓明认为设定合理，如果降低到100万资产以下就太低。但在郑林看来，对于资金需求只有几千元的项目，这样的门槛设定是偏高的。 
+
+天使汇CEO兰宁羽表示，他感觉到创业者并不喜欢公司有太多股东，所以200人的限定是完全足够的。 
+
+“正规军”加入 
+
+新规出台，在划定行业标准的同时，也放开了“正规军”加入股权众筹业务的大门。 
+
+《办法》规定，证券经营机构可以直接提供股权众筹融资服务，在相关业务开展后5个工作日内向证券业协会报备。在监管层看来，证券经营机构作为传统直接融资中介，在企业融资服务方面具备一定经验和优势。 
+
+郑林对《第一财经日报》表示，券商获准开展股权众筹业务并不出乎意料。“券商做股权众筹可以更好地带动整个股权众筹的规范性，因为券商行业已经非常成熟，成熟的行业涉及到股权众筹领域能快速地扩张行业市场认知度。”他认为，目前市场足够大，不存在与券商竞争，券商加入对业内更是一种激励。 
+
+在兰宁羽看来，解决小微企业融资难题，对风险承受能力更强的天使投资人来说更加合适，所以推进股权众筹融资平台是非常有利的方向，市场也会特别大，券商加入可以与纯粹的股权众筹平台一起发展。 
+
+另一位券商高管告诉记者，确实有个别券商在尝试开展股权众筹融资，但是效果并不好。股权众筹并非适合所有券商，需要考虑券商的发展侧重，以及资产业务成熟水平。 
+
+附录 
+
+
+
+关于《私募股权众筹融资管理办法（试行）（征求意见稿）》的起草说明 
+
+为拓展中小微企业直接融资渠道，促进创新创业和互联网金融健康发展，提升资本市场服务实体经济的能力，保护投资者合法权益，防范金融风险，中国证券业协会（以下简称证券业协会）起草了《私募股权众筹融资管理办法（试行）（征求意见稿）》（以下简称《管理办法》）。现就有关情况说明如下： 
+
+一、起草背景 
+
+根据国际证监会组织对众筹融资的定义，众筹融资是指通过互联网平台，从大量的个人或组织处获得较少的资金来满足项目、企业或个人资金需求的活动。众筹融资对于拓宽中小微企业直接融资渠道、支持实体经济发展、完善多层次资本市场体系建设具有重要意义，受到社会各界的高度关注。 
+
+但由于缺乏必要的管理规范，众筹融资活动在快速发展过程中也积累了一些不容忽视的问题和风险：一是法律地位不明确，参与各方的合法权益得不到有效保障；二是业务边界模糊，容易演化为非法集资等违法犯罪活动；三是众筹平台良莠不齐，潜在的资金欺诈等风险不容忽视。 
+
+为满足普通大众的投资需求，发展普惠金融，鼓励行业创新发展，落实李克强总理在近期国务院常务会议上有关部署进一步扶植小微企业，推动“大众创业、万众创新”的指示精神，证券业协会按照“鼓励创新，防范风险”的基本要求起草了《私募股权众筹融资管理办法（试行）（征求意见稿）》，对股权众筹融资进行自律管理，以促进我国股权众筹行业健康发展。 
+
+二、《管理办法》的主要内容 
+
+（一）关于股权众筹融资的非公开发行性质 
+
+现行《证券法》明确规定，公开发行证券必须依法报经国务院证券监督管理部门或者国务院授权的部门核准，未经核准，任何单位与个人不得公开发行证券。通常情况下，选择股权众筹进行融资的中小微企业或发起人不符合现行公开发行核准的条件，因此在现行法律法规框架下，股权众筹融资只能采取非公开发行。 
+
+鉴于此，《管理办法》明确规定股权众筹应当采取非公开发行方式，并通过一系列自律管理要求以满足《证券法》第10条对非公开发行的相关规定：一是投资者必须为特定对象，即经股权众筹平台核实的符合《管理办法》中规定条件的实名注册用户；二是投资者累计不得超过200人；三是股权众筹平台只能向实名注册用户推荐项目信息，股权众筹平台和融资者均不得进行公开宣传、推介或劝诱。 
+
+（二）关于股权众筹平台 
+
+《管理办法》将股权众筹平台界定为“通过互联网平台（互联网网站或其他类似电子媒介）为股权众筹投融资双方提供信息发布、需求对接、协助资金划转等相关服务的中介机构”。对于从事私募股权众筹业务的股权众筹融资平台（以下简称股权众筹平台），主要定位服务于中小微企业，众筹项目不限定投融资额度，充分体现风险自担，平台的准入条件较为宽松，实行事后备案管理。 
+
+在股权众筹平台的经营业务范围方面，为避免风险跨行业外溢，《管理办法》规定股权众筹平台不得兼营个人网络借贷（即P2P网络借贷）或网络小额贷款业务。 
+
+（三）关于投资者 
+
+鉴于股权众筹融资的非公开发行性质，投资者应当为不超过200人的特定对象。《管理办法》对合格投资者的具体标准设定主要参照了《私募投资基金监督管理暂行办法》相关要求，同时投资者范围增加了“金融资产不低于300万元人民币或最近三年个人年均收入不低于50万元人民币的个人”，一方面避免大众投资者承担与其风险承受能力不相匹配的投资风险，另一方面通过引入合格投资者尽可能满足中小微企业的合理融资需求。 
+
+（四）关于融资者 
+
+《管理办法》仅要求融资者为中小微企业，不对融资额度作出限制。《管理办法》规定了融资者在股权众筹融资活动中的职责，强调了适当程度的信息披露义务。根据众筹融资企业，尤其是中小微企业的经营特点，《管理办法》未对财务信息提出很高的披露要求，但要求其发布真实的融资计划书，并通过股权众筹平台向投资者如实披露企业的经营管理、财务、资金使用情况等关键信息，及时披露影响或可能影响投资者权益的重大信息。 
+
+（五）关于投资者保护 
+
+大众投资者投资经验少，抗风险能力弱，通常不允许直接或间接参与高风险投资。然而众筹融资的本质特征决定了大众投资者也是此类投融资活动的重要募资对象，为此，《管理办法》作了三个方面的制度安排：一是明确并非所有普通大众都可以参与股权众筹，要求涉众型平台必须充分了解，并有充分理由确定其具有必要的风险认知能力和风险承受能力；二是以平台为自律管理抓手，要求其有能力判定投资者识别风险和承担风险的能力，有能力承担可能出现的涉众风险，实现投资者资金和平台资金的有效隔离；三是要求融资者适当程度的信息披露。 
+
+（六）关于自律管理 
+
+证券业协会依照有关法律法规及本办法对股权众筹融资行业进行自律管理。股权众筹平台应当在证券业协会备案登记，并申请成为证券业协会会员。证券业协会委托中证资本市场监测中心有限责任公司对股权众筹融资业务备案和后续监测进行日常管理。《管理办法》明确列出各参与主体的禁止行为，划定业务“红线”，防止风险累积，鼓励行业创新和自由竞争。为了保护众筹融资参与各方的合法权益，《管理办法》对违反法律法规及本办法的行为规定了责令整改、警示、暂停执业等自律管理措施和纪律处分。 
+
+（七）关于证券经营机构开展股权众筹业务 
+
+作为传统直接融资中介，证券经营机构在企业融资服务方面具备一定经验和优势，因此，《管理办法》规定证券经营机构可以直接提供股权众筹融资服务，在相关业务开展后5个工作日内向证券业协会报备。 
+
+私募股权众筹融资管理办法（试行）（征求意见稿） 
+
+第一章 总则 
+
+第一条 【宗旨】为规范私募股权众筹融资业务，保护投资者合法权益，促进私募股权众筹行业健康发展，防范金融风险，根据《证券法》、《公司法》、《关于进一步促进资本市场健康发展的若干意见》（国发 
+
+[2014]17号）等法律法规和部门规章，制定本办法。 
+
+第二条 【适用范围】本办法所称私募股权众筹融资是指融资者通过股权众筹融资互联网平台（以下简称股权众筹平台）以非公开发行方式进行的股权融资活动。 
+
+第三条 【基本原则】私募股权众筹融资应当遵循诚实、守信、自愿、公平的原则，保护投资者合法权益，尊重融资者知识产权，不得损害国家利益和社会公共利益。 
+
+第四条 【管理机制安排】中国证券业协会（以下简称证券业协会）依照有关法律法规及本办法对股权众筹融资行业进行自律管理。证券业协会委托中证资本市场监测中心有限责任公司（以下简称市场监测中心）对股权 
+
+众筹融资业务备案和后续监测进行日常管理。 
+
+第二章 股权众筹平台 
+
+第五条 【平台定义】股权众筹平台是指通过互联网平台（互联网网站或其他类似电子媒介）为股权众筹投融资双方提供信息发布、需求对接、协助资金划转等相关服务的中介机构。 
+
+第六条 【备案登记】股权众筹平台应当在证券业协会备案登记，并申请成为证券业协会会员。 
+
+证券业协会为股权众筹平台办理备案登记不构成对股权众筹平台内控水平、持续合规情况的认可，不作为对客户资金安全的保证。 
+
+第七条 【平台准入】股权众筹平台应当具备下列条件： 
+
+（一）在中华人民共和国境内依法设立的公司或合伙企业； 
+
+（二）净资产不低于500万元人民币； 
+
+（三）有与开展私募股权众筹融资相适应的专业人员，具有3年以上金融或者信息技术行业从业经历的高级管理人员不少于2人； 
+
+（四）有合法的互联网平台及其他技术设施； 
+
+（五）有完善的业务管理制度； 
+
+（六）证券业协会规定的其他条件。 
+
+第八条 【平台职责】股权众筹平台应当履行下列职责： 
+
+（一）勤勉尽责，督促投融资双方依法合规开展众筹融资活动、履行约定义务； 
+
+（二）对投融资双方进行实名认证，对用户信息的真实性进行必要审核； 
+
+（三）对融资项目的合法性进行必要审核； 
+
+（四）采取措施防范欺诈行为，发现欺诈行为或其他损害投资者利益的情形，及时公告并终止相关众筹活动； 
+
+（五）对募集期资金设立专户管理，证券业协会另有规定的，从其规定； 
+
+（六）对投融资双方的信息、融资记录及投资者适当性管理等信息及其他相关资料进行妥善保管，保管期限不得少于10年； 
+
+（七）持续开展众筹融资知识普及和风险教育活动，并与投资者签订投资风险揭示书，确保投资者充分知悉投资风险； 
+
+（八）按照证券业协会的要求报送股权众筹融资业务信息； 
+
+（九）保守商业秘密和客户隐私，非因法定原因不得泄露融资者和投资者相关信息； 
+
+（十）配合相关部门开展反洗钱工作； 
+
+（十一）证券业协会规定的其他职责。 
+
+第九条 【禁止行为】股权众筹平台不得有下列行为： 
+
+（一）通过本机构互联网平台为自身或关联方融资； 
+
+（二）对众筹项目提供对外担保或进行股权代持； 
+
+（三）提供股权或其他形式的有价证券的转让服务； 
+
+（四）利用平台自身优势获取投资机会或误导投资者； 
+
+（五）向非实名注册用户宣传或推介融资项目； 
+
+（六）从事证券承销、投资顾问、资产管理等证券经营机构业务，具有相关业务资格的证券经营机构除外； 
+
+（七）兼营个体网络借贷（即P2P网络借贷）或网络小额贷款业务； 
+
+（八）采用恶意诋毁、贬损同行等不正当竞争手段； 
+
+（九）法律法规和证券业协会规定禁止的其他行为。 
+
+第三章 融资者与投资者 
+
+第十条 【实名注册】融资者和投资者应当为股权众筹平台核实的实名注册用户。 
+
+第十一条 【融资者范围及职责】融资者应当为中小微企业或其发起人，并履行下列职责： 
+
+（一）向股权众筹平台提供真实、准确和完整的用户信息； 
+
+（二）保证融资项目真实、合法； 
+
+（三）发布真实、准确的融资信息； 
+
+（四）按约定向投资者如实报告影响或可能影响投资者权益的重大信息； 
+
+（五）证券业协会规定和融资协议约定的其他职责。 
+
+第十二条 【发行方式及范围】融资者不得公开或采用变相公开方式发行证券，不得向不特定对象发行证券。融资完成后，融资者或融资者发起设立的融资企业的股东人数累计不得超过200人。法律法规另有规定的，从其规定。 
+
+第十三条 【禁止行为】融资者不得有下列行为： 
+
+（一）欺诈发行； 
+
+（二）向投资者承诺投资本金不受损失或者承诺最低收益； 
+
+（三）同一时间通过两个或两个以上的股权众筹平台就同一融资项目进行融资，在股权众筹平台以外的公开场所发布融资信息； 
+
+（四）法律法规和证券业协会规定禁止的其他行为。 
+
+第十四条 【投资者范围】私募股权众筹融资的投资者是指符合下列条件之一的单位或个人： 
+
+（一）《私募投资基金监督管理暂行办法》规定的合格投资者； 
+
+（二）投资单个融资项目的最低金额不低于100万元人民币的单位或个人； 
+
+（三）社会保障基金、企业年金等养老基金，慈善基金等社会公益基金，以及依法设立并在中国证券投资基金业协会备案的投资计划； 
+
+（四）净资产不低于1000万元人民币的单位； 
+
+（五）金融资产不低于300万元人民币或最近三年个人年均收入不低于50万元人民币的个人。上述个人除能提供相关财产、收入证明外，还应当能辨识、判断和承担相应投资风险； 
+
+本项所称金融资产包括银行存款、股票、债券、基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等。 
+
+（六）证券业协会规定的其他投资者。 
+
+第十五条 【投资者职责】投资者应当履行下列职责： 
+
+（一）向股权众筹平台提供真实、准确和完整的身份信息、财产、收入证明等信息； 
+
+（二）保证投资资金来源合法； 
+
+（三）主动了解众筹项目投资风险，并确认其具有相应的风险认知和承受能力； 
+
+（四）自行承担可能产生的投资损失； 
+
+（五）证券业协会规定和融资协议约定的其他职责。 
+
+第四章 备案登记 
+
+第十六条 【备案文件】股权众筹平台应当在设立后5个工作日内向证券业协会申请备案，并报送下列文件： 
+
+（一）股权众筹平台备案申请表； 
+
+（二）营业执照复印件； 
+
+（三）最近一期经审计的财务报告或验资报告； 
+
+（四）互联网平台的ICP备案证明复印件； 
+
+（五）股权众筹平台的组织架构、人员配置及专业人员资质证明； 
+
+（六）股权众筹平台的业务管理制度； 
+
+（七）股权众筹平台关于投资者保护、资金监督、信息安全、防范欺诈和利益冲突、风险管理及投资者纠纷处理等内部控制制度； 
+
+（八）证券业协会要求的其他材料。 
+
+第十七条 【相关文件要求】股权众筹平台应当保证申请备案所提供文件和信息的真实性、准确性和完整性。 
+
+第十八条 【核查方式】证券业协会可以通过约谈股权众筹平台高级管理人员、专家评审、现场检查等方式对备案材料进行核查。 
+
+第十九条 【备案受理】股权众筹平台提供的备案申请材料完备的，证券业协会收齐材料后受理。备案申请材料不完备或不符合规定的，股权众筹平台应当根据证券业协会的要求及时补正。 
+
+申请备案期间，备案事项发生重大变化的，股权众筹平台应当及时告知证券业协会并申请变更备案内容。 
+
+第二十条 【备案确认】对于开展私募股权众筹业务的备案申请，经审查符合规定的，证券业协会自受理之日起20个工作日内予以备案确认。 
+
+第二十一条 【备案注销】经备案后的股权众筹平台依法解散、被依法撤销或者被依法宣告破产的，证券业协会注销股权众筹平台备案。 
+
+第五章 信息报送 
+
+第二十二条 【报送融资计划书】股权众筹平台应当在众筹项目自发布融资计划书之日起5个工作日内将融资计划书报市场监测中心备案。 
+
+第二十三条 【年报备查】股权众筹平台应当于每年4月30日之前完成上一年度的年度报告及年报鉴证报告，原件留档备查。 
+
+第二十四条 【信息报送范围】股权众筹平台发生下列情形的，应当在5个工作日内向证券业协会报告： 
+
+（一）备案事项发生变更； 
+
+（二）股权众筹平台不再提供私募股权众筹融资服务； 
+
+（三）股权众筹平台因经营不善等原因出现重大经营风险； 
+
+（四）股权众筹平台或高级管理人员存在重大违法违规行为； 
+
+（五）股权众筹平台因违规经营行为被起诉，包括：涉嫌违反境内外证券、保险、期货、商品、财务或投资相关法律法规等行为； 
+
+（六）股权众筹平台因商业欺诈行为被起诉，包括：错误保证、有误的报告、伪造、欺诈、错误处置资金和证券等行为； 
+
+（七）股权众筹平台内部人员违反境内外证券、保险、期货、商品、财务或投资相关法律法规行为。 
+
+（八）证券业协会规定的其他情形。 
+
+第六章 自律管理 
+
+第二十五条 【备案管理信息系统】市场监测中心应当建立备案管理信息系统，记录包括但不限于融资者及其主要管理人员、股权众筹平台及其从业人员从事股权众筹融资活动的信息。备案管理信息系统应当加入中国证监会中央监管信息平台，股权众筹相关数据与中国证监会及其派出机构、证券业协会共享。 
+
+第二十六条 【自律检查与惩戒】证券业协会对股权众筹平台开展自律检查，对违反自律规则的单位和个人实施惩戒措施，相关单位和个人应当予以配合。 
+
+
+
+第二十七条 【自律管理措施与纪律处分】股权众筹平台及其从业人员违反本办法和相关自律规则的，证券业协会视情节轻重对其采取谈话提醒、警示、责令所在机构给予处理、责令整改等自律管理措施，以及行业内通报批评、公开谴责、暂停执业、取消会员资格等纪律处分，同时将采取自律管理措施或纪律处分的相关信息抄报中国证监会。涉嫌违法违规的，由证券业协会移交中国证监会及其他有权机构依法查处。 
+
+第七章 附则 
+
+第二十八条 【证券经营机构开展众筹业务】证券经营机构开展私募股权众筹融资业务的，应当在业务开展后5个工作日内向证券业协会报备。 
+
+第二十九条 本办法自 年 月 日起实施，由证券业协会负责解释和修订。 本文来源：第一财经日报 .sharecommend-wrap{border-bottom:1px solid #ebebeb;} .share-wrap{float:left;width:340px;border-right:1px solid #EBEBEB;padding-top: 62px;padding-bottom: 96px;} .sharecommend-wrap{position:relative} .sharecommend-info{margin-top:25px;font-size:14px} .sharecommend-info label{color:#888;font-size:14px} .commend-info-wrap label{padding-right:20px;margin-right:16px;border-right:1px solid #ebebeb} a.commend-info-count{color:#dd4232;font-size:20px;text-align:center;display:inline-block;font-family:Georgia;font-weight:normal;transition:opacity 400ms linear;-o-transition:opacity 400ms linear;-ms-transition:opacity 400ms linear;-webkit-transition:opacity 400ms linear;opacity:1} a.commend-info-count:hover{text-decoration:none} .commend-wrap{padding:50px 0 40px;width:230px;display:inline-block;position:relative} .commend-wrap .commend-hugelnk{position:absolute;left:0;top:0;width:100%;height:190px;text-indent:-99em;overflow:hidden;display:none;background:#fff;opacity:0;filter:alpha(opacity=0)} .commend-btn{width:177px;height:47px;background:url(http://img1.cache.netease.com/f2e/news/commend/images/btn.png) no-repeat 0 -47px;display:block;margin:0 auto;cursor:pointer} .commend-hover .commend-btn{background-position:0 -94px} .commend-disable .commend-btn{background-position:0 -183px;cursor:default} .commend-disable .commend-hugelnk{display:block;outline:0} .commend-disable .commend-hugelnk:active{star:expression(this.onFocus=this.blur())} .commend-info-wrap .btn-jump-out{transition:transform 400ms ease-out,opacity 400ms linear;-moz-transition:-moz-transform 400ms ease-out,opacity 400ms linear;-o-transition:-o-transform 400ms ease-out,opacity 400ms linear;-ms-transition:-ms-transform 400ms ease-out,opacity 400ms linear;-webkit-transition:-webkit-transform 400ms ease-out,opacity 400ms linear;transform:translate(0px,-28px);-moz-transform:translate(0px,-28px);-o-transform:translate(0px,-28px);-ms-transform:translate(0px,-28px);-webkit-transform:translate(0px,-28px);opacity:0} .commend-pop-wrap{position:absolute;top:18px;left:0;width:100%;z-index:100;display:none;opacity:0;transition:opacity 450ms linear;-webkit-transition:opacity 450ms linear;-o-transition:opacity 450ms linear;-moz-transition:opacity 450ms linear;-ms-transition:opacity 450ms linear} .commend-pop-visible{opacity:1} .commend-pop{position:relative;width:260px;height:145px;padding:8px 25px;border:1px solid #cdcdcd;background:#fff;margin:0 auto;-webkit-box-shadow:0 0 4px #d9d9d9;-ms-box-shadow:0 0 4px #d9d9d9;-o-box-shadow:0 0 4px #d9d9d9;-moz-box-shadow:0 0 4px #d9d9d9;box-shadow:0 0 4px #d9d9d9} .commend-pop-close{position:absolute;top:12px;right:12px;width:18px;height:18px;background:url(http://img1.cache.netease.com/f2e/news/commend/images/btn.png) no-repeat 0 -165px;cursor:pointer;border:1px solid #fff} .commend-pop-close:hover{border:1px solid #e0e0e0} .commend-pop-title{height:24px;line-height:24px;text-align:center;font-size:16px;padding:12px 12px 12px 0} .commend-pop-title i{width:24px;height:22px;background:url(http://img1.cache.netease.com/f2e/news/commend/images/btn.png) no-repeat 0 -142px;display:inline-block;*display:inline;*zoom:1;vertical-align:middle;margin-right:3px} .commend-pop-title span{vertical-align:middle;color:#888} .commend-pop-content{padding:10px 0} .commend-pop-content a{color:#0f6b99;font-size:14px} .commend-pop-share{font-size:14px;color:#888;padding:6px 6px 6px 0;width:235px;line-height:24px;margin:0 auto} .commend-pop-share .ep-share-end{width:175px;padding-top:0;display:inline-block;*display:inline;*zoom:1;float:none;vertical-align:middle} 已推荐 0 网易荐新闻 推荐成功 快去看看还有哪些新闻被推荐了吧>> 分享到： (function($){ var popul = $("#comment-pop-share"); if(popul){ popul.setAttribute('data-url', window.location.href); popul.setAttribute('data-title', document.title); popul.setAttribute('data-pic', ""); popul.setAttribute('data-digest', ""); popul.setAttribute('data-source', "网易科技"); } })(NTES); 关键词阅读： 互联网众筹 股权众筹 互联网金融 券商平台 房地产众筹，不只是创新尝试 2014/12/18 互联网股权众筹的问题，还要靠互联网本身解决 2014/12/12 土豪房企会把互联网玩成啥样 2014/12/09 电影众筹：从热捧到质疑 2014/12/09 移动互联网法律电商面向国内众筹第一股 2014/11/15 延伸阅读 网易聚合阅读 (function(){ NTES.ajax.importJs('http://news.163.com/special/relevant_tag_data_tech/', function(){ var data = relevantTagData; if(data.count > 0) { var relevantTag = NTES('#js-ep-reletag'), html = []; for(var i = 0; i < data.count && i < 4; i++) { html.push('<li><a href="' + data.hits[i].url+ '#from=reletag">' + data.hits[i].name + '</a></li>'); } html.push('<li><a href="http://love.163.com/park/xunren/1153012?utm_source=yanshen.163.com&utm_campaign=163&vendor=163.new.yanshen">率性酷炫叫我女王</a></li>'); relevantTag.NTES('ul')[0].innerHTML = html.join(''); relevantTag.style.display = 'block'; } }, 'gbk'); })(); 网易首页 科技首页 0 人参与 科技头条 科技首页 | 中概股 | 原创 | 滚动 饥饿海狮如何捕杀章鱼 网上支付与线下支付，谁更安全？ 
+
+万达收购快钱，转型前路漫漫 
+
+苹果在全球如何构建起“避税天堂” 
+
+智能手表已崭露头角，戴还是不戴？ 
+
+大数据时代，MBA教育如何追随硅谷 那些被看好的智能家居 2014年度最佳地球照片 要闻 | 2014机器人：解放家庭主妇的机器助手 要闻 | 干掉页游的手游，前途仍然未可知 要闻 | 12306悬赏2000元：号召网友查漏洞 要闻 | 硅谷新媒体创业公司是如何争夺用户？ 要闻 | 朝鲜网络持续瘫痪：美国"幕后推动"？ 要闻 | 微软东莞工厂：员工获N+3+双年终奖 要闻 | 英国为动物戴数码项圈 改善WiFi信号 要闻 | 索尼微软同被黑 游戏机无法正常联网 要闻 | 盘点2014年P2P网贷十大“问题”平台 要闻 | 为什么网易科技编辑们都不着急买票 <!-- var ghchnid="xkj";//（新闻、科技、教育） //--> var banner_rdm=Math.random(); banner3_rdm=Math.ceil(banner_rdm*3); if(banner3_rdm==1){ document.write('<iframe src="http://qzs.qq.com/qzone/biz/gdt/display/positions/waicai/590x130_v.html?pid=3050107065421397&ptag=12786096_54936_46_12872692" width="590" height="130" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>'); } 聚合阅读 重新定位新闻浏览习惯 (function(){ NTES.ajax.importJs('http://news.163.com/special/hot_tags_data_tech/', function(){ var name1, name2, len1, len2, width1, width2, left2; var loveData = ['<a href="http://love.163.com/park/xunren/1152014?utm_source=juhe.163.com&utm_campaign=163&vendor=163.news.juhe" class="extra-tag-item extra-tag-4">请网友鉴定是否美女</a>','<a href="http://love.163.com/park/xunren/1152014?utm_source=juhe.163.com&utm_campaign=163&vendor=163.news.juhe" class="extra-tag-item extra-tag-5">这等美女还需要征婚</a>']; if (hotTagsData.count && hotTagsData.count > 0) { var code = '#from=article', html = [], item = { name: '', url: ''}; for (var i = 0; i < hotTagsData.data.length && i < 4; i++) { item = hotTagsData.data[i]; html.push('<a href="' + item.url + code + '" class="extra-tag-item extra-tag-' + i + '">' + item.name + '</a>'); if (i == 1) { name1 = item.name; } if (i == 2) { name2 = item.name; } } html.push(loveData[0]); html.push(loveData[1]); NTES('#js-extraTagList').innerHTML = html.join(' '); len1 = name1.replace(/[^\x00-\xff]/gi, "aa").length; len2 = name2.replace(/[^\x00-\xff]/gi, "aa").length; width1 = Math.floor((len1 / (len1 + len2)) * 271); width2 = 271 - width1; left2 = 96 + width1 + 19; NTES('.extra-tag-1').addCss('width: ' + width1 + 'px'); NTES('.extra-tag-2').addCss('width: ' + width2 + 'px; left: ' + left2 + 'px;'); } }, 'gbk'); })(); .imglist-bobo{padding-top:15px;margin-left: -23px; clear:both;} .imglist-bobo li .livestat,.imglist-bobo li .usercount i{background-image:url(http://img6.cache.netease.com/www/v2013/img/icon_bobo_140227-2.png);background-repeat:no-repeat;} .imglist-bobo li{margin-left: 23px;_display:inline;width: 130px;height:120px;overflow: hidden;} .imglist-bobo li a{display: block;width: 100%;height: 100%;cursor: pointer;overflow: hidden;} .imglist-bobo li .pic{width: 100%; height: 90px;position:relative;overflow:hidden;} .imglist-bobo li .livestat{width:33px;height:20px;position:absolute;top:0;right:0;background-color:#F44103;background-position:0 -705px;} .imglist-bobo li .usercount{background: #000; background: rgba(0, 0, 0, 0.7);position: absolute;left: 0;bottom: 0;line-height: 21px;cursor: pointer;width: 100%;height: 21px;overflow: hidden;color: #fff;} .imglist-bobo li .usercount span{display:block;float:right;margin-right:8px;_margin-right:4px;} .imglist-bobo li .usercount i{display:block;_display:none;float:right;margin:4px 4px 0 0;width:12px;height:12px;background-position:-5px -687px;} .imglist-bobo li a:hover{text-decoration: none;} .imglist-bobo li a .icon{position: absolute;left: 0;top: -130px;width:130px; height: 90px;background:url(http://img1.cache.netease.com/cnews/css13/icon_bobo_130x90.png);_background: none;_top:0;} .imglist-bobo li a:hover .icon{ top: 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://img1.cache.netease.com/cnews/css13/icon_bobo_130x90.png");} .imglist-bobo li .title{height: 25px;line-height: 25px;margin-top: 5px;} .imglist-bobo li a:hover .title{text-decoration: underline;} .imglist-bobo-app{ float:right;font-size:14px;font-weight:bold; padding: 20px 0 0 20px; background: url(http://img6.cache.netease.com/bobo/img14/appicon.png) 0 19px no-repeat; } .imglist-bobo-app a{color:#ED6D00;} .imglist-bobo-app a:hover{ color:#333;} 下载网易BoBo手机客户端 NTES.ready(function() { window.boboData = function(data){ var newData = data.hotLive; if(newData && newData.length == 4) { var html = [], len_max = 4, re = /\'|\"/gi, code = "?f=163.articleBottom", alttitle, item_url, anchorLevel_px, live_snip_html; //bobo数据 for (var i = 0; i < len_max; i++){ alttitle = newData[i].anchorExtendTitle.replace(re, "&quot;"); item_url = (newData[i].live == 1) ? newData[i].liveUrl : "http://bobo.163.com/"; live_snip_html = (newData[i].live == 1) ? '<div class="livestat"></div>' : ""; html.push('<li><a href="' + item_url + code + '"><div class="pic"><img src="' + newData[i].liveCoverUrl + '" width="130" height="90" alt="' + alttitle + '" /><div class="icon"></div>' + live_snip_html + '<div class="usercount"><span>' + newData[i].onlineUserCount + '</span><i></i></div></div><div class="title">' + newData[i].anchorExtendTitle + '</div></a></li>'); }; $('#js-ep-bobo').innerHTML = html.join(''); } } var bobo_url = "http://bobo.163.com/a/p2/163.articlebottom/4/boboData/", bobo_num = Math.floor(Math.random() * 10); NTES.ajax.importJs(bobo_url+bobo_num+".js",function(){}, 'utf-8'); })(); //<![CDATA[ var isShowComments = true,tieChannel = "tech",isStrict = true; //]]> 0 人跟贴 | 0 人参与 网友跟贴 0 人跟贴 | 0 人参与 | 手机发跟贴 | 注册 
+
+跟贴热词： 文明上网，登录发贴 账号 密码 自动登录 登录并发表 我的跟贴 | 我的LOFTER | 退出 马上发表 
+
+网友评论仅供其表达个人看法，并不表明网易立场。 if (typeof isForceShowComment != "undefined") { isShowComments = isForceShowComment; }; function tieInit() { tie_load({ urs: "http://img1.cache.netease.com/utf8/microblog/urs/urs1.0.3.js", tie: "http://img1.cache.netease.com/utf8/tie/tieanywhere2.6.7-min.js" }, function() { var replyCount = 2, totalCount = 2, threadId = "ADPT7MTE000915BF", boardId = "tech_bbs", host = tieChannel, tId = tId; NTES(".js-tielink").attr("href", "http://comment." + host + ".163.com/" + boardId + "/" + threadId + ".html") NTES(".js-tiecount").attr("innerHTML", totalCount); NTES(".js-joinCount").attr("innerHTML", TieAnywhere.formatNumber(totalCount.toString(), 3)); NTES(".js-bjoinCount").attr("innerHTML", TieAnywhere.formatNumber(totalCount.toString(), 3)); NTES(".js-actCount").attr("innerHTML", TieAnywhere.formatNumber(replyCount.toString(), 3)); NTES(".js-bactCount").attr("innerHTML", TieAnywhere.formatNumber(replyCount.toString(), 3)); new TieAnywhere.Tie({ wraper: NTES("#tieArea"), threadId: threadId, boardId: boardId, host: host, isShowComment: isShowComments, isStrict: isStrict, tId: tId }); }) }; tie_ready(function() { if (!window.NTES) { tie_load({ lib: "http://img1.cache.netease.com/cnews/js/ntes_jslib_1.x.js" }, function() { tieInit(); }, "GBK") } else { tieInit(); }; }); if(!window.commentData) { var commentData = { joincount: 2, count: 2, diggCount: 0, tcount: 2 }; } 新闻推荐 进入新闻频道 习近平2014年治国理政十件大事 责任 外交 娱乐 | 人民日报评于正抄袭案败诉：法律不容文贼 体育 | 国足正式出征亚洲杯 李铁赠全队特制手表 财经 | 同业存款纳入存款口径 或释放5.5万亿信贷 习近平2014年治国理政十件大事 责任 外交 娱乐 | 人民日报评于正抄袭案败诉：法律不容文贼 体育 | 国足正式出征亚洲杯 李铁赠全队特制手表 财经 | 同业存款纳入存款口径 或释放5.5万亿信贷 盘点豪车界的练摊儿之王 乱停车被恶搞 科技 | 网购化妆品调查：走私货高仿品黑链条 手机 | vivo推2K分辨率智能手机 超6成网友非常看好 旅游 | 在北海道仙境 与天鹅共浴 七成人认为：女人看球就是看男人 数码 | 数码贱男第三季：Gay小编约PAO 房产 | 万科30而立背后的游戏 绿地想当老大的底气 教育 | 学霸研究出胖瘦公式 被世界名校录取 NTES.ready(function() { var areas = $('.js-xwtj'), contents = $('.js-xwtj-content'), countArr = [0, 1, 2].sort(function(){ return 0.5 - Math.random(); }), content_cnxh = $('#js-cnxh-content'); if(window.epTools && window.epTools.getRadomArray) { countArr = window.epTools.getRadomArray([0, 1, 2], 3); } var api_xwtjpr = "http://j.news.163.com/hy/demorecdocapi.s?limit=16&callback=xwtjpr"; window.xwtjpr = function(data){ var xwtjData = data, html = [], len_max = 16, num, re = /\'|\"/gi, alttitle; html[0] = []; html[1] = []; html[2] = []; var tjtype = { '0': '#jnewsartrside1', '1': '#jnewsartrside2','2': '#jnewsartrside3'}; if(xwtjData.length >= len_max) { for(var i = 0; i < len_max; i++){ var j = 0; if(i > 7){ j = 1; } if(i > 11){ j = 2; } if(i == 0 || i == 8 || i == 12){ html[j].push('<h2 class="ep-title-3"><a href="' + xwtjData[i].link + tjtype[0] + '" title="' + alttitle + '">' + xwtjData[i].title + '</a></h2><ul class="mod-f12list">'); }else{ html[j].push('<li><a href="' + xwtjData[i].link + tjtype[0] + '" title="' + alttitle + '">' + xwtjData[i].title + '</a></li>'); } if(i == 7 || i == 11 || i == 15){ html[j].push('</ul>'); } }; areas[0].innerHTML = html[0].join(''); areas[1].innerHTML = html[1].join(''); if(content_cnxh) { content_cnxh.innerHTML = html[2].join(''); } } else { for(var i = 0; i < areas.length; i++) { areas[i].innerHTML = contents[countArr[i]].innerHTML; } } }; NTES.ajax.importJs(api_xwtjpr, function(){}, 'utf-8') }); 新闻推荐 进入新闻频道 盘点豪车界的练摊儿之王 乱停车被恶搞 科技 | 网购化妆品调查：走私货高仿品黑链条 手机 | vivo推2K分辨率智能手机 超6成网友非常看好 旅游 | 在北海道仙境 与天鹅共浴 科技企业库 阅读全部 谷歌 雅虎 Facebook 百度 携程 京东商城 网易 新浪 腾讯 搜狐 搜狗 畅游 亚马逊 当当网 苏宁易购 盛大网络 热点新闻 曝《武媚娘》被广电总局叫停 疑因尺度大 成龙香港街头被贴大字报 遭骂教子无方兼花心 学白上了吗？图揭国人无节操的生活 援交门女星痛心女儿受牵连 称有寻死的念头 window.specheader = function(data) { var html = [], len_max = 4, specHeaderData = data.hotlist; if(specHeaderData.length >= len_max) { for(var i = 0; i < specHeaderData.length && i < 4; i++) { if(i == 0) { html.push('<h2 class="ep-title-3"><a title="' + specHeaderData[i].title + '" href="' + specHeaderData[i].url + '">' + specHeaderData[i].title + '</a></h2> <ul class="mod-f12list">'); } else { html.push('<li><a title="' + specHeaderData[i].title + '" href="' + specHeaderData[i].url + '">' + specHeaderData[i].title + '</a></li>'); } } html.push('</ul>'); if($("#js-specheader")) { $("#js-specheader").innerHTML = html.join(''); } } } NTES.ajax.importJs('http://news.163.com/smart/specheader.json', function(){}, 'gbk'); 猜你喜欢 范冰冰版《武媚娘》被广电总局叫停 疑因尺度大 亚洲航空一架客机失联 失联前曾要求改变航线 高校性学教育状况:性学课常被误认为生理卫生课 中国女孩在印尼遭机场安保人员强奸 中方要求彻查 科技聚焦 阅读全部 饥饿海狮如何捕杀章鱼 那些被看好的智能家居 2014年度最佳地球照片 2014最惊人的太空发现 精彩视频 进入视频频道 男子直播喝下六斤白酒 俄罗斯真人CS震撼场面 震撼实拍日治下的朝鲜 毛主席最欣赏的12女人 var ead_ad_style='new' 彩票 商城 保险 话费 点卡 电影票 彩票 : 双色球 3D 大乐透 七乐彩 时时彩 足彩 彩票开奖 : 双色球 3d 大乐透 快3 11选5 七星彩 走势图 : 双色球 3d 大乐透 时时彩 七星彩 11选5 车险 : 平安车险 　 人保车险 　 太平洋车险 
+阳光车险 　 违章查询 　 车险计算器 非车险: 意外伤害保险 　 旅游保险 　 财产保险 
+重大疾病保险 　 人寿保险 意外保险 : 人身意外险 　 旅游意外险 　 航空意外险 
+交通意外险 　 自驾意外险 　 综合意外险 
+儿童意外险 　 中老年人意外险 　 更多 旅游保险 : 境外旅游保险 　 国内旅游意外险 　 更多 健康保险 : 儿童保险 　 老人保险 　 女性疾病保险 　 更多 热门问题: 车险怎么买？ 　 如何买保险？ 　 保险10元店 网易商城，您身边24小时的联通电信移动营业厅 随时随地为您提供手机话费充值服务。 热门点卡 : 问道 　 Q币 　 穿越火线 　 征途 　 龙之谷 　 56卡 
+天龙八部2 　 5914卡 　 跑跑卡丁车 　 更多 热门公司 : 腾讯 　 巨人 　 盛大 　 金山 　 完美 　 搜狐 
+九城 　 光宇 　 久游 　 世纪天成 　 更多 热门搜索 : 热血传奇 　 武林外传 　 赤壁 热门游戏 : 网易游戏 游戏充值: 三分钟内到账，点卡充值最低7折起 热门影院： 北京： 嘉华国际影城 UME国际影城双井店 上海： 五角万达影城 博纳银兴国际影城 广州： 保利国际影城 华影星美国际影城 深圳： 宝安环星影城 中影今典国际影城 杭州： 新远国际影城 奥斯卡电影大世界 成都： 上影国际影城 橙天嘉禾影城凯丹店 
+
+特价影票4折起 在线选座 
+
+iphone客户端 安卓客户端 NTES.ready(function() { new NTES.ui.Slide ($('#js-epTabDS .mod-tab-trigger'),$('#js-epTabDS .mod-tab-panel'),'current','mouseover'); }); 点击排行 跟贴排行 1 60709 越来越糟糕的iOS系统，到底生了什么病？ 2 50056 苹果公司如何构建起“避税天堂”？ 3 20122 揭秘DDoS黑市：50 块钱就能击瘫一家网站 4 20035 索尼再遭黑客攻击 在线游戏平台已瘫痪三天 5 18265 国产自主系统走了这么久，为何还没进场？ 6 18067 大趋势:廉价中国手机涌入美国 7 10593 周鸿祎叫板百度杀毒：您是有钱就任性吗？ 8 7021 12306网站悬赏2000元：号召网友查漏洞 1 1997 中国手机风行东南亚：富商靠中国手机救命 2 438 12306网站悬赏2000元：号召网友查漏洞 3 349 揭秘DDoS黑市：50 块钱就能击瘫一家网站 4 236 四川自贡现2亿年前恐龙脚印 5 135 微软东莞手机工厂春节前或关闭 6 98 索尼又被“黑”：游戏用户抓狂 7 90 万达收购快钱，转型前路漫漫 8 88 周鸿祎叫板百度杀毒：您是有钱就任性吗？ NTES.ready(function() { new NTES.ui.Slide ($('#js-epTabRank .mod-tab-trigger'),$('#js-epTabRank .mod-tab-panel'),'current','mouseover'); }); 博客 联想K900动了谁的奶酪所感 智能家电将引发芯片战略性危机 阿里、百度、360合作：不只是爱情这么简单 智能手机与平板电脑谁取代谁？ 静看“阿里浪“的碰撞 团购集体转战商城模式 //顶部分享 底部分享 (function() { NTES.ready(function() { article_share14.setAttribute('data-url', window.location.href); article_share14.setAttribute('data-title', document.title); article_share14.setAttribute('data-pic', ""); article_share14.setAttribute('data-digest', ""); article_share14.setAttribute('data-source', "网易科技"); if(NTES("#article_share13")){ article_share13.setAttribute('data-url', window.location.href); article_share13.setAttribute('data-title', document.title); article_share13.setAttribute('data-pic', ""); article_share13.setAttribute('data-digest', ""); article_share13.setAttribute('data-source', "网易科技"); } WbApi.initShareTipsSm({ sourceUrl: "http://tech.163.com/", source: encodeURIComponent("网易科技"), title: encodeURIComponent(document.title), link: encodeURIComponent(window.location.href + '#sns_163') }, "wb-article-share-end"); }); })(); 用微信扫描二维码 
+
+分享至好友和朋友圈 x //二维码 (function() { // IE6 动态生成二维码速度太慢 因此去掉 if(!-[1,]&&!window.XMLHttpRequest) { return false; } NTES.ready(function() { var wxicon2dIcon = NTES('.nt-wx2dcode-icon'); var wxicon2dPop = NTES('.nt-wx2dcode-pop'); var wxicon2dPic = NTES('.nt-wx2dcode-pic'); var wxicon2dClose = NTES('.nt-wx2dcode-close'); var icon2dIcon = NTES('.nt-2dcode-icon') var icon2dPop = NTES('.nt-2dcode-pop'); var icon2dPic = NTES('.nt-2dcode-pic'); var wxicon2dIcon3 = NTES('.nt-wx2dcode-icon3'); var wxqrcode, qrcode, timer; var nxkey, ntit, nurl, tjurl, img; setTimeout(function() { wxqrcode = new QRCode(wxicon2dPic[0], { width : 120, height : 120 }); wxqrcode.makeCode(window.location.href + "#sns_weixin"); }, 500); setTimeout(function() { qrcode = new QRCode(icon2dPic[0], { width : 110, height : 110 }); qrcode.makeCode(window.location.href + "#2code"); }, 1000); wxicon2dIcon.addEvent('click', function() { var offset = getOffset(this); wxicon2dPop[0].style.display = 'block'; wxicon2dPop[0].style.left = offset.left - 86 + 'px'; wxicon2dPop[0].style.top = offset.top + this.clientHeight + 8 + 'px'; nxkey = Math.random().toString().substr(2,6); ntit = escape(document.title); nurl = escape(window.location.protocol.replace(":","") + '://snstj.' + window.location.host + window.location.pathname+'?snstj_weixin'); tjurl='http://analytics.163.com/ntes?_nacc=snstj&_nvid=VISITOR_CLIENT_NO_COOKIE_SUPPORT&_nvtm=0&_nvsf=0&_nvfi=0&_nlag=&_nlmf=0&_nres=&_nscd=&_nstm=0&_nurl='+nurl+'&_ntit='+ntit+'&_nref=&_nfla=&_nssn=&_nxkey='+nxkey+'&_end1'; img = new Image(); img.src = tjurl; }); wxicon2dIcon3.addEvent('click', function() { var offset = getOffset(this); wxicon2dPop[0].style.display = 'block'; wxicon2dPop[0].style.left = offset.left - 86 + 'px'; wxicon2dPop[0].style.top = offset.top + this.clientHeight + 8 + 'px'; nxkey = Math.random().toString().substr(2,6); ntit = escape(document.title); nurl = escape(window.location.protocol.replace(":","") + '://snstj.' + window.location.host + window.location.pathname+'?snstj_weixin'); tjurl='http://analytics.163.com/ntes?_nacc=snstj&_nvid=VISITOR_CLIENT_NO_COOKIE_SUPPORT&_nvtm=0&_nvsf=0&_nvfi=0&_nlag=&_nlmf=0&_nres=&_nscd=&_nstm=0&_nurl='+nurl+'&_ntit='+ntit+'&_nref=&_nfla=&_nssn=&_nxkey='+nxkey+'&_end1'; img = new Image(); img.src = tjurl; }); wxicon2dClose.addEvent('click', function() { wxicon2dPop[0].style.display = "none"; }); icon2dIcon.addEvent('mouseover', function() { var offset = getOffset(this); icon2dPop[0].style.display = 'block'; icon2dPop[0].style.left = offset.left + 'px'; icon2dPop[0].style.top = offset.top + this.clientHeight + 8 + 'px'; clearTimeout(timer); }); icon2dIcon.addEvent('mouseout', function() { timer = setTimeout(function() { icon2dPop[0].style.display = 'none'; }, 100); }); icon2dPop.addEvent('mouseover', function() { clearTimeout(timer); }); icon2dPop.addEvent('mouseout', function(e) { var event = e || window.event; var relatedTarget = event.relatedTarget || event.toElement; if(!isParent(relatedTarget, icon2dPop[0])) { icon2dPop[0].style.display = 'none'; } }); }); function getOffset(el) { var top = el.offsetTop; var left = el.offsetLeft; while(el.offsetParent){ el = el.offsetParent; top += el.offsetTop; left += el.offsetLeft; } return { left: left, top: top } } function isParent(el, parent) { while (el && el.tagName != 'BODY'){ if (el == parent) { return true; } el = el.parentNode; } return false; } })(); document.domain = '163.com'; //微博 LOFTER图片分享按钮 NTES.ready(function(NTES) { var lofterPicBtn = NTES('.nt-lofter-pic')[0], options = {}, timer; var lofterPicForm, imgs; lofterPicForm = document.createElement('form'); lofterPicForm.setAttribute('action', 'http://www.lofter.com/sharephoto/?act=qbwbfx_20141018_01'); lofterPicForm.setAttribute('method', 'POST'); lofterPicForm.setAttribute('target', '_blank'); lofterPicForm.innerHTML = '<input value="news" type="hidden" name="from"><input type="hidden" name="source"><input type="hidden" name="sourceurl"><input type="hidden" name="image"><input type="submit">'; document.body.appendChild(lofterPicForm); lofterPicForm.style.display = "none"; NTES(".end-text")[0] ? imgs = NTES(".end-text img") : imgs = NTES("\#endText img"); imgs.each(function() { var img = NTES(this); img.addEvent('mouseover', function(e) { clearTimeout(timer); if(lofterPicBtn && (this.width > 300 || this.height > 300)) { var offset = getOffset(this); options = { sourceUrl: "http://tech.163.com/", source: encodeURIComponent("网易科技"), title: encodeURIComponent("股权众筹迎来监管 券商也可做平台"), link: encodeURIComponent(document.location.href), images: this.src, togImg: true, method: 'click', keyfrom: 'share163tu.click' }; var lofterPicInputs = lofterPicForm.getElementsByTagName('INPUT'); lofterPicInputs[1].value = "网易新闻"; lofterPicInputs[2].value = window.location.href+"#sns_lofter"; lofterPicInputs[3].value = this.src; lofterPicBtn.style.left = offset.left + 8 + 'px'; lofterPicBtn.style.top = offset.top + this.clientHeight - 32 + 'px'; lofterPicBtn.style.display = 'block'; } }) img.addEvent('mouseout', function(e) { timer = setTimeout(function() { lofterPicBtn.style.display = 'none'; }, 30); }); }); lofterPicBtn.onclick = function() { if(!-[1,]&&!window.XMLHttpRequest) { setTimeout(function() { lofterPicForm.submit(); }, 10); } else { lofterPicForm.submit(); } var nxkey, ntit, nurl, tjurl, imgg; nxkey = Math.random().toString().substr(2,6); ntit = escape(document.title); nurl = escape(window.location.protocol.replace(":","") + '://snstj.' + window.location.host + window.location.pathname+'?snstj_lofter'); tjurl='http://analytics.163.com/ntes?_nacc=snstj&_nvid=VISITOR_CLIENT_NO_COOKIE_SUPPORT&_nvtm=0&_nvsf=0&_nvfi=0&_nlag=&_nlmf=0&_nres=&_nscd=&_nstm=0&_nurl='+nurl+'&_ntit='+ntit+'&_nref=&_nfla=&_nssn=&_nxkey='+nxkey+'&_end1'; imgg = new Image(); imgg.src = tjurl; }; lofterPicBtn.onmouseover = function() { clearTimeout(timer); }; lofterPicBtn.onmouseout = function() { timer = setTimeout(function() { lofterPicBtn.style.display = 'none'; }, 20); }; function getOffset(el) { var top = el.offsetTop; var left = el.offsetLeft; while(el.offsetParent){ el = el.offsetParent; top += el.offsetTop; left += el.offsetLeft; } return { left: left, top: top } } }); NTES.ready(function(NTES) { function ShowDaren(ref, wrapper) { var coords = getCoords(ref); wrapper.style.display = 'none'; wrapper.style.top = coords.top + 'px'; wrapper.style.left = coords.left - 12 + 'px'; wrapper.style.display = 'block'; } NTES.event.addEvent(NTES(".daren-keyword"), "mouseover", function() { var self = this, userid = this.getAttribute('userid'), wrapperId = 'daren_w' + userid, darenWrapper = document.getElementById(wrapperId); if(darenWrapper) { ShowDaren(self, darenWrapper); } else { NTES.ajax.importJs('http://static.t.126.net/share/user/daren/' + userid + '.js', function() { darenWrapper = document.createElement('div'); darenWrapper.id = wrapperId; darenWrapper.className = 'daren_w'; darenWrapper.innerHTML = '<div class="weibo-up-arr"></div><div class="daren-close" onclick="this.parentNode.style.display=\'none\'"></div>' + getWeiboDaren() .replace('wb-article-folow', 'wb-article-minFolow') // 替换按钮样式 .replace(/wenzhang_dr/g, 'wenzhang_hc'); // 替换参数 darenWrapper.onmouseout = function(e) { var evt = e? e: window.event, target = evt.target? evt.target: evt.srcElement; if ( !evt.relatedTarget && evt.fromElement ) { evt.relatedTarget = evt.fromElement == target ? evt.toElement : evt.fromElement; } var parent = evt.relatedTarget; while ( parent && parent != this ) { try { parent = parent.parentNode; } catch(e) { parent = this; } } if( parent != this ){ this.style.display = 'none'; } } darenWrapper.onclick = function(e) { var target; e = e? e: window.event; target = e.target? e.target: e.srcElement; if(target.className.indexOf('talk-to') != -1) { this.style.display = 'none'; } } document.body.appendChild(darenWrapper); ShowDaren(self, darenWrapper); }, 'utf-8'); } }); }); /* foot */ #js_N_nav_footer{padding:28px 0 0;background:#F6F6F6;} .js_N_nav_footer_nav_fixed{position:fixed;z-index:1000;border-top:1px solid #ddd;width:100%;left:0;} .fixed-sitemap-main{width:960px;margin:0 auto;overflow:hidden;} .subfoot-wrap{width:100%;margin-top:80px;border-top:1px solid #ddd;background:#F6F6F6;} .subfoot-wrap .main{width:960px;margin:0 auto;position:relative;z-index:100;} .sitemap-ctrl{width: 100px;height:32px;cursor:pointer;position:absolute;right: 0;top: -34px;z-index:1000;border:1px solid #ddd;text-align: center;line-height: 32px;background-color:#f6f6f6;_display:none;} .sitemap-fixed-arr{position: absolute;z-index:10;left: 50%;top: 50%;margin-top: -2px;margin-left: -4px;border-color: transparent transparent #45454D transparent;border-style: dashed dashed solid;border-width: 0 4px 4px;font-size: 0;height: 0;width: 0;line-height: 0;} .sitemap-fix-circle{position:relative;z-index:9;margin:5px 5px 0 0;float:right;border:1px solid #d2d2d2;width:20px;height:20px;background:#fafafa;-moz-border-radius:12px;-webkit-border-radius:12px;border-radius:12px;} .sitemap{margin-left:-12px;} .sitemap-logo{float:left;width:128px;height:71px;overflow:hidden;text-indent:-10em;margin-bottom:30px;background-position:left top;background-image:url(http://img4.cache.netease.com/www/v2013/img/bg_sprites.png);background-repeat:no-repeat;} .sitemap-info,.sitemap-con{float:left;_display:inline;width:150px;height:150px;margin-left:12px;margin-bottom:12px;} .sitemap-con{line-height:25px;background:#E8E8E8;} .sitemap-con:hover{background:#206F96;color:#fff;} .sitemap-con:hover a{color:#fff;} .sitemap-con strong{display:block;margin:6px 0 0 12px;} .sitemap-con strong a{width:auto;margin-left:0;} .sitemap-con a{display:inline-block;width:52px;margin-left:12px;white-space:nowrap;} .sitemap-icon{float:left;width:20px;height:21px;margin-right:11px;text-indent:-100em;} .sitemap-flink{height:40px;padding-right:9px;line-height:30px;border-bottom:1px solid #DEDEDE;text-align:right;} .subfoot{height:280px;padding-top:36px;border-top:1px solid #fff;} .subfoot-verify{float:left;margin-top:12px;} .subfoot-links{float:right;line-height:26px;margin-bottom:20px;} .subfoot-links td{padding-right:45px;vertical-align:top;} .subfoot-links a,.subfoot-links a:visited,.subfoot-links .text{display:block;white-space:nowrap;color:#666;} .subfoot-links a:hover{color:#ba2636;} .i-entry{background-image:url(http://img4.cache.netease.com/www/v2013/img/icon_v2.png);background-repeat:no-repeat;padding:2px 22px 2px 0;background-position:right -89px;} 全局导航 网易 有态度 新闻 国内 评论 国际 探索 社会 军事 图片 体育 NBA CBA 综合 中超 国际足球 英超 西甲 意甲 娱乐 明星 图片 电影 资料库 电视 音乐 财经 股票 行情 产经 新股 金融 基金 商业 理财 汽车 购车 行情 选车 车型库 论坛 行业 用车 汽车图片 科技 中国概念股 科技企业库 女人 亲子 艺术 时尚 星座 情爱 免费试用 美容 女人图库 手机 / 数码 移动 笔记本 手机库 家电 手机论坛 平板 相机 手机视频 房产 / 家居 北京房产 上海房产 广州房产 全部分站 楼盘库 家具 卫浴 衣柜 旅游 户外 贵州 美食 四川 景点 新疆 专题 西藏 教育 移民 考研 留学 公务员 外语 中小学 高考 校园 查看网易地图 //<![CDATA[ (function($, undefined){ var getElementHeight=function(elm){return elm.clientHeight||elm.offsetHeight||0}, getElementWidth=function(elm){return elm.clientWidth||elm.offsetWidth||0}, getElementPosition = function(a){var b=navigator.userAgent.toLowerCase();var c=(b.indexOf('opera')!=-1);var d=(b.indexOf('msie')!=-1&&!c);var e=typeof a=="string"?document.getElementById(a):a;if(e.parentNode===null||e.style.display=='none'){return false}var f=null;var g=[];var h;if(e.getBoundingClientRect){h=e.getBoundingClientRect();var i=Math.max(document.documentElement.scrollTop,document.body.scrollTop);var j=Math.max(document.documentElement.scrollLeft,document.body.scrollLeft);return{x:h.left+j,y:h.top+i}}else if(document.getBoxObjectFor){h=document.getBoxObjectFor(e);var k=(e.style.borderLeftWidth)?parseInt(e.style.borderLeftWidth):0;var l=(e.style.borderTopWidth)?parseInt(e.style.borderTopWidth):0;g=[h.x-k,h.y-l]}else{g=[e.offsetLeft,e.offsetTop];f=e.offsetParent;if(f!=e){while(f){g[0]+=f.offsetLeft;g[1]+=f.offsetTop;f=f.offsetParent}}if(b.indexOf('opera')!=-1||(b.indexOf('safari')!=-1&&e.style.position=='absolute')){g[0]-=document.body.offsetLeft;g[1]-=document.body.offsetTop}}if(e.parentNode){f=e.parentNode}else{f=null}while(f&&f.tagName!='BODY'&&f.tagName!='HTML'){g[0]-=f.scrollLeft;g[1]-=f.scrollTop;if(f.parentNode){f=f.parentNode}else{f=null}}return{x:g[0],y:g[1]}}, getViewHeight=function(){return document.all?document.getElementsByTagName("html")[0].offsetHeight:window.innerHeight}, getPageHeight=function(){return Math.max(getViewHeight(),document.getElementsByTagName("body")[0].scrollHeight)}, insertAfter = function(a,b){var c=b.parentNode;if(c.lastChild==b){c.appendChild(a)}else{c.insertBefore(a,b.nextSibling)}}, removeElement = function(a){var b=a.parentNode;b&&b.removeChild(a)}, getPageScrollTop = function(){ return Nbd.scrollTop || document.documentElement.scrollTop; }, extend = NTES.util.extend, emptyFunc = function(){}, isIE6 = !!NTES.browser.msie && (NTES.browser.version == "6.0"), console = typeof console == "undefined" ? (console = {}, console.log = emptyFunc, console) : console, /* * default configs */ duration = 0, boundary = 0, triggerShowClass = "js_N_nav_footer_trigger_show", footerNavFixedClass = "js_N_nav_footer_nav_fixed", globalNavSelector = "#js_N_nav_footer", globalNavTriggerSelector = "#js_N_nav_footer_trigger", onGlobalNavFixedChange = emptyFunc, autoBindTrigger = false, /* * default apis */ defaultsInterface = { destory: emptyFunc, update: emptyFunc, fixGlobalNav: emptyFunc }, /* * private member */ hasFixed = false, triggerHasFixed = false, keepFixed = false, scrollTimer = null, Nwin = null, Nbd = null, footerNav = null, footerNavTrigger = null, footerNavPlaceholder = null, triggerElm = null, footerNavElm = null, viewHeight = 0, pageHeight = 0, footerNavHeight = 0, scrollHandler = emptyFunc, resizeHandler = emptyFunc, triggerClickHander = emptyFunc, footerNavTriggerPostion = {x: 0, y: 0}, footerNavPosition = {x:0, y: 0}, lastScrollTop = 0, init = function(configs){ if(isIE6){ return false; } Nwin = $(window); Nbd = document.body; /* * make config */ configs = configs || {}; onGlobalNavFixed = configs.onGlobalNavFixed || emptyFunc; triggerShowClass = configs.triggerShowClass || triggerShowClass; footerNavFixedClass = configs.footerNavFixedClass || footerNavFixedClass; footerNav = $(configs.globalNavSelector || globalNavSelector); footerNavTrigger = $( configs.globalNavTriggerSelector || globalNavTriggerSelector); autoBindTrigger = configs.autoBindTrigger || autoBindTrigger; onGlobalNavFixedChange = configs.onGlobalNavFixedChange || onGlobalNavFixedChange; footerNavPlaceholder = document.createElement("div"); insertAfter(footerNavPlaceholder, footerNav); triggerElm = footerNavTrigger.get(0); footerNavElm = footerNav.get(0); viewHeight = getViewHeight(); pageHeight = getPageHeight(); footerNavHeight = getElementHeight(footerNav); footerNavTriggerHeight = 33; footerNavTriggerPostion = getElementPosition(triggerElm); footerNavPosition = getElementPosition(footerNavElm); //init position info hasFixed = false; triggerHasFixed = false; //Nbd.scrollTop = lastScrollTop; setTriggerPosition(); keepFixed && setGlobalNavPosition(); bindEvent(); return true; }, bindEvent = function(){ var setTimer = function(fn){ if(duration){ scrollTimer = setTimeout(function(){fn()}, duration); return; } fn(); }; scrollHandler = function(e){ lastScrollTop = getPageScrollTop(); if(scrollTimer){ clearTimer(); return; } setTimer(function(){ //reset trigger and nav postion !keepFixed && setTriggerPosition(); keepFixed && setGlobalNavPosition(); clearTimer(); }); }; resizeHandler = function(){ update(); }; triggerClickHander = function(){ if(hasFixed){ keepFixed = false; setGlobalNavPosition(true, true); footerNavTrigger.removeCss("sitemap-ctrl-active"); return; } keepFixed = true; setGlobalNavPosition(true, false); footerNavTrigger.addCss("sitemap-ctrl-active"); }; Nwin.addEvent("scroll", scrollHandler); Nwin.addEvent("resize", resizeHandler); autoBindTrigger && footerNavTrigger.addEvent("click", triggerClickHander); }, setTriggerPosition = function(force, clear){ var detectY = getPageScrollTop() + viewHeight + boundary - footerNavTriggerHeight, resetTriggerTop = 0; if((force && clear) || !keepFixed && (detectY >= footerNavTriggerPostion.y)){ if(!triggerHasFixed){ return; } triggerHasFixed = false; clearTriggerFix(); return; } if((force && !clear) || (detectY < footerNavTriggerPostion.y)){ if(triggerHasFixed && !force){ return; } triggerHasFixed = true; triggerElm.style.position = "fixed"; triggerElm.style.left = footerNavTriggerPostion.x + "px"; resetTriggerTop = viewHeight - boundary - footerNavTriggerHeight; if(hasFixed ){ triggerElm.style.top = (resetTriggerTop - footerNavHeight) + "px"; }else{ triggerElm.style.top = resetTriggerTop + "px"; } } }, setGlobalNavPosition = function(force, clear){ var detectY = getPageScrollTop() + viewHeight + boundary - footerNavHeight; if((force && clear) || (detectY >= footerNavPosition.y)){ if(!hasFixed){ return; }else{ globlNavFixChange(false); } clearGlobalFix(); return; } if((force && !clear) || (detectY < footerNavPosition.y)){ if(hasFixed){ return; }else{ globlNavFixChange(true); } footerNavPlaceholder.style.height = footerNavHeight + "px"; footerNav.addCss(footerNavFixedClass); footerNavElm.style.top = (viewHeight - footerNavHeight) + "px"; } }, clearTriggerFix = function(){ triggerElm.style.position = ""; triggerElm.style.left = ""; triggerElm.style.top = ""; }, clearGlobalFix = function(){ footerNavPlaceholder.style.height = ""; footerNav.removeCss(footerNavFixedClass); footerNavElm.style.top = ""; }, globlNavFixChange = function(fix){ hasFixed = !!fix; setTriggerPosition(true, keepFixed ? !hasFixed: hasFixed); onGlobalNavFixedChange(hasFixed); }, clearTimer = function(){ if(scrollTimer){ clearTimeout(scrollTimer); scrollTimer = null; } }, update = function(){ destory(); init(); }, destory = function(){ clearTimer(); Nwin.removeEvent("scroll", scrollHandler); Nwin.removeEvent("resize", resizeHandler); autoBindTrigger && footerNavTrigger.removeEvent("click", triggerClickHander); clearGlobalFix(); clearTriggerFix(); removeElement(footerNavPlaceholder); }; NTES.plugin = NTES.plugin || {}; NTES.plugin.globalFixedNav = function(configs){ if(init(configs)){ defaultsInterface = extend(defaultsInterface, { destory: function(){ destory(); }, update: function(){ update(); }, fixGlobalNav: function(fix){ keepFixed = !!fix; setGlobalNavPosition(true, !keepFixed); } }); }; //once been instanced, destory export api; NTES.plugin.globalFixedNav = emptyFunc; return defaultsInterface; }; NTES.ready(function(){ //for test window.gf = NTES.plugin.globalFixedNav({ duration: 0, boundary: 0, triggerShowClass: "js_N_nav_footer_trigger_show", footerNavFixedClass: "js_N_nav_footer_nav_fixed", globalNavSelector: "#js_N_nav_footer", globalNavTriggerSelector: "#js_N_nav_footer_trigger", onGlobalNavFixedChange: function(beFixed){ console.log(beFixed); }, autoBindTrigger: true }); }); })(NTES); //]]> 1997-2014 网易公司版权所有 About NetEase | 公司简介 | 联系方法 | 招聘信息 | 客户服务 | 隐私政策 | 广告服务 | 网站地图 | 意见反馈 | 不良信息举报 var cpm_rdm=Math.random(); var vjAcc="860010-0509010000"; var wrUrl="http://163.wrating.com/"; vjTrack(); _ntes_nacc = "tech"; //站点ID。 neteaseTracker();

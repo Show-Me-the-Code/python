@@ -1,0 +1,69 @@
+﻿ Why Alzheimer's Drugs Keep Failing
+Drug candidates have a 99.6 percent failure rate, and poor early detection methods make clinical trials difficult and costly
+July 14, 2014 |By Maria Burke and ChemistryWorld
+cell loss Alzheimer's
+
+Areas of cell loss are in red on this brain scan of an older person with Alzheimer's disease.
+Credit: NIH
+
+The world needs to tackle head-on the market failures undermining dementia research and drug development, UK Prime Minister David Cameron told a summit of world health and finance leaders in London in June. He announced an investigation into how to get medicines to patients earlier, extend patents and facilitate research collaborations, to report this autumn. But just how much difference will these sorts of measures make when scientists are still grappling with exactly what causes different types of dementia?
+
+Added to these problems is that dementia has become a graveyard for a large number of promising drugs. A recent study looked at how 244 compounds in 413 clinical trials fared for Alzheimer's disease between 2002 and 2012. The researchers findings paint a gloomy picture. Of those 244 compounds, only one was approved. The researchers report that this gives Alzheimer's disease drug candidates one of the highest failures rates of any disease area – 99.6%, compared with 81% for cancer.
+
+‘Dementia is a ticking bomb costing the global economy ￡350 billion and yet progress with research is achingly slow,’ warned the World Dementia Envoy, Dennis Gillings. Businesses need incentives to invest in research and bring in faster, cheaper clinical trials, or the world won’t meet the ambition to find a cure or disease-modifying therapy by 2025, he added. ‘We need to free up regulation so that we can test ground-breaking new drugs, and examine whether the period for market exclusivity could be extended.’
+
+What's behind dementia
+Dementia is an umbrella term used to describe a set of symptoms that can vary a great deal but include memory loss, confusion and mood changes. It can be caused by a number of different diseases, usually neurodegenerative diseases, such as Alzheimer's disease (about two-thirds of cases), frontotemporal dementia and dementia with Lewy bodies. With these diseases, the brain cells degenerate and die more quickly than is normal. Damage to brain cells is caused by a build up of abnormal proteins in the brain, which are different in each type of neurodegenerative dementia. However, vascular dementia is caused when the brain's blood supply is restricted or stopped, leading brain cells to die.
+
+In Alzheimer's disease, the loss of brain cells leads to the brain shrinking, particularly the cerebral cortex. This is the layer of grey matter covering the brain that is responsible for processing thoughts and many of the higher functions, such as memory. Clumps of protein, known as plaques and tangles, progressively form in the brain; they are thought to result in the loss of brain cells. As connections between brain cells are lost there are fewer neurotransmitter chemicals, such as dopamine and acetylcholine, available to carry messages from one brain cell to another. Dopamine and acetylcholine are thought to play an important role in regulating brain functions, such as memory, learning, mood and attention.
+
+Dementia with Lewy bodies is where small, circular lumps of protein develop inside brain cells. It is not known what causes them or how they damage the brain, leading to dementia. One theory is that these Lewy bodies interfere with the production of two neurotransmitters, dopamine and acetylcholine.
+
+Frontotemporal dementia is caused by damage and shrinking in the temporal lobe and the frontal lobe. This type of dementia often occurs in those under 65, and an estimated 20% of patients have inherited a genetic mutation from their parents.
+
+Other causes of dementia or dementia-like conditions may be treatable or non-progressive. These can include depression, infections and some brain tumours.
+
+Treatment troubles
+No treatment can currently halt the underlying disease processes in the brain. Presently, the UK has four licensed treatments that can help some people with their dementia symptoms, but the effects are temporary and don’t work for everyone. In the UK, 820,000 people have dementia, and around 44.4 million people worldwide. The World Health Organization predicts that the number of people with dementia will almost double over the next 20 years.
+
+Although companies have 198 compounds in various stages of development, dementia poses particular challenges because symptoms emerge a decade or more after the disease starts, says Bina Rawal of the Association of British Pharmaceutical Industry, making clinical trials expensive and lengthy. ‘[R&D] needs to be commercially viable for companies,’ she says. ‘In the UK, the government has a role to play in ensuring that companies are rewarded for their investment.’
+
+Very few treatments are currently approved for Alzheimer’s in the UK. Acetylcholinesterase inhibitors, such as donepezil and galantamine, are licensed to treat mild to moderate Alzheimer’s disease. They can also be used to treat people with dementia with Lewy bodies, and can be particularly effective at treating hallucinations. They work by delaying the breakdown of the neurotransmitter acetylcholine by inhibiting the enzyme acetylcholinesterase.
+
+Memantine hydrochloride is another Alzheimer's treatment and works by blocking the chemical messenger glutamate. Glutamate is released in excessive amounts when brain cells are damaged by Alzheimer's disease and this causes further damage. Memantine can protect brain cells by blocking the effects of excess glutamate. It is licensed to treat severe Alzheimer’s disease, but can also be used to treat moderate cases.
+
+A slippery problem
+The risks and barriers for companies working in dementia are huge, but so too, potentially, are the rewards, says Simon Ridley, head of research at Alzheimer’s Research UK. He believes the first objective should be to recruit more researchers, but changes to the way drugs’ intellectual property is controlled would help too. ‘If the best chances of successful treatments are for early-stage disease patients, then these trials will be extremely long,’ he explains. ‘A patent would have expired before a trial had finished. That’s why new models and approaches like adaptive licensing are needed. Currently, a trial has to show efficacy in cognition and daily living. These endpoints are not quick or easy to measure so perhaps a possibility is surrogate endpoints with conditional licences, almost like a Phase IV [post licensing] trial.’
+
+Finding drugs to treat dementia is especially difficult because the brain is relatively inaccessible and harder to test and deliver compounds to, explains Simon Lovestone, a professor of translational neuroscience at the University of Oxford, UK. ‘Less is known about the biology of the condition than, say, cancer.’
+
+Until now, companies have mostly gone after the same target – amyloid-? proteins that form aggregates or plaques in the brain of Alzheimer’s disease patients. Evidence suggests that amyloid is deposited early during the course of the disease, even before clinical symptoms appear. So targeting amyloid in patients with mild to moderate Alzheimer's disease, as past failed clinical trials have done, may not be enough to stop the disease progressing.
+
+Last July, Pfizer and Johnson & Johnson announced they would stop development of an Alzheimer's drug because it failed in two late-stage clinical trials. The monoclonal antibody bapineuzumab was designed to bind to, and trigger clearance of, amyloid proteins.
+
+Dementia drugs are ‘almost perfectly set up for expensive failures’, comments Derek Lowe, medicinal chemist and blogger. ‘Our level of ignorance is cripplingly high. This is coupled with the heterogeneous nature of the disease, the difficulty of diagnosing it in the first place – essential for selecting patients in a trial, and treating them later – and its very slow progression.’ Researchers are ‘still arguing, with great vigour, about the amyloid hypothesis. There's a lot of crucial information that we're missing.’
+
+Taking a different tack
+Companies are now diversifying their approaches and targeting the neuronal protein tau, for example, which, together with amyloid, defines Alzheimer’s. Other disorders involve only tau such as frontotemporal dementia.
+
+In Alzheimer’s, tau is more highly phosphorylated than in a normal brain. Lovestone’s group is working with the main enzyme responsible for this phosphorylation, glycogen synthase kinase-3 (GSK-3). They are one of many groups investigating lithium as a GSK-3 inhibitor and have been involved in Phase II trials with the company Noscira.
+
+There is a growing focus on tau targets, but many of these are at an early stage, says Ridley. Some anti-tau therapies are reaching clinical trials, such as TauRx Therapeutics LMTX, which is entering Phase III trials for mild Alzheimer’s and frontotemporal dementia. However, advances in biomarkers and tau imaging will undoubtedly be needed to ensure treatments are tested on the right patients at the right time, he adds.
+
+Spotting dementia early
+Research into biomarkers – tests to detect dementia early – has made great progress, says Lovestone. For biochemical markers, the best evidence is with spinal fluid assays for tau protein or amyloid. Some biomarkers are being used to help recruit and monitor people taking part in clinical trials. But, Lovestone adds, there are no fully confirmed biomarkers for Alzheimer’s yet.
+
+Researchers are also pursuing blood-based biomarkers. Lovestone’s group has confirmed changes in the blood of large numbers of patients with dementia and will publish this work soon. It’s likely that any blood test for dementia would involve a suite of biomarkers, Ridley says, and that future methods to detect Alzheimer’s early will need to use a combination of tests.
+
+While talk of a ‘cure’ is widely perceived to be a tall order, a disease-modifying treatment that prevents or slows down the disease is more likely, if challenging. Lovestone says: ‘Some of the drugs that are already in Phase III trials might prove to work against the early-onset disease and slow its progression, and a large number of drugs that are failing clinical trials could be tried for earlier stage disease. In this case, it would be possible to have something in 10 years’ time. But starting from scratch it is unlikely to have a new drug in less than 20 years.’
+
+A flurry of funding announcements
+The Medical Research Council (MRC) announced the world’s biggest study group for dementia, with two million people participating. The public–private partnership involves six biopharma companies
+
+Alzheimer’s Research UK recently pledged ￡100 million for research. This includes a stem cell research centre, a network of drug discovery institutes and a ￡20 million global clinical development fund dedicated to supporting Phase I and II clinical trials; and a ￡2 million collaboration between University of Cambridge and University College London that will use donated cells from people with Alzheimer’s to test potential new treatments
+
+The Alzheimer’s Society promised ￡100 million for dementia research over the next 10 years, including ￡15 million on studies to examine whether commonly available drugs could double as dementia treatments. Another ￡30 million will be spent training the next generation of dementia researchers
+
+A new ￡3 million dementia consortium unites Alzheimer's Research UK, Eisai, Lilly and technology transfer organisation MRC Technology in the hunt for new drugs The Engineering and Physical Sciences Research Council has committed ￡5 million to improve tools for diagnosis and measuring disease progression
+
+This article is reproduced with permission from Chemistry World. The article was first published on July 3, 2014.

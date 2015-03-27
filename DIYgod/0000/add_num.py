@@ -7,7 +7,7 @@ def add_num(picPath, num):
     img = Image.open(picPath)
     x, y = img.size
     myfont = ImageFont.truetype('Futura.ttf', x / 3)
-    ImageDraw.Draw(img).text((2* x / 3, 0), str(num), font = myfont, fill = 'red')
+    ImageDraw.Draw(img).text((2 * x / 3, 0), str(num), font = myfont, fill = 'red')
     img.save('pic_with_num.jpg')
 
 if __name__ == '__main__':

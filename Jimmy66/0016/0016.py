@@ -20,7 +20,7 @@ def gen_xls(l,filename):
     for row in l:
         for col in row:
             table.write(l.index(row),row.index(col),col)  #row表示行，col表示列，后者的英文不一定匹配，我还是再查找下，list.index()可以得到列表中对于元素的索引值
-    fp.save('numbers.xls')
+    fp.save(filename)
     print '写入完毕'
 
 #主函数，我猜这次返回的应该是列表吧

@@ -30,4 +30,12 @@ def get_important_word(files):
 if __name__ == '__main__':
     files = get_files('.')
     print files
-    print get_important_word(files)
+    wordsort = get_important_word(files)
+    maxnum = 1
+    for i in range(len(wordsort) - 1):
+        if wordsort[i][1] == wordsort[i + 1][1]:
+            maxnum += 1
+        else:
+            break
+    for i in range(maxnum):
+        print wordsort[i]

@@ -24,7 +24,6 @@ def get_important_word(files):
         words = re.findall(r'[a-zA-Z0-9]+', s)
         for word in words:
             worddict[word] = worddict[word] + 1 if word in worddict else 1
-        f.close()
     wordsort = sorted(worddict.items(), key=lambda e:e[1], reverse=True)
     return wordsort
 
@@ -32,7 +31,6 @@ if __name__ == '__main__':
     files = get_files('.')
     print files
     wordsort = get_important_word(files)
-    # 避免遗漏有多个最大值的情况
     maxnum = 1
     for i in range(len(wordsort) - 1):
         if wordsort[i][1] == wordsort[i + 1][1]:

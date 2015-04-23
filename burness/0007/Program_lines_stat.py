@@ -14,7 +14,6 @@ lan_comment={'python':'#','c':'//'}
 # 解决多行注释 如python中的'''
 multi_comment_start={'python':'\'\'\'','c':'/*'}
 multi_comment_end={'python':'\'\'\'','c':'*/'}
-
 def stat_lines(file_name,file_type):
 	import re
 	is_comment=False

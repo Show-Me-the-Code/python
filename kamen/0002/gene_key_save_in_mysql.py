@@ -10,12 +10,7 @@ config={
     'charset':'utf8'
     }
 
-try:
-    cnn=mysql.connector.connect(**config)
-except mysql.connector.Error as e:
-    print ('connect fails!'.format(e))
 
-print cnn
 
 class sql_struct():
     def __init__(self,config):
@@ -25,24 +20,28 @@ class sql_struct():
         try:
             conn=mysql.connector.connect(**self.config)
         except mysql.connector.Error as e:
-            print ('connect fails!'.format(e))
+            print ('connect fails!{}'.format(e))
         self.conn=conn
         
 
     def conn_execute(self, sql_string, data):
         cursor=self.conn.cursor()
-        cursor.execute(sql_string);
-       # try:
-          #  if data is '':
-          #      cursor.execute(sql_string);
-           # elif type(data) is tuple:
-           #     cursor.execute(sql_string, data);
-          #  elif type(data) is dict:
-          #      cursor.execute(sql_string, data)
-       # except mysql.connector.Error as e:
-        #    print('fails{}'.format(e));
+        #cursor.execute(sql_string);
+        try:
+            if data is '':
+                cursor.execute(sql_string);
+            elif type(data) is tuple:
+                cursor.execute(sql_string, data);
+            elif type(data) is dict:
+                cursor.execute(sql_string, data)
+        except mysql.connector.Error as e:
+            print('fails{}'.format(e));
+            
     def sql_close(self):
         self.conn.close()
+
+    def sql_commit(self):
+        self.conn.commit()
 
 class gene_keys():
     def __init__(self,num):
@@ -60,39 +59,25 @@ class gene_keys():
 g=gene_keys(2);
 g.gene_list();
 keys_list=g.return_list();
-#db=sql_struct(config);
-#db.conn_sql();
-print cnn
+db=sql_struct(config);
+db.conn_sql();
+#print cnn
+
 #sql create table ``
 sql_create_table='create table `keyss1` (\
     `source` varchar(10),\
     `key` varchar(20)\
 )';
 
-#db.conn_execute(sql_create_table, '');
-cursor=cnn.cursor()
-sql_insert2="insert into keyss1 (source, key) values ('orange', '20')"
-cursor.execute(sql_insert2);
-#db.sql_close()
-#for key in keys_list:
-#    data=('uuid', key);
-    #print key
-    #db.conn_execute(sql_insert2,'')
- #   cursor=cnn.cursor()
-#    cursor.execute(sql_insert2);
-#db.sql_close()
-
-
-
-
-
-
-
-
+sql_insert2=("insert into keyss1(source, keyss) values (%s, %s)")
+for key in keys_list:
+    data=('uuid', key);
+    db.conn_execute(sql_insert2,data)
     
-#cursor=cnn.cursor()
-#print sql_create_table
-#try:
- #   cursor.execute(sql_create_table)
-#except mysql.connector.Error as e:
- #   print('create table fails'.format(e));
+db.sql_commit();
+db.sql_close()
+
+
+
+
+

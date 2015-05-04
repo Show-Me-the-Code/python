@@ -1,0 +1,20 @@
+﻿Abstract
+Introduction
+
+Alzheimer’s disease (AD) is increasing in frequency as the global population ages. Five drugs are approved for treatment of AD, including four cholinesterase inhibitors and an N-methyl-D-aspartate (NMDA)-receptor antagonist. We have an urgent need to find new therapies for AD.
+Methods
+
+We examined Clinicaltrials.gov, a public website that records ongoing clinical trials. We examined the decade of 2002 to 2012, to better understand AD-drug development. We reviewed trials by sponsor, sites, drug mechanism of action, duration, number of patients required, and rate of success in terms of advancement from one phase to the next. We also reviewed the current AD therapy pipeline.
+Results
+
+During the 2002 to 2012 observation period, 413 AD trials were performed: 124 Phase 1 trials, 206 Phase 2 trials, and 83 Phase 3 trials. Seventy-eight percent were sponsored by pharmaceutical companies. The United States of America (U.S.) remains the single world region with the greatest number of trials; cumulatively, more non-U.S. than U.S. trials are performed. The largest number of registered trials addressed symptomatic agents aimed at improving cognition (36.6%), followed by trials of disease-modifying small molecules (35.1%) and trials of disease-modifying immunotherapies (18%). The mean length of trials increases from Phase 2 to Phase 3, and the number of participants in trials increases between Phase 2 and Phase 3. Trials of disease-modifying agents are larger and longer than those for symptomatic agents. A very high attrition rate was found, with an overall success rate during the 2002 to 2012 period of 0.4% (99.6% failure).
+Conclusions
+
+The Clinicaltrials.gov database demonstrates that relatively few clinical trials are undertaken for AD therapeutics, considering the magnitude of the problem. The success rate for advancing from one phase to another is low, and the number of compounds progressing to regulatory review is among the lowest found in any therapeutic area. The AD drug-development ecosystem requires support.
+Introduction
+
+Alzheimer’s disease (AD) is becoming increasingly common as the global population ages. It is estimated that currently 44 million victims of AD dementia exist in the world and that this will grow to more than 100 million cases by 2050 [1,2]. We urgently need to identify drugs that prevent, delay the onset, slow the progression, or improve the symptoms of AD.
+
+Drug development for AD has proven to be very difficult. Five drugs are approved for the treatment of AD including four cholinesterase inhibitors (tacrine, donepezil, rivastigmine, galantamine) and an N-methyl-D-aspartate (NMDA) receptor AD antagonist (memantine) [3,4]. No new treatments have been approved for AD since 2003. Tacrine was approved by the US Food and Drug Administration (FDA) in 1993, donepezil in 1996, rivastigmine in 1998, galantamine in 2001, and memantine in 2003 (made available in the United States in 2004). Many failures in AD drug development have occurred, with both small molecules and immunotherapies failing to show a drug/placebo difference or having unacceptable toxicity [5-8].
+
+To understand better the process of drug development for AD, we conducted an analysis of clinicaltrials.gov, a government website that serves the mandate to record all ongoing clinical trials. We analyzed both trial activity and, where possible, unique compound progress through the AD pipeline. We examined all trials since 2002 and conducted a separate analysis of currently ongoing trials and currently active compounds. Our goal was to examine historic trends to help understand why AD treatment development efforts so often fail and to provide insight into AD drug development.

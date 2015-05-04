@@ -1,0 +1,96 @@
+TESTING$ python calculator.py 
+Select Operation:
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+enter choice(1/2/3/4):1
+Enter first number: 3
+Enter second number: 2
+(3, '+', 2, '=', 5)
+TESTING$ python calculator.py 
+Select Operation:
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+enter choice(1/2/3/4):2
+Enter first number: 2
+Enter second number: 3
+(2, '-', 3, '=', -1)
+TESTING$ python calculator.py 
+Select Operation:
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+enter choice(1/2/3/4):3
+Enter first number: 5
+Enter second number: 6
+(5, '*', 6, '=', 30)
+TESTING$ python calculator.py 
+Select Operation:
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+enter choice(1/2/3/4):4
+Enter first number: 4
+Enter second number: 2
+(4, '/', 2, '=', 2)
+TESTING$ python calculator.py 
+Select Operation:
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+enter choice(1/2/3/4):1 
+Enter first number: -1
+Enter second number: -1
+(-1, '+', -1, '=', -2)
+TESTING$ python calculator.py 
+Select Operation:
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+enter choice(1/2/3/4):2
+Enter first number: -1
+Enter second number: -1
+(-1, '-', -1, '=', 0)
+TESTING$ python calculator.py 
+Select Operation:
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+enter choice(1/2/3/4):3
+Enter first number: 0
+Enter second number: 0
+(0, '*', 0, '=', 0)
+TESTING$ python calculator.py 
+Select Operation:
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+enter choice(1/2/3/4):2
+Enter first number: 1
+Enter second number: 1
+(1, '-', 1, '=', 0)
+TESTING$ python calculator.py 
+Select Operation:
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+enter choice(1/2/3/4):4
+Enter first number: 0
+Enter second number: 0
+Traceback (most recent call last):
+  File "calculator.py", line 36, in <module>
+    print(num1,"/",num2,"=", divide(num1,num2))
+  File "calculator.py", line 15, in divide
+    return x/y
+ZeroDivisionError: integer division or modulo by zero
+TESTING$ 

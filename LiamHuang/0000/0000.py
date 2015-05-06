@@ -7,7 +7,7 @@
 
 from PIL import Image, ImageDraw, ImageFont
 
-sourceFileName = "source.png"
+sourceFileName = "../public/source.png"
 avatar         = Image.open(sourceFileName)
 drawAvatar     = ImageDraw.Draw(avatar)
 

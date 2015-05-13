@@ -1,5 +1,9 @@
-第 0024 题： 使用 Python 的 Web 框架，做一个 Web 版本 TodoList 应用。
+**第 0024 题：** 使用 Python 的 Web 框架，做一个 Web 版本 TodoList 应用。
+
+- ![SpringSide 版TodoList](http://i.imgur.com/NEf7zHp.jpg)
 ---------------------------------------------------
+成品状态：
+
 ![任务列表](https://raw.githubusercontent.com/JiYouMCC/python/master/JiYouMCC/0024/0024.png)
 
 admin/admin

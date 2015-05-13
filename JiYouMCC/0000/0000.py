@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-# 第0000题：将你的QQ头像（或者微博头像）右上角加上红色的数字，类似于微信未读信息数量那种提示。
-
 # using PIL in http://www.lfd.uci.edu/~gohlke/pythonlibs/#pillow
 from PIL import Image
 from PIL import ImageFont
@@ -19,5 +16,7 @@ def write_number(image_file_path, number=1):
     ImageDraw.Draw(img).text((position, 0), number_txt, (255, 0, 0), font)
     return img
 
+# need an image '0000.png'
 write_number('0000.png').save('result.png')
+# if number > 100, shows '99+'
 write_number('0000.png', 100).save('result100.png')

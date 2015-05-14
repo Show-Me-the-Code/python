@@ -8,15 +8,6 @@ infos = []
 info_file = xlrd.open_workbook('students.xls')
 info_table = info_file.sheets()[0]
 row_count = info_table.nrows
-result = {}
-for row in range(row_count):
-    result[row] = [info_table.cell(row, 1).value,
-                   info_table.cell(row, 2).value,
-                   info_table.cell(row, 3).value,
-                   info_table.cell(row, 4).value]
-
-print str(result)
-
 doc = Document()
 root = doc.createElement('root')
 doc.appendChild(root)
@@ -40,7 +31,6 @@ for row in range(row_count):
     student.appendChild(scores)
     students.appendChild(student)
 root.appendChild(students)
-print doc.toprettyxml()
 file = open('students.xml','w')
 file.write(doc.toprettyxml(indent = ''))
 file.close()

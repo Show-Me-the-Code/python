@@ -7,26 +7,19 @@ import random
 import string
 
 
-def dictField():
-    """
-        字典域 由数字和字母（包括大小写）组成
-    """
-    field = string.digits + string.letters
-    return field
+#  字典域 由数字和字母（包括大小写）组成
+FIELD = string.digits + string.letters
 
 
-def getCode(n):
-    """
-        得到n位激活码
-    """
-    code = "".join(random.sample(dictField(), n))
-    return code
-
-
-def generate(n, many):
+def generate(n, many=1, where=None):
     """
         生成many组随机码
     """
+    def getCode(n):
+        """
+            得到n位激活码
+        """
+        return "".join(random.sample(FIELD, n))
     gene = [getCode(n) for i in range(many)]
     return gene
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Board</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="container">
+        <h1>留言板</h1>
+        {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+        {% endfor %}
+        <form action="{{ url_for('index') }}" method=post>
+           <dl>
+               <dt>你的名字:</dt>
+               <dd><input type="text" size=24 name=username></dd>
+               <dt>你的留言:</dt>
+               <dd><textarea rows=5 cols=64 name=message></textarea></dd>
+               <dd><input type="submit" value="发布"></dd>
+               <br />
+               {% for post in posts %}
+                   <span><strong>{{ post.username }}</strong></span>
+                   <span class="timestamp">{{ post.time }}</span>
+                   <div class="message">
+                   {{ post.message }}
+                   </div>
+               {% endfor %}
+               
+           </dl>
+        </form>
+    </div>
+</body>
+</html>

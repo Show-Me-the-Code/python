@@ -1,0 +1,32 @@
+# Windows image file caches
+
+
+# Folder config file
+.idea
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+
+
+# Icon must end with two \r
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+

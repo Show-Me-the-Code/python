@@ -21,7 +21,6 @@ class MyHtmlParser(HTMLParser):
 def Pic(picurls):
     count = 1
     for picurl in picurls:
-        print picurl
         conn = urllib2.urlopen(picurl)
         f = open(str(count)+".jpg", 'wb')
         f.write(conn.read())

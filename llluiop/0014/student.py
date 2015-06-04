@@ -1,33 +1,30 @@
 #!/usr/bin/env python
 
-import xlwt3
+import xlwt
 import json
 
 
-
-
-def loadData(filepath):
+def load_data(filepath):
     f = open(filepath, "r")
-    return json.load(f, encoding = "utf-8")
+    return json.load(f)
 
-def writeDataToXls(data):
-    xls = xlwt3.Workbook(encoding = "utf-8")
+def write_data_to_xls(data):
+    xls = xlwt.Workbook()
     sheet = xls.add_sheet("student")
-    style = xlwt3.XFStyle()
-	font = xlwt3.Font()
-	font.name = 'ºÚÌå'
+
 
     for i in range(len(data)):
-        sheet.write(i, 0, i+1,style)
-		json_data = data[str(i+1)]
-		for j in range(len(json_data)):
-			sheet.write(i,j+1,json_data[j],style)
-	xls.save('student.xls')
+        sheet.write(i, 0, i+1)
+        json_data = data[str(i+1)]
+        for j in range(len(json_data)):
+            sheet.write(i, j+1, json_data[j])
+
+    xls.save('student.xls')
 
 
 if __name__ == '__main__':
-    data = loadData("student.txt")
-    writeDataToXls(data)
+    data = load_data("student.txt")
+    write_data_to_xls(data)
 
 
 

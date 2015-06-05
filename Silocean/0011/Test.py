@@ -19,4 +19,4 @@ if isValid(myword):
 else:
     print('Freedom')
 
-
+file.close()

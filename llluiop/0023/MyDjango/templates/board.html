@@ -1,0 +1,63 @@
+<html>
+<head>
+<style type="text/css">
+div#container{width:700}
+div#header{background-color:DarkSlateBlue;text-align:center}
+div#message{background-color:PaleTurquoise}
+div#foot{background-color:DarkSlateBlue;text-align:center;}
+</style>
+
+<title>留言薄</title>
+</head>
+<body>
+<div id="container">
+<div id="header">
+<h1>留言薄</h1>
+</div>
+
+{% if error_message %}
+<p><strong>{{error_message}}</strong></p>
+<input type=button value="back" onclick="location='{% url 'index' %}'">
+
+{% else %}
+
+<form  style="background-color:lightblue" name="post" action="{% url "postmessage" %}" method="post">
+{% csrf_token %}
+请尽情留言吧
+</br>
+</br>
+<table>
+<tr>
+<td>姓名</td><td><input type="text" name="name"></td>
+</tr>
+<tr>
+<td>内容</td><td><textarea  rows="5" cols="30" type="text" name="text" align="middle"></textarea></td>
+</tr>
+</table>
+<br />
+<input type="submit" value="提交">
+<br />
+</form>
+
+
+<h3>历史留言</h3>
+<ol>
+{% for each in messages %}
+<li><p>{{each.name}} 留言于 ({{each.date}})</p>
+<div id="message">
+<p>{{each.text}}</p></li>
+
+{%endfor%}
+</div>
+</ol>
+{% endif %}
+<div id="foot">
+messagebook for zentst
+</div>
+
+</div>
+</body>
+</html>
+
+
+

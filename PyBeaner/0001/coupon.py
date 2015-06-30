@@ -26,5 +26,5 @@ def generate_one_coupon(coupon_length=5):
 
 
 if __name__ == '__main__':
-    coupons = generate_coupons(10, 5)
+    coupons = generate_coupons(200, 5)
     print(coupons)

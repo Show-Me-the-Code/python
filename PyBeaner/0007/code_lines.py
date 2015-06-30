@@ -30,7 +30,7 @@ def scan_dir(directory, suffix="*.py"):
             if not fnmatch.fnmatch(file, suffix):
                 continue
             file_path = os.path.join(cur_dir, file)
-            with open(file_path,errors="replace") as f:
+            with open(file_path, errors="replace") as f:
                 for line in f:
                     count_line(line)
 

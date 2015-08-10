@@ -55,3 +55,7 @@ target/
 
 # Mac File
 .DS_Store
+
+# project conf
+*.sublime-project
+*.sublime-workspace

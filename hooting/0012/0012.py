@@ -7,7 +7,6 @@ while True:
     text = raw_input("please input:")
     for x in filter:
         if x in text:
-            print "Freedom"
-            break
-    else:
-        print "Human Rights"
+            print len(x)
+            text = text.replace(x, '*'*len(x))
+    print text

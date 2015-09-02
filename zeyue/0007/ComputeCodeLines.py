@@ -3,25 +3,37 @@
 """
 File: ComputeCodeLines.py
 Author: Zeyue Liang
+Date: September 2, 2015
 Email: zeyue.liang@gmail.com
 Github: https://github.com/zeyue
 Description:
     A program that can compute code line numbers in a directory.
+    Usage: change the variable "directory" in the main funtion and launch
+           the program then.
+           This program has been tested using some files in C and in Python,
+           maybe support java as well.
 """
 
 import os
 
-
+"""
+Global variables
+"""
 file_suffix = "not defined"
 inline_comment_syntax = "not defined"
 start_comment_syntax = "not defined"
 end_comment_syntax = "not defined"
 multilineCommentStartFlag = 0
 result = {"Code files": 0,
-          "Total lines": 0,
+          "No blank lines": 0,
           "Code lines": 0,
           "Comment lines": 0,
           "Blank lines": 0}
+
+
+"""
+Funcitions
+"""
 
 
 def getFilesList(directory):
@@ -97,15 +109,22 @@ def isMultilineComment(string_line):
        multilineCommentStartFlag == 0):
         multilineCommentStartFlag = 1
         # print("one")
+        if(len(string_line) > commentLen and
+           string_line[-commentLen:] == end_comment_syntax):
+            multilineCommentStartFlag = 0
         return True
     elif(string_line[0:commentLen] != start_comment_syntax and
          multilineCommentStartFlag == 1):
         # print("two")
+        if(len(string_line) > commentLen and
+           string_line[-commentLen:] == end_comment_syntax):
+            multilineCommentStartFlag = 0
         return True
-    elif(string_line[0:commentLen] == end_comment_syntax and
+    elif(string_line[-commentLen:] == end_comment_syntax and
          multilineCommentStartFlag == 1):
         multilineCommentStartFlag = 0
         # print("three")
+        # print(string_line[-commentLen:])
         return True
     else:
         return False
@@ -120,6 +139,10 @@ def countOneFile(full_file_path):
     """
     global inline_comment_syntax, start_comment_syntax, end_comment_syntax
     global multilineCommentStartFlag
+    local_result = {"No blank lines": 0,
+                    "Comment lines":  0,
+                    "Code lines": 0,
+                    "Blank lines": 0}
     file_suffix = getSuffix(full_file_path)
     if(identifyFileType(file_suffix) != "not defined"):
         result["Code files"] += 1
@@ -130,17 +153,23 @@ def countOneFile(full_file_path):
             for line in lines:
                 line = line.strip()
                 if line.strip():
-                    result["Total lines"] += 1
+                    local_result["No blank lines"] += 1
                     if isInlineComment(line):
-                        result["Comment lines"] += 1
+                        local_result["Comment lines"] += 1
                     elif isMultilineComment(line):
-                        result["Comment lines"] += 1
+                        local_result["Comment lines"] += 1
                     else:
                         # print("Oops...")
-                        result["Code lines"] += 1
+                        local_result["Code lines"] += 1
                 else:
-                    result["Blank lines"] += 1
-        print(str(result))
+                    local_result["Blank lines"] += 1
+        print(full_file_path)
+        for key in local_result:
+            print(str(key) + ": " + str(local_result[key]))
+        result["No blank lines"] += local_result["No blank lines"]
+        result["Comment lines"] += local_result["Comment lines"]
+        result["Code lines"] += local_result["Code lines"]
+        result["Blank lines"] += local_result["Blank lines"]
 
 
 def countInDirectory(directory):
@@ -159,14 +188,17 @@ def main():
     """main function.
 
     """
-    print("Please input a full directory: ")
-    # directory = input()
-    directory = "d:\PythonProjects\python\zeyue"
+    # directory = "d:\PythonProjects\python\zeyue"
+    directory = "d:/NOTBACKEDUP/python/zeyue"
     countInDirectory(directory)
+
+    print()
+    print("Final result in the directory")
+    print(directory)
     for key in result:
         print(str(key) + ": " + str(result[key]))
 
-
+"""
+Launch
+"""
 main()
-# if(isMultilineComment("\"\"\"dfadf")):
-# print("yes")

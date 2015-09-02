@@ -7,14 +7,18 @@ Date: September 2, 2015
 Email: zeyue.liang@gmail.com
 Github: https://github.com/zeyue
 Description:
-    A program that can compute code line numbers in a directory.
-    Usage: change the variable "directory" in the main funtion and launch
-           the program then.
+    A program that can count code line numbers in a directory.
+    Usage: Launce the program in console with directory as argument, it can add
+           several directories in one time:
+               $python -3 ComputeCodeLines.py <first directory> [second] [...]
+           ATTENTION: use "/" in the place of "\"
+
            This program has been tested using some files in C and in Python,
            maybe support java as well.
 """
 
 import os
+import sys
 
 """
 Global variables
@@ -188,15 +192,28 @@ def main():
     """main function.
 
     """
-    # directory = "d:\PythonProjects\python\zeyue"
-    directory = "d:/NOTBACKEDUP/python/zeyue"
-    countInDirectory(directory)
+    global file_suffix, inline_comment_syntax, start_comment_syntax
+    global end_comment_syntax, multilineCommentStartFlag, result
+    for directory in sys.argv[1:]:
+        file_suffix = "not defined"
+        inline_comment_syntax = "not defined"
+        start_comment_syntax = "not defined"
+        end_comment_syntax = "not defined"
+        multilineCommentStartFlag = 0
+        result = {"Code files": 0,
+                  "No blank lines": 0,
+                  "Code lines": 0,
+                  "Comment lines": 0,
+                  "Blank lines": 0}
 
-    print()
-    print("Final result in the directory")
-    print(directory)
-    for key in result:
-        print(str(key) + ": " + str(result[key]))
+        print("this is the directory: " + directory)
+        countInDirectory(directory)
+
+        print()
+        print("Final result in the directory")
+        print(directory)
+        for key in result:
+            print(str(key) + ": " + str(result[key]))
 
 """
 Launch

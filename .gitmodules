@@ -1,0 +1,3 @@
+[submodule "JiYouMCC"]
+	path = JiYouMCC
+	url = https://github.com/JiYouMCC/python-show-me-the-code

@@ -14,3 +14,4 @@ while True:
 		break
 	else:
 		print('Human Rights')
+

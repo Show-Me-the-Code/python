@@ -15,3 +15,6 @@ while len(codeResult) != codeAmount:
 
 print len(codeResult)
 print codeResult
+
+for each in codeResult:
+    print each

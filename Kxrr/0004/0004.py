@@ -1,16 +1,23 @@
 #!/usr/bin/env python
 # encoding: utf-8
+__author__ = 'Kxrr'
 
 import re
+
 with open('./0004.txt', 'r') as f:
-    	fContent = repr(f.read())
-	listAll = re.findall('[a-zA-Z]+', fContent, re.S)
-	listSort = list(set(listAll))
-	listSort.sort()
+    dictResult = {}
 
-	print listSort
+    # Find the letters each line
+    for line in f.readlines():
+        listMatch = re.findall('[a-zA-Z]+', line.lower()) # remember to lower the letters
 
-# Todo
-# - lower to upper ?
-# - use for line in ?
-# - count
+    # Count
+        for eachLetter in listMatch:
+            eachLetterCount = len(re.findall(eachLetter, line.lower()))
+            dictResult[eachLetter] = dictResult.get(eachLetter, 0) + eachLetterCount
+
+    # Sort the result
+    result = sorted(dictResult.items(), key=lambda d: d[1], reverse=True)
+    for each in result:
+        print each
+

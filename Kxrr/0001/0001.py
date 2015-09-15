@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
+__author__ = 'Kxrr'
 
 import random, string
 
@@ -16,5 +17,3 @@ while len(codeResult) != codeAmount:
 print len(codeResult)
 print codeResult
 
-for each in codeResult:
-    print each

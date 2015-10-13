@@ -1,0 +1,1761 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"enc",
+				"encrypt_password〔function〕"
+			],
+			[
+				"unic",
+				"unicode〔class〕"
+			],
+			[
+				"s",
+				"sha256〔function〕"
+			],
+			[
+				"html",
+				"htmlCont"
+			],
+			[
+				"name",
+				"nameList"
+			],
+			[
+				"cr",
+				"create_Num"
+			],
+			[
+				"Imagec",
+				"ImageColor〔module〕"
+			],
+			[
+				"dia",
+				"diabetes_y_test"
+			],
+			[
+				"line",
+				"linear_model"
+			],
+			[
+				"ir",
+				"iris_Y_test"
+			],
+			[
+				"iris",
+				"iris_X_train"
+			],
+			[
+				"svm",
+				"svm〔module〕"
+			],
+			[
+				"lin",
+				"linear_model"
+			],
+			[
+				"l",
+				"linear_model〔module〕"
+			],
+			[
+				"HttpRe",
+				"HttpResponse〔class〕"
+			],
+			[
+				"a",
+				"append(3"
+			],
+			[
+				"defa",
+				"defaultdict〔module〕"
+			],
+			[
+				"de",
+				"defaultdict〔class〕"
+			],
+			[
+				"prior",
+				"priorityQueue"
+			],
+			[
+				"he",
+				"heappop〔function〕"
+			],
+			[
+				"n",
+				"nlargest〔function〕"
+			],
+			[
+				"p",
+				"print	(todo.py)"
+			],
+			[
+				"pritn",
+				"printf	printf …"
+			],
+			[
+				"ma",
+				"main	main()"
+			],
+			[
+				"readl",
+				"readlines〔function〕"
+			],
+			[
+				"enh",
+				"enhancer"
+			],
+			[
+				"I",
+				"ImageDraw"
+			],
+			[
+				"fr",
+				"from〔keyword〕"
+			],
+			[
+				"Ima",
+				"ImageEnhance"
+			],
+			[
+				"Im",
+				"ImageFilter〔module〕"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"spl",
+				"split"
+			],
+			[
+				"ex",
+				"except〔keyword〕"
+			],
+			[
+				"__",
+				"__future__	(load_data.py)"
+			],
+			[
+				"url",
+				"urllib"
+			],
+			[
+				"ur",
+				"urllib"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"coo",
+				"cookie"
+			],
+			[
+				"fi",
+				"fileName〔variable〕"
+			],
+			[
+				"rq",
+				"request"
+			],
+			[
+				"get",
+				"getPage"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"cl",
+				"close	(wtftw.py)"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"requ",
+				"request	(wtftw.py)"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"in",
+				"index_url"
+			],
+			[
+				"Theta",
+				"Theta1"
+			],
+			[
+				"delta",
+				"delta3"
+			],
+			[
+				"J",
+				"J_temp"
+			],
+			[
+				"pre",
+				"pre_temp"
+			],
+			[
+				"the",
+				"theta_k"
+			],
+			[
+				"all",
+				"all_theta"
+			],
+			[
+				"y",
+				"y_temp"
+			],
+			[
+				"inc",
+				"include	(FoodChain.cpp)"
+			],
+			[
+				"tr",
+				"trueSum"
+			],
+			[
+				"t",
+				"trueSum"
+			],
+			[
+				"m",
+				"MAXK"
+			],
+			[
+				"int",
+				"init"
+			],
+			[
+				"max",
+				"MAXN"
+			],
+			[
+				"do",
+				"double"
+			],
+			[
+				"sort",
+				"sorted"
+			],
+			[
+				"min",
+				"minLen"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"c",
+				"count"
+			],
+			[
+				"Tr",
+				"Tree::Print"
+			],
+			[
+				"Tre",
+				"Tree::add"
+			],
+			[
+				"nel",
+				"nLen2"
+			],
+			[
+				"nle",
+				"nLen1"
+			],
+			[
+				"nL",
+				"nLen2"
+			],
+			[
+				"an",
+				"an2"
+			],
+			[
+				"nlen",
+				"nLen1"
+			],
+			[
+				"szl",
+				"szLine1"
+			],
+			[
+				"sz",
+				"szLine2"
+			],
+			[
+				"szlin",
+				"szLine2"
+			],
+			[
+				"real",
+				"realP"
+			],
+			[
+				"vir",
+				"virP"
+			],
+			[
+				"day",
+				"dayOfMonth"
+			],
+			[
+				"Dat",
+				"Date::Date"
+			],
+			[
+				"mon",
+				"month"
+			],
+			[
+				"E",
+				"Employee"
+			],
+			[
+				"b",
+				"birth"
+			],
+			[
+				"IS",
+				"IS_1"
+			],
+			[
+				"CNO",
+				"Cno"
+			],
+			[
+				"SN",
+				"Sno"
+			],
+			[
+				"minu",
+				"minutes"
+			],
+			[
+				"Ti",
+				"Time::Time"
+			],
+			[
+				"h",
+				"hours"
+			],
+			[
+				"rea",
+				"realP"
+			],
+			[
+				"Co",
+				"Complex"
+			],
+			[
+				"tex",
+				"textPanel"
+			],
+			[
+				"ctrl",
+				"ctrl+right"
+			],
+			[
+				"pr",
+				"private"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "import os\nfrom hashlib import sha256\nfrom hmac import HMAC\n\n\ndef encrypt_password(password, salt=None):\n\n    if salt is None:\n        salt = os.urandom(8)\n\n    salt = salt.encode('utf-8')\n    assert 8 == len(salt)\n    if isinstance(password, str):\n        password = password.encode('UTF-8')\n\n\n    result = password\n    for i in range(10):\n    	result = HMAC(result,salt,sha256).digest()\n\n    return salt+result\n\n\nprint(encrypt_password('Hty980204'))\n",
+			"file": "/D/GitHub/python/asahiSky/0021/test.py",
+			"file_size": 480,
+			"file_write_time": 130865943901684265,
+			"settings":
+			{
+				"buffer_size": 451,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Traceback (most recent call last):\n  File \"test.py\", line 24, in <module>\n    print(encrypt_password('Hty980204'))\n  File \"test.py\", line 12, in encrypt_password\n    assert 8 == len(salt)\nAssertionError\n\n***Repl Closed***\n",
+			"settings":
+			{
+				"buffer_size": 222,
+				"line_ending": "Windows",
+				"name": "*REPL* [python]",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "Traceback (most recent call last):\n  File \"test.py\", line 24, in <module>\n    print(encrypt_password('Hty980204'))\n  File \"test.py\", line 11, in encrypt_password\n    salt = salt.encode('utf-8')\nAttributeError: 'bytes' object has no attribute 'encode'\n\n***Repl Closed***\n",
+			"settings":
+			{
+				"buffer_size": 270,
+				"line_ending": "Windows",
+				"name": "*REPL* [python]",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "b'asdceged\\xee\\xdc\\xea\\x8a\\x08\\x10\\xab3\\xfe\\\\\\xb9\\xb5S\\x8bn\\x11$W\\tV\\x0bC\\x84\\xfd\\xd2\\x14\\x0b\\xef}MP\\xc2'\n\n***Repl Closed***\n",
+			"settings":
+			{
+				"buffer_size": 125,
+				"line_ending": "Windows",
+				"name": "*REPL* [python]",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "Traceback (most recent call last):\n  File \"test.py\", line 22, in <module>\n    print(encrypt_password('Hty980204','asdceged'))\n  File \"test.py\", line 18, in encrypt_password\n    result = HMAC(result,salt,sha256).digest()\n  File \"D:\\Python34\\lib\\hmac.py\", line 84, in __init__\n    self.update(msg)\n  File \"D:\\Python34\\lib\\hmac.py\", line 93, in update\n    self.inner.update(msg)\nTypeError: Unicode-objects must be encoded before hashing\n\n***Repl Closed***\n",
+			"settings":
+			{
+				"buffer_size": 453,
+				"line_ending": "Windows",
+				"name": "*REPL* [python]",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "Traceback (most recent call last):\n  File \"test.py\", line 22, in <module>\n    print(encrypt_password('Hty980204','asdceged'))\n  File \"test.py\", line 17, in encrypt_password\n    for i in xrange(10):\nNameError: name 'xrange' is not defined\n\n***Repl Closed***\n",
+			"settings":
+			{
+				"buffer_size": 257,
+				"line_ending": "Windows",
+				"name": "*REPL* [python]",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "Traceback (most recent call last):\n  File \"test.py\", line 23, in <module>\n    print(encrypt_password('Hty980204','asdceged'))\n  File \"test.py\", line 15, in encrypt_password\n    assert isinstance(password, str)\nAssertionError\n\n***Repl Closed***\n",
+			"settings":
+			{
+				"buffer_size": 244,
+				"line_ending": "Windows",
+				"name": "*REPL* [python]",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C++compiler.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++compiler.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C++compiler.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 242.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"pdf",
+				"LaTeXing: Open PDF"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"alignment",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"set syntax:ja",
+				"Set Syntax: Java"
+			],
+			[
+				"pack",
+				"Package Control: Enable Package"
+			],
+			[
+				"package control:",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Add Channel"
+			],
+			[
+				"ins",
+				"Build: New Build System"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"python",
+			"python img_attribute.py",
+			"python",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/GitHub/python/asahiSky",
+		"/D/GitHub/python/asahiSky/0000",
+		"/D/GitHub/python/asahiSky/0001",
+		"/D/GitHub/python/asahiSky/0011",
+		"/D/GitHub/python/asahiSky/0021"
+	],
+	"file_history":
+	[
+		"/D/GitHub/python/asahiSky/0021/example.py",
+		"/D/GitHub/python/asahiSky/0001/test.py",
+		"/D/GitHub/python/asahiSky/0011/test.py",
+		"/F/config.txt",
+		"/D/Python34/Lib/site-packages/uuid.py",
+		"/D/GitHub/python/ailurus1991/0001/main.py",
+		"/D/GitHub/python/burness/0001/generate_200_keys.py",
+		"/D/GitHub/python/endersodium/0001/0001.py",
+		"/D/GitHub/python/agmcs/0001/0001.py",
+		"/D/GitHub/mycode/0000/test.py",
+		"/D/GitHub/python/agmcs/0013/0013.py",
+		"/D/GitHub/python/JiYouMCC/0001/0001.py",
+		"/D/GitHub/python_study/scilearn/Generalized Linear Models.py",
+		"/D/破解字典/test.py",
+		"/D/GitHub/django/docs/intro/tutorial03.txt",
+		"/D/GitHub/python_study/scilearn/plot_lda_qda.py",
+		"/C/Users/Asahi/Downloads/plot_lda_qda.py",
+		"/D/GitHub/scikit-learn/doc/modules/covariance.rst",
+		"/D/GitHub/python_study/scilearn/todo.py",
+		"/D/GitHub/python_study/jango/mysite/todo.py",
+		"/D/GitHub/python_study/jango/mysite/polls/urls.py",
+		"/D/GitHub/python_study/jango/mysite/polls/models.py",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/User/C++compiler.sublime-build",
+		"/D/GitHub/django/docs/conf.py",
+		"/D/GitHub/python_study/jango/mysite/siteinjango.sublime-project",
+		"/D/GitHub/python_study/jango/mysite/site.sublime-project",
+		"/D/GitHub/python/DIYgod/README.md",
+		"/D/GitHub/python/README.md",
+		"/D/GitHub/python/DIYgod/0006/test/test.py",
+		"/D/GitHub/python_study/cookbook/todo.py",
+		"/D/GitHub/python_study/jango/todo.py",
+		"/D/GitHub/django/docs/intro/overview.txt",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Asahi/Downloads/scipy-master/scipy-master/setup.py",
+		"/D/machine-learning-ex5/machine-learning-ex5/ex5/validationCurve.m",
+		"/D/machine-learning-ex5/machine-learning-ex5/ex5/learningCurve.m",
+		"/D/machine-learning-ex5/machine-learning-ex5/ex5/polyFeatures.m",
+		"/D/GitHub/ML_code/mlclass-ex5-005/mlclass-ex5/validationCurve.m",
+		"/D/GitHub/ML_code/mlclass-ex5-005/mlclass-ex5/polyFeatures.m",
+		"/D/GitHub/ML_code/mlclass-ex5-005/mlclass-ex5/learningCurve.m",
+		"/D/GitHub/ML_code/mlclass-ex5-005/mlclass-ex5/linearRegCostFunction.m",
+		"/D/machine-learning-ex5/machine-learning-ex5/ex5/linearRegCostFunction.m",
+		"/D/GitHub/python_study/try_raise.py",
+		"/D/GitHub/python_study/threeGates.py",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/D/GitHub/python_study/about_pillow/todo.py",
+		"/D/GitHub/python_study/netwatch/todo.py",
+		"/D/GitHub/python_study/s.cpp",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/User/Python.sublime-build",
+		"/D/GitHub/ML_code/mlclass-ex5-005/mlclass-ex5/plotFit.m",
+		"/D/GitHub/python_study/urllibkk.py",
+		"/C/Users/Asahi/Downloads/py3kcap-0.1.tar/py3kcap-0.1/py3kcap-0.1/._README",
+		"/C/Users/Asahi/Desktop/sss.reg",
+		"/D/GitHub/python_study/about_pillow/box.py",
+		"/D/Python34/Lib/site-packages/PIL/Image.py",
+		"/D/GitHub/python_study/about_pillow/thumbnails.py",
+		"/D/GitHub/python/4disland/0000/add_num.py",
+		"/D/GitHub/python_study/about_pillow/load_data.py",
+		"/D/GitHub/python/cijianzy/0000/test.py",
+		"/C/Users/Asahi/Downloads/xv-3.10a/xv-3.10a/bggen.c",
+		"/C/Users/Asahi/Downloads/xv-3.10a/xv-3.10a/INSTALL",
+		"/D/GitHub/python_study/my_cla.py",
+		"/D/GitHub/python_project/reptile/cet4Scores.py",
+		"/D/GitHub/python_study/about_pillow/img_attribute.py",
+		"/D/GitHub/python_project/reptile/ustcLib.py",
+		"/D/GitHub/python_study/about_pillow/work_with_img.py",
+		"/D/GitHub/python_study/myClass.py",
+		"/D/GitHub/python_study/urllib.py",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/D/Python34/Lib/urllib/request.py",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/Python PEP8 Autoformat/pep8_autoformat.sublime-settings",
+		"/C/Users/Asahi/Documents/Tencent Files/969525345/AppWebCache/117/1.url.cn/qun/qinfo_v2/bower_components/json2/1.0/0f9a.json2.js",
+		"/E/shadow/gui-config.json",
+		"/D/ProcessExplorer/Eula.txt",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/GitHub/python_study/os_to.py",
+		"/D/GitHub/python_study/myerror.py",
+		"/D/project/ustcMis.py",
+		"/D/project/ustcLib.py",
+		"/D/project/xiushibaike.py",
+		"/D/project/python-download.py",
+		"/D/GitHub/python_study/force_exception.py",
+		"/D/GitHub/python_study/py_study.sublime-project",
+		"/D/Python34/Lib/dis.py",
+		"/D/Python34/Lib/test/test_sys.py",
+		"/D/code/POJ/Robot.cpp",
+		"/D/code/POJ/DesertKing.cpp",
+		"/D/code/html&css/mypage.html",
+		"/C/Users/Asahi/Documents/AmazeUI-2.4.2/assets/css/amazeui.css",
+		"/C/Users/Asahi/Documents/AmazeUI-2.4.2/assets/js/amazeui.ie8polyfill.js",
+		"/C/Users/Asahi/Downloads/AmazeUI-2.4.2/assets/css/amazeui.css",
+		"/D/code/pystyudy/su.py",
+		"/D/project/wtftw.py",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/Python PEP8 Autoformat/Default (Windows).sublime-keymap",
+		"/D/code/html&css/stylesheet.css",
+		"/D/project/html_to_pdf.py",
+		"/D/project/sss.py",
+		"/D/code/html&css/myproject.html",
+		"/D/code/html&css/todo.css",
+		"/D/code/html&css/todo.scss",
+		"/D/code/html&css/stylesheet.scss",
+		"/D/code/html&css/todo",
+		"/D/code/html&css/a good example.css",
+		"/D/code/html&css/mystyle.css",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/code/html&css/mystyle.scss",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/mystyle.scss",
+		"/D/code/html&css/mystyle.css.map",
+		"/C/Users/Asahi/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/D/project/ps.py",
+		"/D/project/python-download.tpy",
+		"/D/code/html&css/test.html",
+		"/D/code/BigDiv.c",
+		"/D/code/Binomial Distribution.cpp",
+		"/D/Test/MATLAB/ex4/ex4.m",
+		"/C/Users/Asahi/Downloads/CM3D2 Editor_files/ArrayBuffer_slice.js",
+		"/D/Test/MATLAB/ex4/sigmoidGradient.m",
+		"/C/Users/Asahi/Downloads/CM3D2 Editor_files/main.css",
+		"/D/Test/MATLAB/ex4/nnCostFunction.m",
+		"/D/Test/MATLAB/ex3/oneVsAll.m",
+		"/D/Test/MATLAB/ex3/predictOneVsAll.m",
+		"/D/Test/MATLAB/ex3/predict.m",
+		"/D/Test/MATLAB/ex3/lrCostFunction.m",
+		"/D/Test/MATLAB/ex2/costFunctionReg.m",
+		"/D/Test/MATLAB/ex2/costFunction.m",
+		"/D/Test/MATLAB/ex2/ex2_reg.m"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"UUID",
+			"string",
+			"ctrl+b",
+			"ctrl+shift+b",
+			"#include \"stdio.h\"\n",
+			"#",
+			"ctrl+`",
+			"console",
+			"encode()",
+			"ctrl+o",
+			"ctrl+l",
+			"link",
+			"Square",
+			"line",
+			"ctrl+l"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Circle",
+			"=\"\";"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/GitHub/python/asahiSky/0021/test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								369,
+								369
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"open_with_edit": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"auto_indent": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "D:\\GitHub\\python\\asahiSky",
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "0332263a7a204d059303aad3b596ed58",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"python",
+									"-u",
+									"$file_basename"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"PYTHONIOENCODING": "utf-8"
+								},
+								"external_id": "python",
+								"syntax": "Packages/Python/Python.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								270,
+								270
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"auto_indent": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "D:\\GitHub\\python\\asahiSky",
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "199baf9d90a54c188c62ebfcad11415f",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"python",
+									"-u",
+									"$file_basename"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"PYTHONIOENCODING": "utf-8"
+								},
+								"external_id": "python",
+								"syntax": "Packages/Python/Python.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"auto_indent": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "D:\\GitHub\\python\\asahiSky",
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "fe691f22eb574eefbea4722cf17eb46a",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"python",
+									"-u",
+									"$file_basename"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"PYTHONIOENCODING": "utf-8"
+								},
+								"external_id": "python",
+								"syntax": "Packages/Python/Python.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								387,
+								433
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"auto_indent": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "D:\\GitHub\\python\\asahiSky",
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "2833a1b82139483caf55ac828c16235b",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"python",
+									"-u",
+									"$file_basename"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"PYTHONIOENCODING": "utf-8"
+								},
+								"external_id": "python",
+								"syntax": "Packages/Python/Python.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"auto_indent": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "D:\\GitHub\\python\\asahiSky",
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "519227a6b1204ae089ffd0613b6075fe",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"python",
+									"-u",
+									"$file_basename"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"PYTHONIOENCODING": "utf-8"
+								},
+								"external_id": "python",
+								"syntax": "Packages/Python/Python.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"auto_indent": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "D:\\GitHub\\python\\asahiSky",
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "cc52d72427354724acc6e404a18c231b",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"python",
+									"-u",
+									"$file_basename"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"PYTHONIOENCODING": "utf-8"
+								},
+								"external_id": "python",
+								"syntax": "Packages/Python/Python.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CppYCM.2":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 160.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/C++compiler.sublime-build",
+	"project": "showmecode.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"todo.py"
+			],
+			[
+				"bino",
+				"D:\\code\\Binomial Distribution.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\GitHub\\data-structure\\data_structure.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}

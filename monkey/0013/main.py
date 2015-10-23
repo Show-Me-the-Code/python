@@ -10,7 +10,11 @@ __author__ = 'monkey'
 
 def spider(url):
     html = requests.get(url)
-    print(html.text)
+    selector = etree.HTML(html.text)
+    picitems = []
+    picitems = selector.xpath('//div[@id="post_content_29397251028"]')
+
+    print(len(picitems))
 
 if __name__ == '__main__':
     url = "http://tieba.baidu.com/p/2166231880"

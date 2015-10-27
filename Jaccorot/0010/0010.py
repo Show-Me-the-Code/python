@@ -1,6 +1,12 @@
 #!/usr/bin/python
 #coding=utf-8
 
+"""
+
+第 0010 题：使用 Python 生成字母验证码图片
+
+"""
+
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import random
 

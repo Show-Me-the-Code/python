@@ -1,6 +1,12 @@
 #!/usr/bin/python
 #coding=utf-8
 
+"""
+
+第 0009 题：一个HTML文件，找出里面的链接
+
+"""
+
 from bs4 import BeautifulSoup
 
 def find_the_link(filepath):

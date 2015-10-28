@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>留言板</title>
+    <link href="{{ url_for('static', filename='css/amazeui.flat.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1 style="text-align: center;">留言板</h1>
+    <ul class="am-list am-list-static msgbox">
+        {% for msg in msglist %}
+        <li class="am-g">
+        <div class="am-list-item-text">{{ msg['msg'] }}</div>
+        <span class="am-list-item-text am-fr">{{ msg['time'] }}</span>
+      </li>
+        {% endfor %}
+
+    </ul>
+
+    <form class="am-form inputbox" method="POST">
+        <div class="am-form-group">
+              <textarea name="msg" rows="4" id="msg"></textarea>
+        </div>
+        <p><button type="submit" class="am-btn am-btn-primary am-center">发送</button></p>
+    </from>
+
+
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+from PIL import Image, ImageFont, ImageDraw
+
+def draw_num(filePath, num=1):
+    im = Image.open(filePath)
+    mysize = int(im.size[0]/4)
+    myfont = ImageFont.truetype("arial.ttf", mysize)
+    ImageDraw.Draw(im).text( (im.size[0]-mysize, 0), '%d'%num, fill='red', font=myfont )
+    im.show()

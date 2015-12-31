@@ -5,9 +5,6 @@ import urllib
 
 __author__ = 'monkey'
 
-# 题目要求：
-# 用Pyhton写一个爬图片的程序，爬这个链接里的日本妹子图片
-# 地址：http://tieba.baidu.com/p/2166231880
 
 # 获取url地址，对页面进行爬去
 def spider(url):

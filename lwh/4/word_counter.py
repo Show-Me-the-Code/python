@@ -13,7 +13,7 @@ with open("test_doc.txt", "r") as file_obj:
     print(cnt.most_common())
 
     while True:
-        s = input("enter the key:")
+        s = input("enter the key")
         if s == "":
             break
         print(word_dict[s])

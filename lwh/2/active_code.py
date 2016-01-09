@@ -16,8 +16,8 @@ def generate_active_code():
     active_code = []
     ascii_ = string.ascii_letters + string.digits
     active_code = ["".join([random.choice(ascii_) for i in range(16)])
-                   for j in range(200)]
-    print(len(active_code))
+                   for i in range(200)]
+
     return active_code
 
 if __name__ == "__main__":

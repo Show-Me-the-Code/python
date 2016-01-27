@@ -32,24 +32,24 @@ for parent, dirnames, filenames in os.walk(root_dir):
 
     for filename in filenames:
         os.chdir(parent)
-        print(filename)
-        print(parent)
+        # print(filename)
+        # print(parent)
         with open(filename, "rb") as f:
             line = f.readline().strip()
             while line != b"":
-                print("*")
+                # print("*")
                 ret = isnote(line)
-                print(ret)
+                # print(ret)
                 if ret == "//":
                     note_count = note_count + 1
                 elif ret == "/*":
                     line = f.readline().strip()
-                    print(line)
+                    # print(line)
                     # if len(line) >= 2:
                     while b"*/" in line:
                         note_count = note_count + 1
                         line = f.readline().strip()
-                        print(line)
+                        # print(line)
                 elif ret == "no":
                     code_count = code_count + 1
                 line = f.readline().strip()

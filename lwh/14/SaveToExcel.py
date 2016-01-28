@@ -8,7 +8,6 @@ path_read = "/home/lwh/SublimeTextProject/demo.txt"
 def write_test():
     wb = Workbook()     # 1.creat a work book
     wb_sheet0 = wb.create_sheet("student")  # 2.create a sheet in the work book
-    wb_sheet0 = wb.active
 
     datas_str = ""
     datas_dict = {}

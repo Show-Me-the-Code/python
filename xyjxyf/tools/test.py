@@ -1,6 +1,6 @@
 # coding = utf-8
 
-import imager
+from tools import imager
 
 im, str = imager.verification_code()
 im.show()

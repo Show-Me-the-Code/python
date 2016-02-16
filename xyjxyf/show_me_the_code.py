@@ -11,8 +11,14 @@ def add_num(image_path):
         w, h = im.size
         point = (w - 10, 0)
         imager.draw_text(im, "8", point, font)
-        # imager.save(im, "./header_tmp.jpg")
         im.show()
 
+
+# 第 0010 题：使用 Python 生成字母验证码图片
+def create_verification_code():
+    im, str = imager.verification_code()
+    im.show()
+
 if __name__ == "__main__":
-    add_num("./header.jpg")
+    # add_num("./header.jpg")
+    # create_verification_code()

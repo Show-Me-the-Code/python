@@ -157,7 +157,7 @@ def verification_code(num=4, width=240, height=60, font_size=30):
     tx = margin
     str = ""
     for t in range(num):
-        char = stringer.rand_choice()
+        char = stringer.rand_char()
         draw.text((tx, ty), char, font=font, fill=colorer.randRGB(0, 100))
         tx = tx + tw
         str = str + char

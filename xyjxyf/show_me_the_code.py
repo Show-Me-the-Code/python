@@ -32,6 +32,24 @@ def create_activation_code(num=200):
 # 第 0003 题：将 0001 题生成的 200 个激活码（或者优惠券）保存到 Redis 非关系型数据库中。
 
 # 第 0004 题：任一个英文的纯文本文件，统计其中的单词出现的个数。
+import re
+
+
+def numberOfWords(filePath=None):
+    num = 0
+
+    if filePath is None:
+        return num
+
+    file = open(filePath, 'r')
+    content = file.read()
+    content = " " + content
+    pattern = re.compile(u'\s+\w+')
+    match = pattern.findall(content)
+    num = len(match)
+
+    return num
+
 
 # 第 0005 题：你有一个目录，装了很多照片，把它们的尺寸变成都不大于 iPhone5 分辨率的大小。
 
@@ -50,6 +68,14 @@ def create_verification_code():
     im.show()
 
 if __name__ == "__main__":
-    # add_num("./header.jpg")
+    # 0000
+    # add_num("./0000.jpg")
+
+    # 0001
+    # create_activation_code()
+
+    #0004
+    numberOfWords("./0004.txt")
+
+    # 0010
     # create_verification_code()
-    create_activation_code()

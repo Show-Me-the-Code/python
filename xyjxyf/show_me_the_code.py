@@ -1,7 +1,8 @@
 # coding = utf-8
 
 from tools import imager
-from PIL import Image, ImageFont
+from PIL import ImageFont
+
 
 # 第 0000 题：将你的 QQ 头像（或者微博头像）右上角加上红色的数字
 def add_num(image_path):
@@ -14,8 +15,17 @@ def add_num(image_path):
         im.show()
 
 
+import uuid
 # 第 0001 题：使用 Python 生成 200 个激活码（或者优惠券）
-# def create_activation_code(num=200):
+def create_activation_code(num=200):
+    codes = []
+    for i in range(num):
+        code = str(uuid.uuid1())
+        code = code.replace('-', '')
+        codes.append(code)
+
+    return codes
+
 
 # 第 0002 题：将 0001 题生成的 200 个激活码（或者优惠券）保存到 MySQL 关系型数据库中。
 
@@ -42,3 +52,4 @@ def create_verification_code():
 if __name__ == "__main__":
     # add_num("./header.jpg")
     # create_verification_code()
+    create_activation_code()

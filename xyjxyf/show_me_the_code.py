@@ -15,8 +15,9 @@ def add_num(image_path):
         im.show()
 
 
-import uuid
 # 第 0001 题：使用 Python 生成 200 个激活码（或者优惠券）
+import uuid
+
 def create_activation_code(num=200):
     codes = []
     for i in range(num):
@@ -34,14 +35,13 @@ def create_activation_code(num=200):
 # 第 0004 题：任一个英文的纯文本文件，统计其中的单词出现的个数。
 import re
 
-
-def numberOfWords(filePath=None):
+def number_of_words(file_path=None):
     num = 0
 
-    if filePath is None:
+    if file_path is None:
         return num
 
-    file = open(filePath, 'r')
+    file = open(file_path, 'r')
     content = file.read()
     content = " " + content
     pattern = re.compile(u'\s+\w+')
@@ -55,7 +55,60 @@ def numberOfWords(filePath=None):
 
 # 第 0006 题：你有一个目录，放了你一个月的日记，都是 txt，为了避免分词的问题，假设内容都是英文，请统计出你认为每篇日记最重要的词。
 
-# 第 0007 题：有个目录，里面是你自己写过的程序，统计一下你写过多少行代码。包括空行和注释，但是要分别列出来。
+# 第 0007 题：有个目录，里面是你自己写过的程序，统计一下你写过多少行代码。包括空行和注释，但是要分别列出来
+import os
+
+# 注释://, #, /* */, """ """, ''' '''
+def lines_of_codes(dir_path=None):
+    code_num = 0
+    note_num = 0
+    blank_line_num = 0
+    if dir_path is None:
+        return code_num, note_num, blank_line_num
+
+    for root, dirs, files in os.walk(dir_path):
+        mut_note = None
+        for path in files:
+            if path.startswith("."):
+                continue
+
+            file_path = os.path.join(root, path)
+            for count, line in enumerate(open(file_path, "rU")):
+
+                # 判断是否是空行
+                if not line.split():
+                    blank_line_num += 1
+                    continue
+
+                # 判断是否多行注释
+                if mut_note is not None:
+                    note_num += 1
+                    match_note = re.match("\*/|\"\"\"|\'\'\'", line)
+                    if match_note is not None:
+                        mut_note = None
+                        match_note = re.match("\/\*|\"\"\"|\'\'\'", line)
+                        if match_note is not None:
+                            mut_note = line[match_note.pos:(match_note.endpos - 1)]
+
+                    continue
+                else:
+                    match_note = re.match("\/\*|\"\"\"|\'\'\'", line)
+                    if match_note is not None:
+                        note_num += 1
+                        mut_note = line[match_note.pos:(match_note.endpos - 1)]
+                        continue
+
+                # 判断单行注释
+                match_note1 = re.match("\s*(#|//).*\n*", line)
+                if match_note1 is not None:
+                    note_num += 1
+                    continue
+
+                pass
+
+            code_num += count + 1
+
+    return code_num, note_num, blank_line_num
 
 # 第 0008 题：一个HTML文件，找出里面的正文。
 
@@ -74,8 +127,12 @@ if __name__ == "__main__":
     # 0001
     # create_activation_code()
 
-    #0004
-    numberOfWords("./0004.txt")
+    # 0004
+    # number_of_words("./0004.txt")
+
+    # 0007
+    code, note, blank_line = lines_of_codes("./0007")
+    print("代码行数:%i\n注释行数:%i\n空行行数:%i" % (code, note, blank_line))
 
     # 0010
     # create_verification_code()

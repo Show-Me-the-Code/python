@@ -168,3 +168,22 @@ def verification_code(num=4, width=240, height=60, font_size=30):
     return image, str
 
 # 生成中文验证码
+
+# 重置图片大小
+def reset_image_size(image=None, max_width=None, max_height=None):
+    if image is None or max_width is None or max_height is None:
+        return
+
+    if image.size[0] <= max_width and image.size[1] <= max_height:
+        return
+
+    rotate = image.size[0] / image.size[1]
+    if rotate > 1:
+        new_width = max_width
+        new_height = max_width / rotate
+    else:
+        new_height = max_height
+        new_width = max_height * rotate
+
+    new_image = image.resize((int(new_width), int(new_height)), Image.BILINEAR)
+    return new_image

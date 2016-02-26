@@ -52,6 +52,20 @@ def number_of_words(file_path=None):
 
 
 # 第 0005 题：你有一个目录，装了很多照片，把它们的尺寸变成都不大于 iPhone5 分辨率的大小。
+def reset_images_size(dir_path=None):
+    if dir_path is None:
+        return
+
+    for root, dirs, files in os.walk(dir_path):
+        for path in files:
+            if path.startswith("."):
+                continue
+
+            file_path = os.path.join(root, path)
+            image = imager.open_image(file_path)
+            if image is not None:
+                new_image = imager.reset_image_size(image, 640, 1136)
+                imager.save(new_image, file_path)
 
 # 第 0006 题：你有一个目录，放了你一个月的日记，都是 txt，为了避免分词的问题，假设内容都是英文，请统计出你认为每篇日记最重要的词。
 
@@ -120,6 +134,7 @@ def create_verification_code():
     im, str = imager.verification_code()
     im.show()
 
+
 if __name__ == "__main__":
     # 0000
     # add_num("./0000.jpg")
@@ -127,12 +142,19 @@ if __name__ == "__main__":
     # 0001
     # create_activation_code()
 
+    # 0002
+
+    # 0003
+
     # 0004
     # number_of_words("./0004.txt")
 
+    # 0005
+    reset_images_size("./0005")
+
     # 0007
-    code, note, blank_line = lines_of_codes("./0007")
-    print("代码行数:%i\n注释行数:%i\n空行行数:%i" % (code, note, blank_line))
+    # code, note, blank_line = lines_of_codes("./0007")
+    # print("代码行数:%i\n注释行数:%i\n空行行数:%i" % (code, note, blank_line))
 
     # 0010
     # create_verification_code()

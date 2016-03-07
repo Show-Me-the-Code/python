@@ -29,8 +29,42 @@ def create_activation_code(num=200):
 
 
 # 第 0002 题：将 0001 题生成的 200 个激活码（或者优惠券）保存到 MySQL 关系型数据库中。
+import pymysql
+
+def save_activation_code_to_mysql():
+    conn = pymysql.connect(host='127.0.0.1', user='root', charset='UTF8')
+    cur = conn.cursor()
+    cur.execute("CREATE DATABASE IF NOT EXISTS code_mysql")
+    cur.execute("USE code_mysql")
+    cur.execute("CREATE TABLE IF NOT EXISTS codes (id INT, code VARCHAR(255))")
+
+    codes = create_activation_code(200)
+    for code in codes:
+        cur.execute("INSERT INTO codes (code) values(%s)", [code])
+
+    conn.commit()
+
+    cur.execute("SELETE * FROM codes")
+    data = cur.fetchall()
+    print("data:%s" % data)
+
+    cur.close()
+    conn.close()
+
 
 # 第 0003 题：将 0001 题生成的 200 个激活码（或者优惠券）保存到 Redis 非关系型数据库中。
+
+import redis
+
+def save_activation_code_to_redis():
+    re = redis.Redis(host='127.0.0.1', port=6379, db=0)
+
+    codes = create_activation_code(200)
+    for code in codes:
+        re.lpop('codes', code)
+
+    print("data:%s" % re.get('codes'))
+
 
 # 第 0004 题：任一个英文的纯文本文件，统计其中的单词出现的个数。
 import re
@@ -127,6 +161,17 @@ def lines_of_codes(dir_path=None):
 # 第 0008 题：一个HTML文件，找出里面的正文。
 
 # 第 0009 题：一个HTML文件，找出里面的链接。
+from urllib import request
+
+def get_html_links(url=None):
+    url_list = []
+    if url is None:
+        return url_list
+
+    content = request.urlopen(url).read()
+
+    match = re.findall("<a\s+herf\s*=\s*\w+\s*\w*>", content)
+
 
 
 # 第 0010 题：使用 Python 生成字母验证码图片
@@ -143,18 +188,27 @@ if __name__ == "__main__":
     # create_activation_code()
 
     # 0002
+    # save_activation_code_to_mysql()
 
     # 0003
+    # codes = create_activation_code(200)
+    save_activation_code_to_redis()
 
     # 0004
     # number_of_words("./0004.txt")
 
     # 0005
-    reset_images_size("./0005")
+    # reset_images_size("./0005")
+
+    # 0006
 
     # 0007
     # code, note, blank_line = lines_of_codes("./0007")
     # print("代码行数:%i\n注释行数:%i\n空行行数:%i" % (code, note, blank_line))
+
+    # 0008
+
+    # 0009
 
     # 0010
     # create_verification_code()

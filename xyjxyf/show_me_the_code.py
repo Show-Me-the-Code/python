@@ -32,7 +32,7 @@ def create_activation_code(num=200):
 import pymysql
 
 def save_activation_code_to_mysql():
-    conn = pymysql.connect(host='127.0.0.1', user='root', charset='UTF8')
+    conn = pymysql.connect(host='localhost', user='root', charset='UTF8')
     cur = conn.cursor()
     cur.execute("CREATE DATABASE IF NOT EXISTS code_mysql")
     cur.execute("USE code_mysql")
@@ -101,7 +101,37 @@ def reset_images_size(dir_path=None):
                 new_image = imager.reset_image_size(image, 640, 1136)
                 imager.save(new_image, file_path)
 
-# 第 0006 题：你有一个目录，放了你一个月的日记，都是 txt，为了避免分词的问题，假设内容都是英文，请统计出你认为每篇日记最重要的词。
+
+# 第 0006 题：你有一个目录，放了你一个月的日记，都是 txt，
+# 为了避免分词的问题，假设内容都是英文，请统计出你认为每篇日记最重要的词。
+# 思路:哪个词出现的最多,哪个词就是最重要的词
+import operator
+
+def get_most_important_word(dir_path=None):
+    if dir_path is None:
+        return None
+
+    for root, dirs, files in os.walk(dir_path):
+        for path in files:
+            if not path.endswith("txt"):
+                continue
+
+            file_path = os.path.join(root, path)
+            content = open(file_path, 'r').read().lower()
+
+            words = content.split()
+            word_dic = {}
+            for word in words:
+                if word in word_dic.keys():
+                    word_dic[word] += 1
+                else:
+                    word_dic[word] = 1
+
+            if len(word_dic):
+                word_list = sorted(word_dic.items(), key=lambda x:x[1], reverse=True)
+                print("%s : %s -- %d" % (path, word_list[0][0], word_list[0][1]))
+
+
 
 # 第 0007 题：有个目录，里面是你自己写过的程序，统计一下你写过多少行代码。包括空行和注释，但是要分别列出来
 import os
@@ -180,6 +210,18 @@ def create_verification_code():
     im.show()
 
 
+# 第 0011 题： 敏感词文本文件 filtered_words.txt，里面的内容为以下内容，
+# 北京, 程序员, 公务员, 领导, 牛比, 牛逼, 你娘, 你妈, love, sex, jiangge
+# 当用户输入敏感词语时，则打印出 Freedom，否则打印出 Human Rights。
+
+
+# 第 0012 题： 敏感词文本文件 filtered_words.txt，里面的内容 和 0011题一样，
+# 当用户输入敏感词语，则用 星号 * 替换，例如当用户输入「北京是个好城市」，则变成「**是个好城市」。
+
+
+# 第 0013 题： 用 Python 写一个爬图片的程序
+
+
 if __name__ == "__main__":
     # 0000
     # add_num("./0000.jpg")
@@ -191,8 +233,7 @@ if __name__ == "__main__":
     # save_activation_code_to_mysql()
 
     # 0003
-    # codes = create_activation_code(200)
-    save_activation_code_to_redis()
+    # save_activation_code_to_redis()
 
     # 0004
     # number_of_words("./0004.txt")
@@ -201,6 +242,7 @@ if __name__ == "__main__":
     # reset_images_size("./0005")
 
     # 0006
+    get_most_important_word("./0006")
 
     # 0007
     # code, note, blank_line = lines_of_codes("./0007")
@@ -212,3 +254,9 @@ if __name__ == "__main__":
 
     # 0010
     # create_verification_code()
+
+    # 0011
+
+    # 0012
+
+    # 0013

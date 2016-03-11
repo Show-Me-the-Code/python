@@ -189,15 +189,18 @@ def lines_of_codes(dir_path=None):
     return code_num, note_num, blank_line_num
 
 # 第 0008 题：一个HTML文件，找出里面的正文。
+def get_html_context(url=None):
+    if url is None:
+        return None
 
 # 第 0009 题：一个HTML文件，找出里面的链接。
 from urllib import request
 
 def get_html_links(url=None):
-    url_list = []
     if url is None:
-        return url_list
+        return None
 
+    url_list = []
     content = request.urlopen(url).read()
 
     match = re.findall("<a\s+herf\s*=\s*\w+\s*\w*>", content)
@@ -214,6 +217,22 @@ def create_verification_code():
 # 北京, 程序员, 公务员, 领导, 牛比, 牛逼, 你娘, 你妈, love, sex, jiangge
 # 当用户输入敏感词语时，则打印出 Freedom，否则打印出 Human Rights。
 
+def find_sensitive_words(sensitive_file=None, input_string=None):
+    if sensitive_file is None or input_string is None:
+        return None
+
+    file = open(sensitive_file, "r")
+    sensitive_words = file.read().split()
+
+    is_sensitive = False
+    for sensitive in sensitive_words:
+        if sensitive in input_string:
+            is_sensitive = True
+            print("Freedom")
+
+    if not is_sensitive:
+        print("Human Rights")
+
 
 # 第 0012 题： 敏感词文本文件 filtered_words.txt，里面的内容 和 0011题一样，
 # 当用户输入敏感词语，则用 星号 * 替换，例如当用户输入「北京是个好城市」，则变成「**是个好城市」。
@@ -229,7 +248,7 @@ if __name__ == "__main__":
     # 0001
     # create_activation_code()
 
-    # 0002
+    # 0002 ?????
     # save_activation_code_to_mysql()
 
     # 0003
@@ -242,7 +261,7 @@ if __name__ == "__main__":
     # reset_images_size("./0005")
 
     # 0006
-    get_most_important_word("./0006")
+    # get_most_important_word("./0006")
 
     # 0007
     # code, note, blank_line = lines_of_codes("./0007")
@@ -256,7 +275,32 @@ if __name__ == "__main__":
     # create_verification_code()
 
     # 0011
+    find_sensitive_words("./0011/0011.txt", "haha")
 
     # 0012
 
     # 0013
+
+    # 0014
+
+    # 0015
+
+    # 0016
+
+    # 0017
+
+    # 0018
+    
+    # 0019
+
+    # 0020
+
+    # 0021
+
+    # 0022
+
+    # 0023
+
+    # 0024
+
+    # 0025

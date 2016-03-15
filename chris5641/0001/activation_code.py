@@ -8,7 +8,7 @@ __author__ = 'Chris5641'
 
 
 def get_code():
-    f = open('ActvationCode.txt', 'w')
+    f = open('ActivationCode.txt', 'w')
     char_seq = 'abcdefghijklmnopqrstuvwxyz0123456789'
     for i in range(200):
         code = ''

@@ -253,6 +253,7 @@ def replace_sensitive_words(sensitive_file=None, input_string=None):
 # 第 0013 题： 用 Python 写一个爬图片的程序
 
 # 第 0014 题： 纯文本文件 student.txt为学生信息, 写到 student.xls 文件中
+# 第 0015 题： 纯文本文件 city.txt为城市信息,写到 city.xls 文件中
 import json
 import xlwt
 
@@ -292,7 +293,32 @@ def dictxt_to_xls(file_path=None):
     wb.save(save_path)
 
 
-# 第 0015 题： 纯文本文件 city.txt为城市信息,写到 city.xls 文件中
+# 第 0016 题： 纯文本文件 numbers.txt, 请将上述内容写到 numbers.xls 文件中
+def listtxt_to_xls(file_path=None):
+    if file_path is None:
+        return
+
+    file = open(file_path)
+    if file is None:
+        return
+
+    content = json.loads(file.read())
+    content.sort(key=lambda x:x[0])
+
+    (path, name)=os.path.split(file.name)
+    file_name = name.split('.')[0]
+    wb = xlwt.Workbook()
+    ws = wb.add_sheet(file_name)
+
+    for i in range(len(content)):
+        col = 0
+        list = content[i]
+        for value in list:
+            ws.write(i, col, content[i][col])
+            col += 1
+
+    save_path = path + "/" + file_name + ".xls"
+    wb.save(save_path)
 
 
 if __name__ == "__main__":
@@ -343,6 +369,7 @@ if __name__ == "__main__":
     # dictxt_to_xls("./0015/city.txt")
 
     # 0016
+    listtxt_to_xls("./0016/numbers.txt")
 
     # 0017
 

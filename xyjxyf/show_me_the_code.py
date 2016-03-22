@@ -320,6 +320,103 @@ def listtxt_to_xls(file_path=None):
     save_path = path + "/" + file_name + ".xls"
     wb.save(save_path)
 
+# pip3 install xlrd
+import xlrd
+def read_xls(file_path=None):
+    if file_path is None:
+        return None
+
+    data_list = {}
+    wb = xlrd.open_workbook(file_path)
+    sheet_names = wb.sheet_names()
+    for name in sheet_names:
+        table = wb.sheet_by_name(name)
+        table_data = []
+        for i in range(table.nrows):
+            row_data = table.row_values(i)
+            table_data.append(row_data)
+
+        data_list[name] = table_data
+
+    return data_list
+
+
+# 第 0017 题： 将 第 0014 题中的 student.xls 文件中的内容写到 student.xml 文件中
+# 使用DOM
+from tools import stringer
+from xml.dom.minidom import Document
+
+def write_student_to_xml(dic=None, to_path=None):
+    if dic is None or to_path is None:
+        return None
+
+    doc = Document()
+    root_node = doc.createElement("root")
+    doc.appendChild(root_node)
+
+    stu_node = doc.createElement("students")
+    root_node.appendChild(stu_node)
+
+    note_node = doc.createComment("\n\t学生信息表\n\t\"id\" : [名字, 数学, 语文, 英文]\n\t")
+    stu_node.appendChild(note_node)
+
+    # data = json.dumps(dic, ensure_ascii=False, indent=1)
+    dic_node = doc.createTextNode(stringer.dict_to_json(dic, "\t\t"))
+    stu_node.appendChild(dic_node)
+
+    file = open(to_path, "w")
+    file.write(doc.toprettyxml())
+    # doc.writexml(file,'    ','    ','\n','utf-8')
+    file.close()
+
+# 第 0018 题： 将 第 0015 题中的 city.xls 文件中的内容写到 city.xml 文件中
+# 使用lxml
+import codecs
+from lxml import etree
+
+def write_city_to_xml(dic=None, to_path=None):
+    if dic is None or to_path is None:
+        return None
+
+    root_node = etree.Element('root')
+    root_node.text = "\n\t"
+
+    city_node = etree.SubElement(root_node, 'citys')
+
+    comment_node = etree.Comment("\n城市信息\n")
+    comment_node.tail = "\n\t"
+    city_node.append(comment_node)
+
+    city_node.text = "\n\t" + stringer.dict_to_json(dic, "\t") + u'\n'
+    city_node.tail = "\n"
+
+    city_tree = etree.ElementTree(root_node)
+    city_tree.write(to_path, pretty_print=True, xml_declaration=True, encoding='utf-8')
+    # output = codecs.open(to_path, 'w', 'utf-8')
+    # output.write(etree.tounicode(city_tree.getroot()))
+    # output.close()
+
+
+# 第 0019 题： 将 第 0016 题中的 numbers.xls 文件中的内容写到 numbers.xml 文件中
+def write_numbers_to_xml(list=None, to_path=None):
+     if list is None or to_path is None:
+        return None
+
+     root_node = etree.Element('root')
+     root_node.text = "\n\t"
+
+     number_node = etree.SubElement(root_node, 'numbers')
+
+     comment_node = etree.Comment("\n数字信息\n")
+     comment_node.tail = "\n\t"
+     number_node.append(comment_node)
+
+     number_node.text = "\n\t" + stringer.list_to_json(list, "\t") + u'\n'
+     number_node.tail = "\n"
+
+     number_tree = etree.ElementTree(root_node)
+     number_tree.write(to_path, pretty_print=True, xml_declaration=True, encoding='utf-8')
+
 
 if __name__ == "__main__":
     # 0000
@@ -369,13 +466,42 @@ if __name__ == "__main__":
     # dictxt_to_xls("./0015/city.txt")
 
     # 0016
-    listtxt_to_xls("./0016/numbers.txt")
+    # listtxt_to_xls("./0016/numbers.txt")
 
     # 0017
+    # student_dic = read_xls("./0017/student.xls")
+    # for key in student_dic:
+    #     student = student_dic[key]
+    #
+    #     dic = {}
+    #     for list in student:
+    #         dic[list[0]] = list[1:]
+    #
+    #     write_student_to_xml(dic, "./0017/student.xml")
+    #
+    #     break
+
 
     # 0018
+    # city_dic = read_xls("./0018/city.xls")
+    # for key in city_dic:
+    #     city = city_dic[key]
+    #
+    #     dic = {}
+    #     for list in city:
+    #         dic[list[0]] = list[1:]
+    #
+    #     write_city_to_xml(dic, "./0018/city.xml")
+    #
+    #     break
     
     # 0019
+    number_dic = read_xls("./0019/numbers.xls")
+    for key in number_dic:
+        number = number_dic[key]
+        write_numbers_to_xml(number, "./0019/numbers.xml")
+
+        break
 
     # 0020
 

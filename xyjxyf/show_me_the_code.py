@@ -192,19 +192,22 @@ def get_html_context(url=None):
     if url is None:
         return None
 
-# 第 0009 题：一个HTML文件，找出里面的链接。
+# 第 0009 题：一个HTML文件，找出里面的链接
+# 查找<a>, 用 HTMLParser
 from urllib import request
+from tools import dxhtmlparser
 
 def get_html_links(url=None):
     if url is None:
         return None
 
-    url_list = []
-    content = request.urlopen(url).read()
+    content = request.urlopen(url).read().decode("utf-8")
+    dxparser = dxhtmlparser.DXHTMLParser('a', 'href', url)
+    dxparser.feed(content)
 
-    match = re.findall("<a\s+herf\s*=\s*\w+\s*\w*>", content)
+    links = dxparser.getrets()
 
-
+    return links
 
 # 第 0010 题：使用 Python 生成字母验证码图片
 def create_verification_code():
@@ -447,6 +450,7 @@ if __name__ == "__main__":
     # 0008
 
     # 0009
+    get_html_links("http://blog.bccn.net")
 
     # 0010
     # create_verification_code()
@@ -496,12 +500,12 @@ if __name__ == "__main__":
     #     break
     
     # 0019
-    number_dic = read_xls("./0019/numbers.xls")
-    for key in number_dic:
-        number = number_dic[key]
-        write_numbers_to_xml(number, "./0019/numbers.xml")
-
-        break
+    # number_dic = read_xls("./0019/numbers.xls")
+    # for key in number_dic:
+    #     number = number_dic[key]
+    #     write_numbers_to_xml(number, "./0019/numbers.xml")
+    #
+    #     break
 
     # 0020
 

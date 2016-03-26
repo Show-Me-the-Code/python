@@ -270,6 +270,16 @@ def replace_sensitive_words(sensitive_file=None, input_string=None):
     print(input_string)
 
 # 第 0013 题： 用 Python 写一个爬图片的程序
+from tools import geturlimgs
+
+def get_url_imgs(url=None):
+    if url is None:
+        return None
+
+    tmp = geturlimgs.geturlimgs()
+    tmp.get_imgs(url, "/Users/xieyajie/Desktop/Python/ShowMeCode/xyjxyf/0013/")
+
+
 
 # 第 0014 题： 纯文本文件 student.txt为学生信息, 写到 student.xls 文件中
 # 第 0015 题： 纯文本文件 city.txt为城市信息,写到 city.xls 文件中
@@ -464,7 +474,7 @@ if __name__ == "__main__":
     # print("代码行数:%i\n注释行数:%i\n空行行数:%i" % (code, note, blank_line))
 
     # 0008
-    get_html_context("http://blog.bccn.net")
+    # get_html_context("http://blog.bccn.net")
 
     # 0009
     # get_html_links("http://blog.bccn.net")
@@ -479,6 +489,7 @@ if __name__ == "__main__":
     # replace_sensitive_words("./0011/0011.txt", "haha, 北京不错")
 
     # 0013
+    get_url_imgs("http://www.ivsky.com/tupian/beijing_t1542/index_2.html")
 
     # 0014
     # dictxt_to_xls("./0014/student.txt")

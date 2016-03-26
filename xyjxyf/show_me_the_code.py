@@ -187,10 +187,26 @@ def lines_of_codes(dir_path=None):
 
     return code_num, note_num, blank_line_num
 
-# 第 0008 题：一个HTML文件，找出里面的正文。
+# 第 0008 题：一个HTML文件，找出里面的正文
+# 使用 pip install beautifulsoup4
+from bs4 import BeautifulSoup
+
 def get_html_context(url=None):
     if url is None:
         return None
+
+    content = request.urlopen(url).read().decode("utf-8")
+    soup = BeautifulSoup(content)
+    [script.extract() for script in soup.find_all('script')]
+    [style.extract() for style in soup.find_all('style')]
+
+    soup.prettify()
+    reg = re.compile("<[^>]*>")
+    ret_content = reg.sub('', soup.prettify())
+    # print(ret_content)
+
+    return ret_content
+
 
 # 第 0009 题：一个HTML文件，找出里面的链接
 # 查找<a>, 用 HTMLParser
@@ -448,9 +464,10 @@ if __name__ == "__main__":
     # print("代码行数:%i\n注释行数:%i\n空行行数:%i" % (code, note, blank_line))
 
     # 0008
+    get_html_context("http://blog.bccn.net")
 
     # 0009
-    get_html_links("http://blog.bccn.net")
+    # get_html_links("http://blog.bccn.net")
 
     # 0010
     # create_verification_code()

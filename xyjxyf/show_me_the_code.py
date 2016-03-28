@@ -447,6 +447,60 @@ def write_numbers_to_xml(list=None, to_path=None):
      number_tree.write(to_path, pretty_print=True, xml_declaration=True, encoding='utf-8')
 
 
+# 第 0020 题： 登陆中国联通网上营业厅 后选择「自助服务」 --> 「详单查询」，然后选择你要查询的时间段，点击「查询」按钮，
+# 查询结果页面的最下方，点击「导出」，就会生成类似于 2014年10月01日～2014年10月31日通话详单.xls 文件。
+# 写代码，对每月通话时间做个统计
+
+import datetime
+
+def statistics_month_time():
+    dic = {}
+    wb = xlrd.open_workbook("./0020/0020.xls")
+    sheet = wb.sheets()[0]
+    row_count = sheet.nrows
+
+    for i in range(1, sheet.nrows):
+        values = sheet.row_values(i)
+        ym_str = values[2][:6]
+
+        time_str = values[3]
+        if '时' in time_str:
+            time_str = re.sub('时', '.', time_str)
+        if '分' in time_str:
+            time_str = re.sub('分', '.', time_str)
+        if '秒' in time_str:
+            time_str = re.sub('秒', '', time_str)
+
+        tmp = time_str.split('.')
+        j = len(tmp) - 1
+        sum = int(tmp[j])
+        while j > -1:
+            sum = sum + (len(tmp) - 1 - j) * 60 * int(tmp[j])
+            j = j - 1
+
+        if ym_str in dic:
+            dic[ym_str] = dic[ym_str] + int(sum)
+        else:
+            dic[ym_str] = int(sum)
+
+        # i = i + 1
+
+    return dic
+
+
+# 第 0022 题： iPhone 6、iPhone 6 Plus 早已上市开卖。请查看你写得 第 0005 题的代码是否可以复用
+
+
+# 第 0023 题： 使用 Python 的 Web 框架，做一个 Web 版本 留言簿 应用
+
+
+# 第 0024 题： 使用 Python 的 Web 框架，做一个 Web 版本 TodoList 应用
+
+
+# 第 0025 题： 使用 Python 实现：对着电脑吼一声,自动打开浏览器中的默认网站
+
+
+
 if __name__ == "__main__":
     # 0000
     # add_num(".0000/0000.jpg")
@@ -489,7 +543,7 @@ if __name__ == "__main__":
     # replace_sensitive_words("./0011/0011.txt", "haha, 北京不错")
 
     # 0013
-    get_url_imgs("http://www.ivsky.com/tupian/beijing_t1542/index_2.html")
+    # get_url_imgs("http://www.ivsky.com/tupian/beijing_t1542/index_2.html")
 
     # 0014
     # dictxt_to_xls("./0014/student.txt")
@@ -536,6 +590,7 @@ if __name__ == "__main__":
     #     break
 
     # 0020
+    statistics_month_time()
 
     # 0021
 

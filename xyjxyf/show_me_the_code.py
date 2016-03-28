@@ -449,7 +449,7 @@ def write_numbers_to_xml(list=None, to_path=None):
 
 if __name__ == "__main__":
     # 0000
-    # add_num("./0000.jpg")
+    # add_num(".0000/0000.jpg")
 
     # 0001
     # create_activation_code()
@@ -461,7 +461,7 @@ if __name__ == "__main__":
     # save_activation_code_to_redis()
 
     # 0004
-    # number_of_words("./0004.txt")
+    # number_of_words("./0004/0004.txt")
 
     # 0005
     # reset_images_size("./0005")

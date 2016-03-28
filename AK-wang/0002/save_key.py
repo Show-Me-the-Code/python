@@ -63,40 +63,21 @@ def process():
     QueryData(conn)
     dbconn.close()
 
-#def execute(sql):
-#    '''执行sql'''
-#    conn=dbconn.cursor()
-#    conn.execute(sql)
-
-#def executemany(sql, tmp):
-#    '''插入多条数据'''
-#    conn=dbconn.cursor()
-#    conn.executemany(sql,tmp)
-
 def query(sql,conn):
-    '''查询sql'''
-    #conn=dbconn.cursor()
     conn.execute(sql)
     rows = conn.fetchall()
     return rows
 
 def DropTable(conn):
-    #conn=dbconn.cursor()
     conn.execute("DROP TABLE IF EXISTS `user_key`")
      
 def CreateTable(conn):
-    #conn=dbconn.cursor()
     sql_create =''' CREATE TABLE `user_key` (`key` varchar(50) NOT NULL)'''
     conn.execute(sql_create)
 
 def InsertDatas(conn):
-    #conn=dbconn.cursor()
-    #insert_sql = "insert into user_key values(%s)"
     insert_sql = "INSERT INTO user_key VALUES (%(value)s)"
     key_list = key_num(KEY_ALL)
-    #print len(key_list)
-    #conn.executemany(insert_sql,str(key_listi))
-    #conn.executemany("INSERT INTO user_key VALUES (%(value)s)",[dict(value=v) for v in key_list])
     conn.executemany(insert_sql,[dict(value=v) for v in key_list])
 
 def DeleteData():

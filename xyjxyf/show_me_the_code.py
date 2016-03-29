@@ -488,6 +488,24 @@ def statistics_month_time():
     return dic
 
 
+# 第 0021 题： 请使用 Python 对密码加密
+from hashlib import sha256
+from hmac import HMAC
+
+def encrypt_password(password, salt=None):
+    if salt is None:
+        salt = os.urandom(8)
+
+    if isinstance(password, str):
+        password = password.encode('UTF-8')
+
+    ret = password
+    for i in range(10):
+        ret = HMAC(ret, salt, sha256).digest()
+
+    return salt + ret
+
+
 # 第 0022 题： iPhone 6、iPhone 6 Plus 早已上市开卖。请查看你写得 第 0005 题的代码是否可以复用
 
 
@@ -590,9 +608,10 @@ if __name__ == "__main__":
     #     break
 
     # 0020
-    statistics_month_time()
+    # statistics_month_time()
 
     # 0021
+    encrypt_password("123")
 
     # 0022
 

@@ -516,7 +516,7 @@ def encrypt_password(password, salt=None):
 
 
 # 第 0025 题： 使用 Python 实现：对着电脑吼一声,自动打开浏览器中的默认网站
-
+# 在文件夹0025中实现
 
 
 if __name__ == "__main__":

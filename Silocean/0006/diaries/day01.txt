@@ -1,0 +1,4 @@
+Python learning
+
+This is a diary about Python.
+Python is an interesting language, which is very easy to learn and we can use it to do many things.

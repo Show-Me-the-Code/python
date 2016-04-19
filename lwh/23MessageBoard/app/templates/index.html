@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>给lwh的留言板</title>
+{% endblock %}
+{% block content %}
+    <form action="/postmessage" method="post">
+        名字：
+        <input type="text" name="name"/>
+        <br><br>
+        内容：
+        <input type="text" name="content"/>
+        <br><br>
+        <button type="submit" name="submit"/>留言
+    </form>
+{% endblock %}

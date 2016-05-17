@@ -10,14 +10,14 @@ def wordStatistics(path):
 	wordDict = {}
 	with open(path,'r') as file:
 		for line in file:
-			wordListPerLine = line.split(' ')
+			wordListPerLine = line.strip().split(' ')
 			for word in wordListPerLine:
 				if wordDict.has_key(word):
 					wordCount = wordDict.get(word)
 					wordCount+=1
 					wordDict[word] = wordCount
 				else:
-					wordDict[word] = 0
+					wordDict[word] = 1
 	return wordDict
 
 if __name__ == '__main__':

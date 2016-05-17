@@ -12,6 +12,7 @@ def wordStatistics(path):
 		for line in file:
 			wordListPerLine = line.strip().split(' ')
 			for word in wordListPerLine:
+				word = word.lower()
 				if wordDict.has_key(word):
 					wordCount = wordDict.get(word)
 					wordCount+=1

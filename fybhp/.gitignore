@@ -1,0 +1,7 @@
+.idea
+fortest.py
+*.png
+*.jpg
+migrations
+*.sqlite
+*.pyc

@@ -8,18 +8,17 @@ __author__ = 'Drake-Z'
 import random
 
 def rndChar(filename, digit=4, num=200):
-    f = open(filname, 'a')
-    a = 0
-    for i in range(1, 201):
-        while a < 4:
+    f = open(filename, 'a')
+    for i in range(0, num):     
+        for m in range(0, digit):
             f.write(chr(random.randint(65, 90)))
-            a += 1
         f.write('\n')
     f.close()
     print('Done!')
     return 0
 
 if __name__ == '__main__':
-    filname = 'activecode.txt'
+    filename = 'active_code.txt'
     digit = 4
     num = 200
+    rndChar(filename, digit, num)

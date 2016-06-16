@@ -17,7 +17,7 @@ def write_to_mysql(filename):
     return 0
 
 def search_mysql():
-    b = int(input('查询第几号（1-200）激活码：'))
+    b = int(input('Search Active code（1-200）：'))
     r = redis.StrictRedis(host='localhost', port=6379, db=0)
     print(str(r.get(b),'UTF-8'))
     return 0

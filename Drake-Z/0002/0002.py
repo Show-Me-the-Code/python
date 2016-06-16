@@ -8,26 +8,21 @@ __author__ = 'Drake-Z'
 import mysql.connector
 
 def write_to_mysql(filename):
-    f = open(filename, 'r')
-    conn = mysql.connector.connect(user='root', password='******', database='test')
-    print('登录数据库成功')
+    conn = mysql.connector.connect(user='root', password='986535', database='test')
     cursor = conn.cursor()
     cursor.execute("DROP TABLE IF EXISTS user")
     cursor.execute('create table user (id varchar(20) primary key, name varchar(20))')
-    print('创建表成功')
-    a = 1
-    for line in f.readlines():
+    f = open(filename, 'r').readlines()
+    for line, num in zip(f, range(1, len(f)+1)):
         line = line[:-1]                     #直接除去最后一个字符的所有字符，这里去除\n符号
-        cursor.execute('insert into user (id, name) values (%s, %s)', [str(a), line])
+        cursor.execute('insert into user (id, name) values (%s, %s)', [str(num), line])
         conn.commit()
-        a += 1
     cursor.close()
-    print('插入数据结束')
     return 0
 
 def search_mysql():
-    b = input('查询第几号（1-200）激活码：')
-    conn = mysql.connector.connect(user='root', password='******', database='test')
+    b = input('Search Active code（1-200）：')
+    conn = mysql.connector.connect(user='root', password='986535', database='test')
     cursor = conn.cursor()
     cursor.execute('select * from user where id = %s', (b,))
     values = cursor.fetchall()

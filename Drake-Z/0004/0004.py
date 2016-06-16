@@ -9,7 +9,7 @@ import re
 
 def statistics(file_path):
     f = open(file_path, 'r').read()
-    f = re.split(r'[\s\,\;,\n]+', f)
+    f = re.findall(r'[\w\-\_\.\']+', f)
     print(len(f))
     return 0
 

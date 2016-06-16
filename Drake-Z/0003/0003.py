@@ -7,7 +7,7 @@ __author__ = 'Drake-Z'
 
 import redis
 
-def write_to_mysql(filename):
+def write_to_redis(filename):
     r = redis.StrictRedis(host='localhost', port=6379, db=0)
     r.flushdb()
     f = open(filename, 'r').readlines()
@@ -16,7 +16,7 @@ def write_to_mysql(filename):
         r.set(num, line)
     return 0
 
-def search_mysql():
+def search_redis():
     b = int(input('Search Active code（1-200）：'))
     r = redis.StrictRedis(host='localhost', port=6379, db=0)
     print(str(r.get(b),'UTF-8'))

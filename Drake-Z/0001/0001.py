@@ -7,7 +7,7 @@ __author__ = 'Drake-Z'
 
 import random
 
-def rndChar(filename, digit=4, num=200):
+def randChar(filename, digit=4, num=200):
     f = open(filename, 'a')
     for i in range(0, num):     
         for m in range(0, digit):

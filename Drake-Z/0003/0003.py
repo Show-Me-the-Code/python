@@ -12,7 +12,7 @@ def write_to_redis(filename):
     r.flushdb()
     f = open(filename, 'r').readlines()
     for line, num in zip(f, range(1, len(f)+1)):
-        line = line[:-1]                     #直接除去最后一个字符的所有字符，这里去除\n符号
+        line = line[:-1]                     #去除\n符号
         r.set(num, line)
     return 0
 

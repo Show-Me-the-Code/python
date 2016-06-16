@@ -24,5 +24,5 @@ def search_redis():
 
 if __name__ == '__main__':
     filename = 'active_code.txt'
-    write_to_mysql(filename)
-    search_mysql()
+    write_to_redis(filename)
+    search_redis()

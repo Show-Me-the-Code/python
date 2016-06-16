@@ -7,7 +7,7 @@ __author__ = 'Drake-Z'
 
 import re
 
-def tongji(file_path):
+def statistics(file_path):
     f = open(file_path, 'r').read()
     f = re.split(r'[\s\,\;,\n]+', f)
     print(len(f))
@@ -15,4 +15,4 @@ def tongji(file_path):
 
 if __name__ == '__main__':
     file_path = 'English.txt'
-    tongji(file_path)
+    statistics(file_path)

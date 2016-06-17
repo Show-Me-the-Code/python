@@ -13,8 +13,8 @@ def filter_word(a):
     strs = '**'
     f = open('filtered_words.txt', 'r', encoding = 'utf-8').readlines()
     for i in f: 
-        i = i.strip()
-        b = re.split(r'%s' % (i), a)
+        i = i.strip()                                                           #去除\n
+        b = re.split(r'%s' % (i), a)                                      #分解字符串
         if len(b) > 1:
             c = i
             sensitive = True   

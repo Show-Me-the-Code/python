@@ -16,7 +16,7 @@ def count_num(a, b):
         if re.match(r'^#', i) == None:                          
             pass
         else:
-            shuzi[1] += 1                                                   #获得注释行数
+            shuzi[1] += 1                                                   #获得注释行数，只匹配单行注释
     if f[-1][-1:]=='\n':                                                     #最后一行为空行时
         shuzi[2] = f.count('\n')+1                                     #获得空行行数
         shuzi[0] = len(f)+1 - shuzi[2] - shuzi[1]                 #获得代码行数

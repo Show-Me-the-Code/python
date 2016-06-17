@@ -5,13 +5,20 @@
 
 __author__ = 'Drake-Z'
 
-import re
+import os, re
+from html.parser import HTMLParser
+from html.entities import name2codepoint
 
-def analysis(a):
-    b = re.findall(r'href="(http://.*?.zhihu.com/.*?)"', a)         #以知乎为例
-    for i in b:
-        print(i)
+class MyHTMLParser(HTMLParser):
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'a':
+            for (variables, value) in attrs:
+                if variables == 'href':
+                    if re.match(r'http(.*?)', value):
+                        print(value)
 
 if __name__ == '__main__':
-    with open('testzhihu.html', encoding='utf-8') as html:
-        analysis(html.read())
+    with open('test.html', encoding='utf-8') as html:
+        parser = MyHTMLParser()
+        parser.feed(html.read())

@@ -36,9 +36,7 @@ def writeFlie(dictdata, hangshu, lieshu):
         for m in range(0, lieshu):
             worksheet.write(i, m+1, label = dictdata[num[i]][m])
     workbook.save('city.xls')
-
-
-
+    
 if __name__ == '__main__':
     file = open('city.txt', 'r', encoding='utf-8')
     hangshu = 3

@@ -17,8 +17,6 @@ def get_num(key_word, filename):
     numbers = re_zhengze.findall(f)
     return len(numbers)
 
-
-
 def article_analysis(dirs):
     article = glob.glob(r'*.txt')
     dictdata = OrderedDict()

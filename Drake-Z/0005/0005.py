@@ -6,12 +6,13 @@
 __author__ = 'Drake-Z'
 
 import os
+import glob
 from PIL import Image
 
 def thumbnail_pic(path):
-    a = os.listdir(path) 
+    a = glob.glob(r'*.jpg')
     for x in a:
-        name = os.path.join('0005', x)
+        name = os.path.join(path, x)
         im = Image.open(name)
         im.thumbnail((1136, 640))
         print(im.format, im.size, im.mode)
@@ -19,5 +20,5 @@ def thumbnail_pic(path):
     print('Done!')
 
 if __name__ == '__main__':
-    path = '0005'
+    path = '.'
     thumbnail_pic(path)

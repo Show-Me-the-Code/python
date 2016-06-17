@@ -36,8 +36,8 @@ def writeFlie(dictdata):
         worksheet.write(i, 0, label = num[i])
         for m in range(0, 4):
             worksheet.write(i, m+1, label = dictdata[num[i]][m])
-    workbook.save('0014/student.xls')
+    workbook.save('student.xls')
 
 if __name__ == '__main__':
-    file = open('0014/student.txt', 'r', encoding='utf-8')
+    file = open('student.txt', 'r', encoding='utf-8')
     read_data(file.read())

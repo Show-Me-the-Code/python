@@ -16,11 +16,14 @@ import re
 from collections import OrderedDict
 import xlwt
 
-def read_data(data, re1, re2):
+def shuju(data, re1, re2):
     c = OrderedDict([])
     re_xuhao = re.compile(r'%s' % re1)            
     re_yuansu = re.compile(r'%s' % re2)            
     a = re_xuhao.findall(data)                      #得到序号
+    if len(a)==0:
+        for d in range(0, hangshu):
+            a.append(d)
     b = re_yuansu.findall(data)                 #得到具体数据
     for m, n in zip(a, b):                          #将数据转为Dict
         n = re.split(r',', n)
@@ -32,17 +35,18 @@ def writeFlie(dictdata, hangshu, lieshu):
     worksheet = workbook.add_sheet('My Worksheet')              #创建表
     num = list(dictdata.keys())                                                    #得到序号
     for i in range(0, hangshu):
-        worksheet.write(i, 0, label = num[i])
         for m in range(0, lieshu):
-            worksheet.write(i, m+1, label = dictdata[num[i]][m])
-    workbook.save('city.xls')
+            worksheet.write(i, m, label = dictdata[num[i]][m])
+    workbook.save('numbers.xls')
+
+
 
 
 
 if __name__ == '__main__':
-    file = open('city.txt', 'r', encoding='utf-8')
+    file = open('numbers.txt', 'r', encoding='utf-8')
     hangshu = 3
-    lieshu = 1
-    re1 = '"(.*?)" :'
-    re2 = ': "(.*?)"'
-    read_data(file.read(), re1, re2)
+    lieshu = 3
+    re1 = '%'
+    re2 = '\[(.*?)\]'
+    shuju(file.read(), re1, re2)

@@ -23,7 +23,7 @@ def Imageurl(data):
     data = re_Imageurl.findall(data)                            #输出图片链接
     downloadImage(data)
 
-def downloadImage(tupianlianjie):
+def downloadImage(pic_url):
     dirct = '0013'
     try:  
         if not os.path.exists(dirct):                                   #创建存放目录
@@ -31,7 +31,7 @@ def downloadImage(tupianlianjie):
     except:  
         print('Failed to create directory in %s' % dirct)
         exit()  
-    for i in tupianlianjie:
+    for i in pic_url:
         data = urllib.request.urlopen(i).read()  
         i = re.split('/', i)[-1]
         print(i)

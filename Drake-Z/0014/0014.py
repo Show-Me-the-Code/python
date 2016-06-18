@@ -14,7 +14,6 @@ __author__ = 'Drake-Z'
 import json
 from collections import OrderedDict
 from openpyxl import Workbook
-from openpyxl.styles import Font
 
 def txt_to_xlsx(filename):
     file = open(filename, 'r', encoding = 'UTF-8')

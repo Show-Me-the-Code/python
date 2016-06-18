@@ -20,33 +20,40 @@
 
 __author__ = 'Drake-Z'
 
-import os
-import xlrd
+import xlrd,codecs
+from lxml import etree
+from collections import OrderedDict
 
-def xmlwrite(hangshu):
-    L = []
-    L.append(r'<?xml version="1.0" encoding="UTF-8"?>')
-    L.append(r'<root>')
-    L.append(r'<students>')
-    L.append(r'<!-- ')
-    L.append(r'    学生信息表')
-    L.append(r'    "id" : [名字, 数学, 语文, 英文]')
-    L.append(r'-->')
-    L.append(r'{')
-    data = xlrd.open_workbook('student.xls')
+def read_xls(filename):
+    data = xlrd.open_workbook(filename)
     table = data.sheets()[0]
-    for i in range(0, hangshu):
-        a = '"%s" : ["%s", %s, %s, %s],' % (table.cell(i,0).value, table.cell(i, 1).value, table.cell(i, 2).value, table.cell(i, 3).value, table.cell(i, 4).value)
-        L.append(r'    %s' % a)
-    L.append(r'}')
-    L.append(r'</students>')
-    L.append(r'</root>')
-    a = '\n'.join(L)
-    f = open('students.xml', 'w')
-    f.write(a)
-    f.close()
-    print(a)
-    return 0
+    c = OrderedDict()
+    for i in range(table.nrows):
+        c[table.cell(i,0).value] = table.row_values(i)[1:]
+    return c
 
-hangshu = 3
-xmlwrite(hangshu)
+def save_xml(data):
+    output = codecs.open('student.xml','w','utf-8')
+    root = etree.Element('root')
+    student_xml = etree.ElementTree(root)
+    student = etree.SubElement(root, 'student')
+    student.append(etree.Comment('学生信息表\n\"id\": [名字，数学，语文，英语]'))
+    student.text = str(data)
+    output.write(etree.tounicode(student_xml.getroot()))
+    output.close()
+
+if __name__ == '__main__':
+    file = 'student.xls'
+    a = read_xls(file)
+    save_xml(a)
+
+
+
+
+
+
+
+
+
+
+

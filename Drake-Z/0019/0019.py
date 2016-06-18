@@ -19,33 +19,29 @@
 
 __author__ = 'Drake-Z'
 
-import os
-import xlrd
+import xlrd,codecs
+from lxml import etree
+from collections import OrderedDict
 
-def xmlwrite(file, hangshu):
-    L = []
-    L.append(r'<?xml version="1.0" encoding="UTF-8"?>')
-    L.append(r'<root>')
-    L.append(r'<numbers>')
-    L.append(r'<!-- ')
-    L.append(r'    数字信息')
-    L.append(r'-->')
-    L.append(r'[')
-    data = xlrd.open_workbook(file)
+def read_xls(filename):
+    data = xlrd.open_workbook(filename)
     table = data.sheets()[0]
-    for i in range(0, hangshu):
-        a = '[%s, %s, %s],' % (table.cell(i, 0).value, table.cell(i, 1).value, table.cell(i, 2).value)
-        L.append(r'    %s' % a)
-    L.append(r']')
-    L.append(r'</numbers>')
-    L.append(r'</root>')
-    a = '\n'.join(L)
-    f = open('numbers.xml', 'w')
-    f.write(a)
-    f.close()
-    print(a)
-    return 0
+    c = OrderedDict()
+    for i in range(table.nrows):
+        c[table.cell(i,0).value] = table.row_values(i)[1:]
+    return c
 
-file = 'numbers.xls'
-hangshu = 3
-xmlwrite(file, hangshu)
+def save_xml(data):
+    output = codecs.open('numbers.xml','w','utf-8')
+    root = etree.Element('root')
+    numbers_xml = etree.ElementTree(root)
+    numbers = etree.SubElement(root, 'numbers')
+    numbers.append(etree.Comment('城市信息'))
+    numbers.text = str(data)
+    output.write(etree.tounicode(numbers_xml.getroot()))
+    output.close()
+
+if __name__ == '__main__':
+    file = 'numbers.xls'
+    a = read_xls(file)
+    save_xml(a)

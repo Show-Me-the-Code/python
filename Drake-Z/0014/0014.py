@@ -11,33 +11,24 @@
 
 __author__ = 'Drake-Z'
 
-import os
-import re
+import json
 from collections import OrderedDict
-import xlwt
+from openpyxl import Workbook
+from openpyxl.styles import Font
 
-def read_data(data):
-    c = OrderedDict([])
-    re_xuhao = re.compile(r'"([\d]+)":')            
-    re_yuansu = re.compile(r'\[(.*?)\]')            
-    a = re_xuhao.findall(data)                      #得到序号
-    b = re_yuansu.findall(data)                 #得到具体数据
-    for m, n in zip(a, b):                          #将数据转为Dict
-        n = re.split(r',', n)
-        n[0] = n[0][1:-1]                            #去除引号
-        c[m] = n
-    writeFlie(c)
-
-def writeFlie(dictdata):
-    workbook = xlwt.Workbook(encoding = 'utf-8')                #创建工作薄
-    worksheet = workbook.add_sheet('My Worksheet')              #创建表
-    num = list(dictdata.keys())                                                    #得到序号
-    for i in range(0, 3):
-        worksheet.write(i, 0, label = num[i])
-        for m in range(0, 4):
-            worksheet.write(i, m+1, label = dictdata[num[i]][m])
-    workbook.save('student.xls')
+def txt_to_xlsx(filename):
+    file = open(filename, 'r', encoding = 'UTF-8')
+    file_cintent = json.load(file, encoding = 'UTF-8')
+    print(file_cintent)
+    workbook = Workbook()
+    worksheet = workbook.create_sheet(title = 'student')
+    font1 = Font(color = 'FF9632')
+    font2 = Font(color = '0000FF')
+    for i in range(1, len(file_cintent)+1):
+        worksheet.cell(row = i, column = 1).value = i
+        for m in range(0, len(file_cintent[str(i)])):
+            worksheet.cell(row = i, column = m+2).value = file_cintent[str(i)][m]
+    workbook.save(filename = 'student.xlsx')
 
 if __name__ == '__main__':
-    file = open('student.txt', 'r', encoding='utf-8')
-    read_data(file.read())
+    txt_to_xlsx('student.txt')

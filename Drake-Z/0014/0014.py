@@ -25,7 +25,7 @@ def txt_to_xlsx(filename):
         worksheet.cell(row = i, column = 1).value = i
         for m in range(0, len(file_cintent[str(i)])):
             worksheet.cell(row = i, column = m+2).value = file_cintent[str(i)][m]
-    workbook.save(filename = 'student.xlsx')
+    workbook.save(filename = 'student.xls')
 
 if __name__ == '__main__':
     txt_to_xlsx('student.txt')

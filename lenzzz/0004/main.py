@@ -15,8 +15,6 @@ for word in artical.split(" "):
     else:
         words[word] = 1
 
-
-
 for key in words:
     if key == " ":
         continue

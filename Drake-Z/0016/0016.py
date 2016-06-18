@@ -20,7 +20,7 @@ def txt_to_xlsx(filename):
     file_cintent = json.load(file, encoding = 'UTF-8')
     print(file_cintent)
     workbook = Workbook()
-    worksheet = workbook.create_sheet(title = 'numbers')
+    worksheet = workbook.worksheets[0]
     for i in range(1, len(file_cintent)+1):
         for m in range(1, len(file_cintent[i-1])+1):
             worksheet.cell(row = i, column = m).value = file_cintent[i-1][m-1]

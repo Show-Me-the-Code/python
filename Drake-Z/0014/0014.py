@@ -22,8 +22,6 @@ def txt_to_xlsx(filename):
     print(file_cintent)
     workbook = Workbook()
     worksheet = workbook.create_sheet(title = 'student')
-    font1 = Font(color = 'FF9632')
-    font2 = Font(color = '0000FF')
     for i in range(1, len(file_cintent)+1):
         worksheet.cell(row = i, column = 1).value = i
         for m in range(0, len(file_cintent[str(i)])):

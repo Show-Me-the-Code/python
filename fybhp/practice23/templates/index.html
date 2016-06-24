@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}留言薄{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>请尽情留言吧!</h1>
+</div>
+{{ wtf.quick_form(form) }}
+<h3>
+    留言历史信息
+</h3>
+{% include '_posts.html' %}
+{% endblock %}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+<div class="page">
+    <h1>Guestbook</h1>
+    <div class="metanav">
+        {% if not session.logged_in %}
+        <a href="{{ url_for('login') }}">log in</a>
+        {% else %}
+        <div>{{ session.name }}</div>
+        <a href="{{ url_for('logout') }}">log out</a>
+        {% endif %}
+    </div>
+    {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
+    {% block body %}{% endblock %}
+</div>
+</body>
+</html>

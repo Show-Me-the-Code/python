@@ -1,5 +1,6 @@
-## Python 练习册，每天一个小程序 ##
+Here is the link to my solution: [BrambleXu](https://github.com/BrambleXu/python/tree/master/BrambleXu)
 
+## Python 练习册，每天一个小程序 ##
 
 #### 说明： ####
 

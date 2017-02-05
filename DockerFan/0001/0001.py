@@ -15,7 +15,7 @@ def random_series(count,len=10):
 			series += random.choice(str)
 			if series not in series_set:
 				series_set.append(series)
-		print series
+		print (series)
 
 random_series(20)	
     

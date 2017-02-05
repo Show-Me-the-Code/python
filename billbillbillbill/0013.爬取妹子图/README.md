@@ -1,0 +1,2 @@
+- 先安装所需依赖
+- 运行方法：scrapy crawl meizi

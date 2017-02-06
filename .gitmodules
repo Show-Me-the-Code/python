@@ -1,3 +1,6 @@
 [submodule "JiYouMCC"]
 	path = JiYouMCC
 	url = https://github.com/JiYouMCC/python-show-me-the-code
+[submodule "cnwangjie"]
+	path = cnwangjie
+	url = https://github.com/cnwangjie/practice-go

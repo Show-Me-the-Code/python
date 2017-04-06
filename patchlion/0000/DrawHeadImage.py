@@ -15,14 +15,14 @@ def drawNumberOnIcon(imgpath, number):
     draw = ImageDraw.Draw(img)
     img_size = img.size
 
-    font = ImageFont.truetype("Blackout-Midnight.ttf", size=int(img_size[1]/4))
+    font = ImageFont.truetype("Varela-Regular.otf", size=int(img_size[1]/4))
     text_size = font.getsize(str(number))
 
     draw.text((img_size[0]-text_size[0], 0), str(number), font=font, fill=(255, 0, 0))
 
-    img.save('icon_withnumber.bmp')
+    img.save('icon_withnumber.jpg')
 
     print('生成图片成功')
 
 
-drawNumberOnIcon("icon.bmp", 21)
+drawNumberOnIcon("icon.jpg", 21)

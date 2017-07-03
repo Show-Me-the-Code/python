@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guest-Book</title>
+	<link rel="stylesheet" href="static/main.css">
+</head>
+<body>
+ <h1>Guest-Book</h1>
+ <hr>
+
+ <div id="form_wrapper" class="container">
+ <form style="width: 300px" method="post">
+  <h3>Write Down Here!</h3>
+  <input type="text" name="userName" class="form-control" placeholder="Your Name" style="margin-bottom: 10px;">
+  <textarea class="form-control" rows="6" name="content" placeholder="Your Message"></textarea>
+  <br>
+  <input type="submit" class="btn-default btn-lg" style="height: 40px">
+ </form>
+ </div>
+ <br>
+ <br>
+ <hr>
+ <div id="past">
+ <h3>There are totaly {{ nums }} records!</h3>
+ <br>
+{% for item in items %}
+ <div class="container" name="post">
+ 	<div id="{{ item.postID }}">
+ 	<b style="font-size: 1.5em">{{ item.userName }}</b>
+ 	 &nbsp;&nbsp;&nbsp;created at
+ 	<time>{{ item.createdAt }}</time>
+ 	<blockquote style="background-color: #F0F0F0">{{ item.content }}</blockquote>
+ 	</div>
+ </div>
+{% endfor %}
+ <div>
+</body>
+</html>

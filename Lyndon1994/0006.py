@@ -29,7 +29,7 @@ def findWord(DirPath):
                     else:
                         wordDict[word] = 1
             ansList = sorted(wordDict.items(), key=lambda t: t[1], reverse=True)
-            print('file: %s->the most word: %s' % (file, ansList[1]))
+            print('file: %s->the most word: %s' % (file, ansList[0]))
 
 
 if __name__ == '__main__':

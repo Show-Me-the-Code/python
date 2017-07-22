@@ -1,9 +1,12 @@
-#coding:utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 """
 * 0000
 * by ahwz001
 * 2017/7/22
 """
+
 from PIL import Image, ImageDraw, ImageFont
 
 def addNumToImg(img):
@@ -21,3 +24,4 @@ if __name__ == '__main__':
     img = Image.open("me.jpg")
     addNumToImg(img)
     img.close()
+    

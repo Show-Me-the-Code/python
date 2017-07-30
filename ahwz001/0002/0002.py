@@ -87,7 +87,7 @@ def printResult(rows):
         print row
 
 
-def DeleteData():
+def DeleteData(conn):
     del_sql = "delete from user_key where id=2"
     conn.execute(del_sql)
 
@@ -141,6 +141,7 @@ def process():
     UseActiveKey(conn,test_key='25C492DF')
     print '\nA case for another test_key'
     UseActiveKey(conn,test_key='ABCDEF12')
+    DeleteData(conn)
     dbconn.commit()
     dbconn.close()
 

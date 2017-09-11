@@ -1,0 +1,62 @@
+Make sure you know what
+you're supposed to be doing. Okay, that sounds obvious and easy, right? This is not always true. If you are new to your job, you might not
+have a feel for your responsibilities. If you have not done a certain
+type of work before, you might not know how long
+something is going to take. That's completely normal. So how do you know? Ask. Review your job responsibilities,
+ask someone who is in the same roll or who has previously done this job, keep good
+notes, keep track of how long something takes you so that you have a solid
+estimate and you can use that next time. Remember, it also helps to take big
+tasks and break them into smaller steps. Remember that research Sam was
+starting for the sales reports? He might take that research and divide it
+into steps, that way he can keep track of each step and he'll know what is
+involved in completing that research. How do you know what your priorities are? Depending on the type of work you do,
+your priorities come to you from your leadership or perhaps from a customer
+who is, you're supporting. It's important to really understand
+the priorities you're expected to support. So in your sample work plan, you're going
+to have something, perhaps the priority, the description of what you're doing,
+the due date, who you're doing it for, the steps, an estimate of how long
+it's going to take, and a start date. And those are some good fields for
+you to start out with. And you can create a table,
+a spread sheet, and begin to work with this and see if this
+helps you in completing your work. You might not really know how
+long something is going to take. That's okay. So how do you know? Ask. Review your job responsibilities
+with your supervisor, ask someone who's in the same role,
+or who has previously done the job. Keep good notes when you do something,
+keep notes, keep track of how long it takes you, and then you have something to refer back
+to for a good estimate next time. Remember, it also helps to take big
+tasks and break them into smaller steps. Remember when Sam was
+working on that research, he started that research
+with those sales reports? He might take that research and
+divide it into steps, and that way he can keep track of
+how long each step will take, and he's gonna know what is involved
+in completing that research. How do you know what your priorities are? Well, depending on the type of work you
+do, sometimes your priorities are gonna come to you from your leadership or
+from a customer you support. It's important to really understand the
+priorities you are expected to support. In our example with Sam,
+it became more important for him to complete his status report
+first and then his other report later. What if your boss can not or
+will not tell you? You know sometimes the person you work for
+wants to see you figure it out for yourself. Sometimes the person you work for doesn't
+really know what the true priorities are. And if this is true, you're gonna
+have to figure it out for yourself. Pay attention to what is discussed the
+most in meetings and in announcements and in other communications. Pay attention to where your successful
+colleagues are spending their time. There are clues around you waiting for
+you to uncover them. Before you go,
+I would like to share with you a story. I once had a co-worker who had
+an important meeting after lunch and the meeting was with an executive. She was gonna facilitate the meeting and
+give a presentation. During lunch, she remembered that she forgotten
+to pick something up at the store. The item she forgot was something
+her family needed that evening. Immediately, she ran out of the office to
+the store and purchased the missing item. In doing so,
+she was late to her own meeting and to make matters worse,
+she explained why she was late. Her manager looked at her and said, if I had known you were gonna go do
+that, I would've gone to the store for you so you could have been here
+on time and been prepared. That's what we call
+a career limiting moment. It was all because she forgot her plan,
+she forgot her priorities, and she forgot the difference between something
+that was urgent versus important. It may have been important that she bring
+home that item that evening to her family, but it wasn't urgent. She could've picked it up
+on the way home from work. What was both urgent and important
+was being prepared for that meeting. Now, before we move to the next module,
+why don't you consider taking a shot at creating your own plan that covers
+at least the next five business days.

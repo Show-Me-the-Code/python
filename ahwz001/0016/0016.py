@@ -26,7 +26,7 @@ def save_to_xls(data, des_file):
     data: list of list of data.
     """
     wb = xlwt.Workbook(encoding = 'utf-8')
-    sheet = wb.add_sheet('student',cell_overwrite_ok=True)
+    sheet = wb.add_sheet('numbers',cell_overwrite_ok=True)
     row, column = 0,0
 
     for  numbers in data:    

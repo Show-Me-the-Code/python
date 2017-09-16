@@ -13,7 +13,6 @@ import json
 from lxml import etree
 
 
-
 def read_xls(fromfile):
     book = xlrd.open_workbook(fromfile)
     sheet = book.sheet_by_name('student')
@@ -50,3 +49,4 @@ if __name__ == '__main__':
     tofile = 'student.xml'
     data = read_xls(fromfile)
     to_xml(data, tofile)
+    

@@ -22,6 +22,6 @@ For example, if you wanna add a solution for problem 0001, you should do like th
   * cd YOU_GITHUB_USER_NAME
   * mkdir 0001
   * cd 0001
-  * and the write some code & test it
+  * and then write some code & test it
 
 if all these steps done, send us an pull request. After we accepte your request, we'll invite you to this group.

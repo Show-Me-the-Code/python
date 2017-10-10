@@ -1,44 +1,32 @@
 import os
 
-def count_lines(file_name):
-	line1 = 0
-	line2 = 0
-	space1 = 0
-	space2 = 0
-	comment1 = 0
-	comment2 = 0
-	ext = os.path.splitext(file_name)[1]
-	with open(file_name, encoding = 'gbk', errors='ignore') as f:
-		for each_line in f:
-			if ext == '.cpp':
-				line1 += 1
-				if not f:
-					space1 += 1
-				elif f.startwith('//'):
-					comment1 += 1
-			else:
-				line2 += 1
-				if not f:
-					space2 += 1
-				elif f.startwith('#'):
-					comment2 += 1
+def get_files(start_dir):
+	files = []
+	for root, dirs, names in os.walk(start_dir):
+		for name in names:
+			if os.path.splitext(name)[1] == '.py':
+				files.append(os.path.join(root,name))
+	return files
 
-def search_file(start_dir):
-	os.chdir(start_dir)
-	files = os.listdir(os.curdir)
+def cal_lines(files):
+	lines = 0
+	spaces = 0
+	comments = 0
 	for file in files:
-		ext = os.path.splitext(file)[1]
-		if ext in ['.cpp',  '.py']:
-			count_lines(file)
-
-		if os.path.isdir(file):        #判断路径存在且是一个目录
-			search_file(file)
-			os.chdir(os.pardir)				#返回上一级操作目录
+		with open(file, errors='ignore') as f:
+			#因为这里会报错：'gbk' codec can't decode byte 0x90 in position ...
+			for each_line in f:
+				lines += 1
+				if each_line.isspace():
+					spaces += 1
+				elif each_line.startswith('#'):
+					comments += 1
+	return (lines, spaces, comments)
 
 if __name__ == '__main__':
-	search_file('E:\\Python')
-	print('共写了'+line1+'行C语言代码，其中包括'+space1+'行空格和'+comment1+'行注释。')
-	print('共写了'+line2+'行Python代码，其中包括'+space2+'行空格和'+comment2+'行注释。')
-
-
-
+	all_files = get_files('E:/Python')
+	total_lines = cal_lines(all_files)[0]
+	total_spaces = cal_lines(all_files)[1]
+	total_comments = cal_lines(all_files)[2]
+	print('【.py】源文件%d个，源代码%d行\n' % (len(all_files), total_lines))
+	print('目前共累计编写了%d行Python代码，其中包括%d行空行, %d行注释。' % (total_lines, total_spaces, total_comments))

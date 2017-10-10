@@ -13,14 +13,18 @@ def cal_lines(files):
 	spaces = 0
 	comments = 0
 	for file in files:
-		with open(file, errors='ignore') as f:
+		with open(file) as f:
 			#因为这里会报错：'gbk' codec can't decode byte 0x90 in position ...
-			for each_line in f:
-				lines += 1
-				if each_line.isspace():
-					spaces += 1
-				elif each_line.startswith('#'):
-					comments += 1
+			#异常捕获
+			try:
+				for each_line in f:
+					lines += 1
+					if each_line.isspace():
+						spaces += 1
+					elif each_line.startswith('#'):
+						comments += 1
+			except UnicodeDecodeError:
+				pass
 	return (lines, spaces, comments)
 
 if __name__ == '__main__':

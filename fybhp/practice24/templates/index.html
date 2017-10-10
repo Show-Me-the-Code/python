@@ -1,0 +1,66 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "_macros.html" as macros %}
+
+{% block title %}备忘本{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">TodoList</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {{ wtf.quick_form(form1) }}
+    <div class="search col-md-2">
+        {{ wtf.quick_form(form2) }}
+    </div>
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
+    {% block page_content %}
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td class="col-md-9"> 事务 </td>
+                    <td class="col-md-3"> 管理 </td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for thing in things %}
+                <tr>
+                    <td class="col-md-9"> {{ thing.thing }} </td>
+                    <td class="col-md-3"> <a href="{{ url_for('.delthing',delthing = thing.id) }}"> 删除 </a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="pagination">
+        {{ macros.pagination_widget(pagination, '.index')}}
+    </div>
+    {% endblock %}
+</div>
+{% endblock %}

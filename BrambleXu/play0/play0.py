@@ -30,3 +30,6 @@ def add_num(picPath, num):
 
 if __name__ == '__main__':
     add_num('/Users/xu/Udacity/python/BrambleXu/play0/icon.jpg', 3)
+  def request(img,data):
+        this.img=img;
+        this.data=data;

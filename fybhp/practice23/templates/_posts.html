@@ -1,0 +1,15 @@
+<div class="container">
+    <table class="table table-striped table-bordered">
+    {% for message in messages %}
+            <tbody>
+            <tr>
+                <td>{{ message.name}}  留言于  {{message.time}}</td>
+            </tr>
+            <tr>
+                <td>{{ message.message}}</td>
+            </tr>
+            </tbody>
+
+    {% endfor %}
+    </table>
+</div>

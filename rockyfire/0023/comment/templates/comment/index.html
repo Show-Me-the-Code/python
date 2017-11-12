@@ -1,0 +1,21 @@
+{% if new_comment %}
+    <h2>Your comment has been added</h2>
+{% else %}
+    <h2>Add a new comment</h2>
+    <form action="." method="post">
+        {{ comment_form.as_p }}
+        {% csrf_token %}
+        <p><input type="submit" value="提交"/></p>
+    </form>
+{% endif %}
+
+{% for comment in comments %}
+    <div class="comment">
+        <p class="info">
+            {{ comment.name }}留言于{{ comment.created }}
+        </p>
+        {{ comment.body }}
+    </div>
+{% empty %}
+    <p>快来坐沙发</p>
+{% endfor %}

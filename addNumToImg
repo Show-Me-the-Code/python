@@ -1,0 +1,8 @@
+from PIL import Image, ImageDraw,ImageFont
+img = Image.open("xxxx.png")
+draw = ImageDraw.Draw(img)
+font = ImageFont.truetype("C:/Windows/Fonts/Arial.ttf",size=40)
+fillcolor = "#ff0000"
+width, hight = img.size
+draw.text((width-40,0),'99',fill=fillcolor,font=font)
+img.save("newImg.png","png")

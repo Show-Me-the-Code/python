@@ -1,0 +1,12 @@
+from PIL import Image,ImageDraw,ImageFont
+impath=r'C:\Users\Administrator\Desktop\2017.jpg'
+outpath=r'F:\learn files\suyou python\outimage.jpg'
+fontpath=r'C:\Windows\Fonts\方正喵呜体.ttf'
+
+im=Image.open(impath)
+draw=ImageDraw.Draw(im)
+fontsize=min(im.size)/4
+font=ImageFont.truetype(fontpath,fontsize)
+draw.text((im.size[0]-fontsize,0),'5',font=font,fill=(256,256,256))
+im.save(outpath,'jpeg')
+

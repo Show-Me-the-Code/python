@@ -1,0 +1,14 @@
+<!doctype html>
+<title>TodoList</title> 
+<link rel="stylesheet" style="text/css" href="{{ url_for('static',filename='style.css') }}">
+<div id="header">TodoList</div>
+  <h2>Login</h2>
+  {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}
+  <form action="{{ url_for('login') }}" method=post>
+  <dl>
+  <dt>Username:
+  <dd><input type=text name=username> <dt>Password: <dd><input type=password name=password>
+  <dd><input type=submit value=Login>
+  </dl>
+  </form>
+  <div id="footer">TodoList Ver:0.1 <br/>gongqingkui AT 126.com<br/>all rights reserved<br/><a href="logout" style="color:white">Logout</a></div>

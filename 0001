@@ -1,0 +1,13 @@
+import string,random
+
+num=string.letters+string.digits
+x=''
+
+for i in range(200):
+    for j in range(4):
+        if(j!=3):
+            x=x+''.join(random.sample(num,4))+'-'
+        if(j==3):
+            x=x+''.join(random.sample(num,4))
+    print x
+    x=''

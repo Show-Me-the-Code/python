@@ -1,0 +1,11 @@
+import re
+from collections import Counter
+
+file=r'C:\Users\Administrator\Desktop\新建文本文档 (3).txt'
+
+patten=r'''[A-Za-z]+|\$?\d+%?$'''
+
+with open(file) as f:
+    r= re.findall(patten,f.read())
+    x=Counter(r).most_common()
+print x

@@ -1,0 +1,23 @@
+#coding:utf-8
+import os,re
+from collections import Counter
+
+file=r'F:\learn files\suyou python\7a7'
+
+stop_word=['a','an','the','is','are','and','was','of','wtih','to','I','in','my',\
+           'that','me','she','you','it','we','this','so','your','am','his']
+
+pattern =r'''[A-Za-z]+|\$?\d+%?$'''
+
+os.chdir(file)
+total_counter=Counter()
+for i in os.listdir(os.getcwd()):
+    if os.path.splitext(i)[1]=='.txt':
+        with open(file+'//'+i) as f:
+            r=re.findall(pattern,f.read())
+            getcounter=Counter(r)
+            total_counter+=getcounter
+
+for i in stop_word:
+    total_counter[i]=0
+print total_counter.most_common()[0][0]

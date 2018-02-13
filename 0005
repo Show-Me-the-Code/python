@@ -1,0 +1,17 @@
+import os
+from PIL import Image
+
+mypath=r'F:\learn files\suyou python'
+outpath=r'F:\learn files\suyou python\6a6'
+
+os.chdir(mypath)
+for i in os.listdir(os.getcwd()):
+    postfix=os.path.splitext(i)[1]
+    if postfix == '.jpg' or postfix =='.png':
+        imgtype = 'jpeg' if postfix =='.jpg' else '.png'
+        im=Image.open(mypath+'\\'+i)
+        rate = max(im.size[0]/640.0 if im.size[0]>640 else 0,im.size[1]/1136.0 if im.size>1136 else 0)
+        if rate:
+            im.thumbnail((im.size[0]/rate,im.size[1]/rate))
+        im.save(outpath+'\\'+i,imgtype)
+            

@@ -21,7 +21,7 @@ class Input(object):
         self.in_string = input('>')
 
     def std_output(self):
-        self.filter_words()
+        self.load_filtered_words()
         print(self.out_string)
 
 if __name__ == '__main__':

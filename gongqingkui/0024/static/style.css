@@ -1,0 +1,15 @@
+html{-webkit-text-size-adjust:none;}
+*{margin:0px;padding:0px;}
+a{text-decoration:none;}
+#header,#footer,#content,#oper{padding:15px;width:100%}
+#header,#footer{background:#0766C8;text-align:center;}
+#header{color:white;font-size:50px;}
+#loginout{float:right;text-align:right;}
+#oper{padding-bottom:0px;}
+#content li{padding:5px;}
+#footer{color:white;}
+
+li{list-style:none;}
+.last{color:red;}
+.today{color:black;}
+.future{color:green;}

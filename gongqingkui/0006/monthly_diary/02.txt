@@ -1,0 +1,129 @@
+Python Starter Tips: Beginner¡¯s Guide to Writing Simple and Effective Code
+Published: Tuesday 12th September 2017
+Last Updated: Wednesday 20th September 2017
+Getting started with Python
+
+If you are new to Python, chances are that you will find this post quite useful. Here you will learn about some common Python starter tips and tricks that will enable you to write simple and efficient code.
+Python version 3.5.2 was used to create this tutorial.
+
+List initialization
+
+Lists are one of the most frequently used data structures in Python. If you have declared lists in the past, you would have done something like this:
+
+alist = list()
+
+              (or) 
+
+            alist = []
+If you want to initialize alist to five 0s, you would have done this:
+
+alist = [0,0,0,0,0]
+The above mentioned way works well enough for short lists, but what if you wanted to initialize a list to twenty 0s? Typing 0 twenty times would not be an efficient way. So instead, you can write something like this:
+
+alist = [0] * 20
+
+print(alist)
+
+Output: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+Randint Command
+
+Often you will be required to generate random numbers. Python has made this very easy by introducing the randint command. This command selects a number at random from the range you specify, making the process quick and simple. Randint needs to be imported from the 'random' library, which can be done like this:
+
+from random import randint 
+  The syntax for using randint is:
+
+randint(<from_range>,<to_range>)
+As an example, if you want to print random integers between 0 and 9 (both inclusive), it would be done like this:
+
+from random import randint 
+
+print(randint(0, 9))
+
+Output: prints an integer between 0 and 9
+Note that every time you execute the above command, you will get a different integer between 0 and 9.
+
+Type Command
+
+When you receive inputs from users or process inputs from other programs, it¡¯s very useful to know the datatype of the input that you are dealing with. This gives you better control over the operations that you can perform. The type command identifies the datatype of a variable.
+
+The syntax looks like this:
+
+type(<variable_name>)
+For instance, if you have a variable named alist which is a list, then executing the below command would return:
+
+alist = list()
+
+type(alist)
+
+Output: <class 'list'>
+Strip Command
+
+This is a very useful command that formats inputs that are received in the form of strings. The strip command removes the spaces that are present before and after a string. The syntax is:
+
+<string>.strip()
+For example, if you want to strip spaces before and after in a string, it should be done like this:
+
+sample = ¡°   Python ¡°
+
+sample.strip()
+
+Output: Python
+Note: only spaces before and after are removed and not the spaces in between two words. For example:
+
+sample = ¡°      I love Python       ¡°
+
+sample.strip()
+
+Output: ¡°I love Python¡± 
+There are many more operations that can be performed using lstrip/rstrip commands like stripping on the left/right side of the string respectively. Be sure to explore further on your own!
+
+Counting 
+
+I am sure you will be familiar with counting forward using the for keyword, which looks like this:
+
+for i in range(0,5):
+
+print(i)
+
+Output: prints 0,1,2,3,4
+However, there is more to the for keyword. It also enables you to count in steps and even in reverse. The syntax is as follows:
+
+          for i in range (<from_value>,<to_value>,<step>):
+
+print(i)
+For example, if you want to count every second number between 0 and 10, it should be written as follows:
+
+          for i in range(0,10,2):
+
+print(i)
+
+Output: prints 0,2,4,6,8
+The above command will print 0,2,4,6,8. Note that if the step is not specified, it is taken to be 1 by default.
+
+To count in reverse, the command is as follows:
+
+for i in range(10,0,-1):
+
+print(i)
+
+Output: prints 10,9,8,7,6,5,4,3,2,1
+If the step is specified as -2, then the above command would print 10,8,6,4,2.
+
+General Tips
+
+A few other general tips:
+
+Comment - write comments wherever possible as this will help you and others to understand the code better. Single line comments can be written as follows:
+#<Single line comment>
+Paragraph comments can be written as below:
+
+¡°¡±¡± 
+
+<Paragraph comment>
+
+¡°¡±¡±
+Naming conventions - Take extra care in using relevant names while naming variables. Specifying the datatype in the name will be extra helpful when someone else reads your code. If you are initializing a string called ¡°first name¡±, be sure to include the data type in the name like ¡°strFirstName¡±. This way anyone reading your code will immediately understand that the variable ¡°strFirstName¡± is of the type string.
+Line number - If you are using Python IDLE, be sure to use the ALT+G command to get to a particular line. This helps in tracking a line based on line number and can be a lifesaver when you have several lines of code and an error is thrown.
+Conclusion
+
+These are a few handpicked tips from Python and hopefully these make coding a little easier for you. There is so much more to learn as Python has an ocean of libraries that make coding extremely simple. So keep exploring and happy Pythoning!

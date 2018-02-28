@@ -1,0 +1,26 @@
+<!doctype html>
+<title>TodoList</title> 
+<link rel="stylesheet" style="text/css" href="{{ url_for('static',filename='style.css') }}">
+<div id="header">TodoList</div>
+{% if not session.logged_in  %}
+  <div id="loginout"><a href='/login'>login</a></div>
+{% else %}
+  <div id="loginout"><a href='/logout'>logout</a></div>
+<div id="oper">
+     <form action="{{ url_for('add_task') }}" name="formnewtask" method='POST'>
+<input type="text" name="content" />
+<input type="date" name="date"/>
+<input type="submit" value="New Todo"/>
+     </form> 
+  </div>
+  <div id="content">
+  <h3>TodoList</h3>
+  <ul>
+  {% for tasklog in tasklogs %}
+  <li>[<a href='confirm?id={{ tasklog.id }}'>Confirm</a>]<span class='today future last'>{{ tasklog.date}}{{ tasklog.content }}{{ tasklog.id }}</span></li>
+  {% else %}
+  <li><span>no task</span></li>
+  {% endfor %}
+  </ul>
+{% endif %}
+  <div id="footer">TodoList Ver:0.1 <br/>gongqingkui AT 126.com<br/>all rights reserved<br/><a href="logout" style="color:white">Logout</a></div>

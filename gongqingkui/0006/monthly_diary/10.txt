@@ -1,0 +1,25 @@
+
+At the same time, every HTML page contains large swaths of static text. And these pages are large, containing tens of thousands of bytes of text. The web application developer has a problem to solve: how best to generate a large string containing a mix of static and dynamic data? To add to the problem, the static text is actually HTML markup that is authored by another member of the team, the front-end designer, who wants to be able to work with it in familiar ways.
+
+For purposes of illustration, let's imagine we want to produce this toy HTML:
+
+<p>Welcome, Charlie!</p>
+<p>Products:</p>
+<ul>
+    <li>Apple: $1.00</li>
+    <li>Fig: $1.50</li>
+    <li>Pomegranate: $3.25</li>
+</ul>
+Here, the user's name will be dynamic, as will the names and prices of the products. Even the number of products isn't fixed: at another moment, there could be more or fewer products to display.
+
+One way to make this HTML would be to have string constants in our code, and join them together to produce the page. Dynamic data would be inserted with string substitution of some sort. Some of our dynamic data is repetitive, like our lists of products. This means we'll have chunks of HTML that repeat, so those will have to be handled separately and combined with the rest of the page.
+
+Producing our toy page in this way might look like this:
+
+# The main HTML for the whole page.
+PAGE_HTML = """
+<p>Welcome, {name}!</p>
+<p>Products:</p>
+<ul>
+{products}
+</ul>

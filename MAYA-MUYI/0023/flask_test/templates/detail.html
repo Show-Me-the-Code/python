@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{% block title %}详情{% endblock %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/detail.css')}}">
+{% endblock %}
+{% block main %}
+    <h3 class="page-title">{{question.title}}</h3>
+    <p class="question-info"></p>
+        <span>{{question.author.username}}</span>
+        <span>{{question.create_time}}</span>
+    <hr>
+    <p class="question-content">{{question.content}}</p>
+    <hr>
+    <h4>评论：（0）</h4>
+    <form action="{{url_for('comment')}}" method="post">
+        <div class="form-group">
+            <input type="text" name="content" class="form-control" placeholder="评论">
+            <input type="hidden" name="question_id" value="{{question.id}}">
+        </div>
+        <div class="form-group" style="text-align: right">
+            <button class="btn btn-primary" >评论</button>
+        </div>
+    </form>
+    <ul class="comment-list">
+        {% for comment in question.comments %}
+            <li>
+                <div class="user-info">
+                    <img src="{{url_for('static', filename='images/3.jpg')}}" alt="" class="avatar">
+                    <span class="username">{{question.author.username}}</span>
+                    <span class="create-time">{{comment.create_time}}</span>
+                </div>
+                <p class="comment-content">{{comment.content}}</p>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

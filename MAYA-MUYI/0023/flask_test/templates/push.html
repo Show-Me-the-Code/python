@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}问答{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/push.css')}}">
+{% endblock %}
+
+{% block main %}
+    <h3 class="page-title">问答</h3>
+    <form action="" method="POST">
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="标题" name="title">
+            </div>
+            <div class="form-group">
+                <textarea name="content" class="form-control" rows="5" placeholder="请输入内容">
+
+                </textarea>
+            </div>
+            <div class="form-group"><button class="btn btn-primary">submit</button></div>
+        </div>
+    </form>
+
+{% endblock %}

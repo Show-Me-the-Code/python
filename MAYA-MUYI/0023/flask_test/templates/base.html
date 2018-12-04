@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}" type="text/css">
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+              <img src="{{url_for('static', filename='images/3.jpg')}}" class="logo" alt="">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+            <li><a href="{{url_for('push_article')}}">问答 </a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="请输入关键字">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            {% if user:%}
+                <li><a href="#">{{user.username}}</a></li>
+                <li><a href="{{url_for('logout')}}">注销</a></li>
+            {% else %}
+                <li><a href="{{url_for('login')}}">Login</a></li>
+                <li><a href="{{url_for('register')}}">Register</a></li>
+            {% endif %}
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="main">
+        {% block main %}{% endblock %}
+    </div>
+
+</body>
+</html>

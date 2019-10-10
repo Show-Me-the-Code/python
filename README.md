@@ -25,3 +25,4 @@ For example, if you wanna add a solution for problem 0001, you should do like th
   * and the write some code & test it.
 
 If all these steps done, send us an pull request. After we accept your request, we'll invite you to this group.
+## i just wanted to learn about pull request

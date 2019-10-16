@@ -1,7 +1,7 @@
 #coding = utf-8
 # Make check codes
 __author__ = 'Forec'
-
+#import file
 import random
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 

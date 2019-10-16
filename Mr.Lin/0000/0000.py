@@ -6,7 +6,7 @@
 # @Last Modified time: 2015-01-12 17:03:30
 #将你的 QQ 头像（或者微博头像）右上角加上红色的数字，类似于微信未读信息数量那种提示效果。
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont#Image,ImageDraw,ImageFront are importing from PTL
 class Image_unread_message:
 	def open(self,path):
 		self.im=Image.open(path)

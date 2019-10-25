@@ -1,0 +1,9 @@
+Python Workbook, a small daily program
+
+Explanation:
+
+Python Workbook, a small daily program. Note: Python into other languages, most of the topics also apply
+Do not appear, such as "print multiplication table", "Print Narcissus" like topic
+In this paper, the history of this paper by the @ Jiang Song ( shijiangge@gmail.com QQ: 499 065 469) according to organize data collection from the Internet, thanks to the Internet, thanks for sharing. Thanks! This article will be updated continuously.
+Welcome to the Pull Request a problem, paste the code (Gist, Blog can be) :-)
+Welcome to answer, and send pull request to the Show-Me-the-Code

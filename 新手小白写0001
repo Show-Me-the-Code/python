@@ -1,0 +1,28 @@
+def get_codes():
+    import random as r
+    ls=[]
+    count=0
+    for x in range(4):
+        for y in range(4):
+            i=r.randint(1,5)                                      #这一块可以用于控制概率！！
+            if i==1:
+                ls.append(str(r.randint(0,9)))
+            elif 2 < i < 4:
+                ls.append(chr(r.randint(97,122)))
+            else:
+                ls.append(chr(r.randint(65,90)))
+        count+=1
+        if count<4:
+             ls.append("-")  
+        else:
+            pass
+    code="".join(ls)
+    return code
+
+def main():
+    num=int(input("请输入您想生成的优惠券的数量："))
+    for i in range(num):
+        code=get_codes()
+        print(code)
+if __name__=="__main__":
+    main()

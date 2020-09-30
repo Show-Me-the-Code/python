@@ -25,3 +25,10 @@ For example, if you wanna add a solution for problem 0001, you should do like th
   * and the write some code & test it.
 
 If all these steps done, send us an pull request. After we accept your request, we'll invite you to this group.
+///////////////////////////////////////  my changes includes ///////////////////////////////////////////////////////////////
+       code is very better but little bit changes on the java -script code uses in huge times
+                                    very better codes welldone and  continued practiceof codes writing
+                                                         welldone sir.
+                 please provide me good rating sir 
+                     thanking you sir
+///////////////////////////////////////  complete my lines//////////////////////////////////////////////////////////////////

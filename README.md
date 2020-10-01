@@ -1,4 +1,4 @@
-python
+Python
 ======
 
 Show Me the Code Python version.

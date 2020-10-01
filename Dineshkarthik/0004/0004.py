@@ -4,7 +4,7 @@ __author__ = 'Dineshkarthik'
 
 #0004 Title: any of a plain text file in English, statistics on the number of words appears.
 
-import pandas as pd
+import pandas as pd  #This statement imports Pandas module as pd
 import re
 
 def word_count(file_path):

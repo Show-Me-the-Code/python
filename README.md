@@ -3,15 +3,13 @@ python
 
 Show Me the Code Python version.
 
-2015年8月10日更新：
-【注】Pull Request 请提交你个人的仓库 URL 链接地址。
-
 ### How to Add your solutions:
 
-  * Fork this repo.
+  * Fork this repositry.
   * Create a folder named with your github name.
   * Create a folder named the problem num.
   * Add your solution in the folder.
+  * Pull the request
 
 For example, if you wanna add a solution for problem 0001, you should do like this:
 

@@ -1,0 +1,7 @@
+stack=[1,2,3,4,5]
+print("Stack is:",stack)
+x=int(input("Enter the element to push:"))
+stack.append(x)
+print("Stack after push operation is:",stack)
+stack.pop()
+print("Stack after pop operation is:",stack)

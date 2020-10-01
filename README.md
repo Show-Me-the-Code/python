@@ -1,7 +1,7 @@
-python
+Python
 ======
 
-Show Me the Code Python version.
+Show Me the syntax Python version.
 
 2015年8月10日更新：
 【注】Pull Request 请提交你个人的仓库 URL 链接地址。

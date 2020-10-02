@@ -1,5 +1,7 @@
 import string
 import random
+#function takes digit as in number of coupons needs to be generated
+
 def coupon_creator(digit):
     coupon=''
     for word in range(digit):

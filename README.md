@@ -8,12 +8,12 @@ Show Me the Code Python version.
 
 ### How to Add your solutions:
 
-  * Fork this repo.
+  * Fork this repository.
   * Create a folder named with your github name.
   * Create a folder named the problem num.
   * Add your solution in the folder.
 
-For example, if you wanna add a solution for problem 0001, you should do like this:
+For example, if you want to  add a solution for problem 0001, you should do like this:
 
   * Fork `Show-Me-the-Code/python`.
   * git clone `YOUR_REPO_URL SOME_DIR`.

@@ -1,5 +1,5 @@
 def count():
-    name = raw_input("Enter file:")
+    name = raw_input("Enter file Name:")
     if len(name) < 1 : name = "test.txt"
     handle = open(name)
     count_words=list()

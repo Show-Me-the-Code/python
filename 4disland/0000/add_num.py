@@ -1,3 +1,4 @@
+#image adjustment
 from PIL import Image, ImageDraw, ImageFont
 
 def add_num(img):

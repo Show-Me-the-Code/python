@@ -1,0 +1,136 @@
+TESTING$calculator_advanced.py
+Select Operation:
+
+                1.Add
+                2.Subtract
+                3.Multiply
+                4.Get the Remainder after division
+                5.Divide
+                6. Divide and get the integer value
+                7. Exit
+
+1
+Enter first number:
+12
+Enter second number:
+32
+12 + 32 = 44
+Select Operation:
+
+                1.Add
+                2.Subtract
+                3.Multiply
+                4.Get the Remainder after division
+                5.Divide
+                6. Divide and get the integer value
+                7. Exit
+
+2
+Enter first number:
+12
+Enter second number:
+32
+12 - 32 = -20
+Select Operation:
+
+                1.Add
+                2.Subtract
+                3.Multiply
+                4.Get the Remainder after division
+                5.Divide
+                6. Divide and get the integer value
+                7. Exit
+
+3
+Enter first number:
+12
+Enter second number:
+32
+12 * 32 = 384
+Select Operation:
+
+                1.Add
+                2.Subtract
+                3.Multiply
+                4.Get the Remainder after division
+                5.Divide
+                6. Divide and get the integer value
+                7. Exit
+
+4
+Enter first number:
+36
+Enter second number:
+5
+36 % 5 = 1
+Select Operation:
+
+                1.Add
+                2.Subtract
+                3.Multiply
+                4.Get the Remainder after division
+                5.Divide
+                6. Divide and get the integer value
+                7. Exit
+
+5
+Enter first number:
+78
+Enter second number:
+4
+78 / 4 = 19.5
+Select Operation:
+
+                1.Add
+                2.Subtract
+                3.Multiply
+                4.Get the Remainder after division
+                5.Divide
+                6. Divide and get the integer value
+                7. Exit
+
+6
+Enter first number:
+78
+Enter second number:
+4
+78 // 4 = 19
+Select Operation:
+
+                1.Add
+                2.Subtract
+                3.Multiply
+                4.Get the Remainder after division
+                5.Divide
+                6. Divide and get the integer value
+                7. Exit
+
+12
+Invalid input.
+Try Again...
+Select Operation:
+
+                1.Add
+                2.Subtract
+                3.Multiply
+                4.Get the Remainder after division
+                5.Divide
+                6. Divide and get the integer value
+                7. Exit
+
+233
+Invalid input.
+Try Again...
+Select Operation:
+
+                1.Add
+                2.Subtract
+                3.Multiply
+                4.Get the Remainder after division
+                5.Divide
+                6. Divide and get the integer value
+                7. Exit
+
+7
+
+TESTING$calculator_advanced.py

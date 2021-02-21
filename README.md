@@ -8,9 +8,9 @@ Show Me the Code Python version.
 
 ### How to Add your solutions:
 
-  * Fork this repo.
-  * Create a folder named with your github name.
-  * Create a folder named the problem num.
+  * Fork this repository.
+  * Create a folder and give it your github username.
+  * Create a folder named, the problem num.
   * Add your solution in the folder.
 
 For example, if you wanna add a solution for problem 0001, you should do like this:
@@ -22,6 +22,6 @@ For example, if you wanna add a solution for problem 0001, you should do like th
   * cd `YOU_GITHUB_USER_NAME`.
   * mkdir `0001`.
   * cd `0001`.
-  * and the write some code & test it.
+  * and then write some code & test it.
 
-If all these steps done, send us an pull request. After we accept your request, we'll invite you to this group.
+If all these steps are done then send us a pull request. After we accept your request, we'll invite you to this group.

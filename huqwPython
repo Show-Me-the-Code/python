@@ -1,3 +1,4 @@
+# 0001
 # 做为 Apple Store App 独立开发者，你要搞限时促销，为你的应用生成激活码（或者优惠券），使用 Python 如何生成 200 个激活码（或者优惠券）？
 
 import random
@@ -26,3 +27,42 @@ class GenerateCDK:
 bit = 15
 num = 200
 GenerateCDK(bit, num).Generate()
+
+
+# 0000
+# 将你的 QQ 头像（或者微博头像）右上角加上红色的数字，类似于微信未读信息数量那种提示效果。
+
+from PIL import Image, ImageDraw, ImageFont
+
+
+class AddNum2Image:
+    def __init__(self, ImagePath, SavePath):
+        self.ImagePath = ImagePath
+        self.SavePath = SavePath
+        self.img = None
+
+    def OpenImage(self):
+        img = Image.open(self.ImagePath)
+        self.img = img
+
+    def DrawImage(self):
+        size = self.img.size
+        PlotX = size[0] * 0.8
+        PlotY = size[1] * 0.1
+        font = ImageFont.truetype(r'C:\Users\System-Pc\Desktop\arial.ttf', 100)
+        draw = ImageDraw.Draw(self.img)
+        draw.ellipse((PlotX, PlotY, PlotX+200, PlotY+200), fill='red', outline='blue', width=5)
+        draw.text((PlotX+70, PlotY+50), '1', fill='yellow', font=font)
+
+    def SaveImage(self):
+        self.img.save(self.SavePath)
+        self.img.show()
+
+
+if __name__ == '__main__':
+    ImageFile = './img.jpg'
+    SaveFile = './img_new.png'
+    Solute = AddNum2Image(ImageFile, SaveFile)
+    Solute.OpenImage()
+    Solute.DrawImage()
+    Solute.SaveImage()

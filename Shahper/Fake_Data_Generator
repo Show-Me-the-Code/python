@@ -1,0 +1,11 @@
+## first install Faker from your terminal by using this command -> pip install Faker
+
+from faker import Faker
+fake = Faker()
+print(fake.name())x
+print(fake.email())
+print(fake.country())
+print(fake.profile())
+
+#you can also generate more fake/samople data by checking more methods form here 👇🏽
+website link : https://faker.readthedocs.io/en/master/index.html

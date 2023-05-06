@@ -13,3 +13,8 @@ def Hashing_Password(password_On_Clear):
 
     # Return the hash and the salt
     return hash_value, salt
+
+hash_value = Hashing_Password(password)
+Hash_Key = open('KEY_HASH.txt'),'w')
+Hash_Key.write(str(hash_value))
+Hash_Key.close()

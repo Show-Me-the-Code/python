@@ -8,11 +8,11 @@ def make_rand_char():
 
 
 def generator_bgcolor():
-    return (random.randint(64, 255), random.randint(64, 255), random.randint(64, 255))
+    return (random.randint(32, 125), random.randint(64, 255), random.randint(64, 255))
 
 
 def generator_font_color():
-    return (random.randint(32, 127), random.randint(32, 127), random.randint(32, 127))
+    return (random.randint(32, 120), random.randint(32, 127), random.randint(32, 127))
 
 
 def producer():

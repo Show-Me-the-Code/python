@@ -1,0 +1,3 @@
+pip install mediapipe
+pip install cv2
+pip install screen_brighness_control

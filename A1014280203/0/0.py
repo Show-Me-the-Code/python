@@ -1,5 +1,5 @@
 from PIL import Image, ImageFont, ImageDraw
-
+# It plays an Images and edit using python
 image = Image.open('0.png')
 w, h = image.size
 font = ImageFont.truetype('arial.ttf', 50)

@@ -1,6 +1,4 @@
-from PIL import Image
-from PIL import ImageFont
-from PIL import ImageDraw
+from PIL import Image,ImageFont,ImageDraw
 
 file_name = raw_input("Please input the image name, including file appendix: ")
 try:

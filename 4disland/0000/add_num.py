@@ -12,3 +12,4 @@ def add_num(img):
 if __name__ == '__main__':
     image = Image.open('image.jpg')
     add_num(image)
+print("numpy")
